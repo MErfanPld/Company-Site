@@ -28,6 +28,7 @@ urlpatterns = [
          SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
+    path('', include('regulation.urls')),
 ]
 
 if settings.DEBUG:

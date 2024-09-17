@@ -1,0 +1,1050 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "SpectacularAPIView",
+        "importPath": "drf_spectacular.views",
+        "description": "drf_spectacular.views",
+        "isExtraImport": true,
+        "detail": "drf_spectacular.views",
+        "documentation": {}
+    },
+    {
+        "label": "SpectacularRedocView",
+        "importPath": "drf_spectacular.views",
+        "description": "drf_spectacular.views",
+        "isExtraImport": true,
+        "detail": "drf_spectacular.views",
+        "documentation": {}
+    },
+    {
+        "label": "SpectacularSwaggerView",
+        "importPath": "drf_spectacular.views",
+        "description": "drf_spectacular.views",
+        "isExtraImport": true,
+        "detail": "drf_spectacular.views",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "home.utils",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "home.utils",
+        "description": "home.utils",
+        "detail": "home.utils",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "slugify",
+        "importPath": "django.utils.text",
+        "description": "django.utils.text",
+        "isExtraImport": true,
+        "detail": "django.utils.text",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "rest_framework.generics",
+        "description": "rest_framework.generics",
+        "isExtraImport": true,
+        "detail": "rest_framework.generics",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "config.asgi",
+        "description": "config.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "config.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-q)brqd3@-@$9ui07y8mbc+hav761=g=5rx@vu8u_j3--f85cpy'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-q)brqd3@-@$9ui07y8mbc+hav761=g=5rx@vu8u_j3--f85cpy'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',\n    'drf_spectacular',\n    'home',",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'config.urls'",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "ROOT_URLCONF = 'config.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'config.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.1/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\n# STATIC_URL = 'static/'\nSTATIC_URL = '/site_statics/'\nSTATICFILES_DIRS = [\n    os.path.join(BASE_DIR, \"staticfiles\")",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\n# STATIC_URL = 'static/'\nSTATIC_URL = '/site_statics/'\nSTATICFILES_DIRS = [\n    os.path.join(BASE_DIR, \"staticfiles\")\n]",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\n# STATIC_URL = 'static/'\nSTATIC_URL = '/site_statics/'\nSTATICFILES_DIRS = [\n    os.path.join(BASE_DIR, \"staticfiles\")\n]\nSTATIC_ROOT = os.path.join(BASE_DIR, \"static_cdn\")",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.1/howto/static-files/\n# STATIC_URL = 'static/'\nSTATIC_URL = '/site_statics/'\nSTATICFILES_DIRS = [\n    os.path.join(BASE_DIR, \"staticfiles\")\n]\nSTATIC_ROOT = os.path.join(BASE_DIR, \"static_cdn\")\nMEDIA_URL = '/media/'",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "STATIC_URL = '/site_statics/'\nSTATICFILES_DIRS = [\n    os.path.join(BASE_DIR, \"staticfiles\")\n]\nSTATIC_ROOT = os.path.join(BASE_DIR, \"static_cdn\")\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, \"static_cdn\", \"media_root\")\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATICFILES_DIRS",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "STATICFILES_DIRS = [\n    os.path.join(BASE_DIR, \"staticfiles\")\n]\nSTATIC_ROOT = os.path.join(BASE_DIR, \"static_cdn\")\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, \"static_cdn\", \"media_root\")\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nREST_FRAMEWORK = {",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_ROOT",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "STATIC_ROOT = os.path.join(BASE_DIR, \"static_cdn\")\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, \"static_cdn\", \"media_root\")\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nREST_FRAMEWORK = {\n    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',\n}\nSPECTACULAR_SETTINGS = {",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_URL",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "MEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, \"static_cdn\", \"media_root\")\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nREST_FRAMEWORK = {\n    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',\n}\nSPECTACULAR_SETTINGS = {\n    'TITLE': 'Project API',",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_ROOT",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "MEDIA_ROOT = os.path.join(BASE_DIR, \"static_cdn\", \"media_root\")\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nREST_FRAMEWORK = {\n    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',\n}\nSPECTACULAR_SETTINGS = {\n    'TITLE': 'Project API',\n    'DESCRIPTION': 'Project description',",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nREST_FRAMEWORK = {\n    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',\n}\nSPECTACULAR_SETTINGS = {\n    'TITLE': 'Project API',\n    'DESCRIPTION': 'Project description',\n    'VERSION': '1.0.0',\n    'SERVE_INCLUDE_SCHEMA': False,\n}",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "REST_FRAMEWORK",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',\n}\nSPECTACULAR_SETTINGS = {\n    'TITLE': 'Project API',\n    'DESCRIPTION': 'Project description',\n    'VERSION': '1.0.0',\n    'SERVE_INCLUDE_SCHEMA': False,\n}",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SPECTACULAR_SETTINGS",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "SPECTACULAR_SETTINGS = {\n    'TITLE': 'Project API',\n    'DESCRIPTION': 'Project description',\n    'VERSION': '1.0.0',\n    'SERVE_INCLUDE_SCHEMA': False,\n}",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "config.urls",
+        "description": "config.urls",
+        "peekOfCode": "urlpatterns = [\n    path('schema/', SpectacularAPIView.as_view(), name='schema'),\n    path('schema/swagger-ui/',\n         SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),\n    path('schema/redoc/',\n         SpectacularRedocView.as_view(url_name='schema'), name='redoc'),\n    path('admin/', admin.site.urls),\n    path('', include('home.urls')),\n]\nif settings.DEBUG:",
+        "detail": "config.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "config.wsgi",
+        "description": "config.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "config.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "home.migrations.0001_initial",
+        "description": "home.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='AboutUs',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title_en', models.CharField(max_length=255, verbose_name='Title EN')),",
+        "detail": "home.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "home.migrations.0002_alter_service_icon_img",
+        "description": "home.migrations.0002_alter_service_icon_img",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('home', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='service',\n            name='icon_img',\n            field=models.ImageField(blank=True, null=True, upload_to=home.utils.upload_image_service_icon, verbose_name='Image Icon'),\n        ),",
+        "detail": "home.migrations.0002_alter_service_icon_img",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "home.migrations.0003_remove_comments_fullname_comments_fullname_ar_and_more",
+        "description": "home.migrations.0003_remove_comments_fullname_comments_fullname_ar_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('home', '0002_alter_service_icon_img'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='comments',\n            name='fullname',\n        ),\n        migrations.AddField(",
+        "detail": "home.migrations.0003_remove_comments_fullname_comments_fullname_ar_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "home.migrations.0004_suggestions",
+        "description": "home.migrations.0004_suggestions",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('home', '0003_remove_comments_fullname_comments_fullname_ar_and_more'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Suggestions',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title_en', models.CharField(max_length=255, verbose_name='Title EN')),",
+        "detail": "home.migrations.0004_suggestions",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "home.migrations.0005_faq_alter_comments_status_alter_service_status_and_more",
+        "description": "home.migrations.0005_faq_alter_comments_status_alter_service_status_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('home', '0004_suggestions'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='FAQ',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('question_en', models.CharField(max_length=255, verbose_name='Question EN')),",
+        "detail": "home.migrations.0005_faq_alter_comments_status_alter_service_status_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "SlidersAdmin",
+        "kind": 6,
+        "importPath": "home.admin",
+        "description": "home.admin",
+        "peekOfCode": "class SlidersAdmin(admin.ModelAdmin):\n    list_display = ('title_en', 'title_ar', 'status', 'image')\n    list_filter = ('status',)\n    search_fields = ('title_en', 'title_ar')\n    ordering = ('title_en',)\n    fieldsets = (\n        (None, {\n            'fields': ('title_en', 'title_ar', 'sub_title_en', 'sub_title_ar', 'image', 'status')\n        }),\n    )",
+        "detail": "home.admin",
+        "documentation": {}
+    },
+    {
+        "label": "AboutUsAdmin",
+        "kind": 6,
+        "importPath": "home.admin",
+        "description": "home.admin",
+        "peekOfCode": "class AboutUsAdmin(admin.ModelAdmin):\n    list_display = ('title_en', 'title_ar', 'count_employee',\n                    'count_product', 'image')\n    search_fields = ('title_en', 'title_ar', 'content_en', 'content_ar')\n    ordering = ('title_en',)\n    fieldsets = (\n        (None, {\n            'fields': ('title_en', 'title_ar', 'content_en', 'content_ar', 'count_employee', 'count_product', 'image')\n        }),\n    )",
+        "detail": "home.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ChooseUsAdmin",
+        "kind": 6,
+        "importPath": "home.admin",
+        "description": "home.admin",
+        "peekOfCode": "class ChooseUsAdmin(admin.ModelAdmin):\n    list_display = ('title_en', 'title_ar', 'image')\n    search_fields = ('title_en', 'title_ar', 'content_en', 'content_ar')\n    ordering = ('title_en',)\n    fieldsets = (\n        (None, {\n            'fields': ('title_en', 'title_ar', 'content_en', 'content_ar', 'image')\n        }),\n    )\nclass ServiceAdmin(admin.ModelAdmin):",
+        "detail": "home.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ServiceAdmin",
+        "kind": 6,
+        "importPath": "home.admin",
+        "description": "home.admin",
+        "peekOfCode": "class ServiceAdmin(admin.ModelAdmin):\n    list_display = ('title_en', 'title_ar', 'status', 'image', 'icon_img')\n    list_filter = ('status',)\n    search_fields = ('title_en', 'title_ar')\n    ordering = ('title_en',)\n    fieldsets = (\n        (None, {\n            'fields': ('title_en', 'title_ar', 'content_en', 'content_ar', 'image', 'icon_img', 'status')\n        }),\n    )",
+        "detail": "home.admin",
+        "documentation": {}
+    },
+    {
+        "label": "SuggestionsAdmin",
+        "kind": 6,
+        "importPath": "home.admin",
+        "description": "home.admin",
+        "peekOfCode": "class SuggestionsAdmin(admin.ModelAdmin):\n    list_display = ('title_en', 'title_ar', 'status', 'icon_img')\n    list_filter = ('status',)\n    search_fields = ('title_en', 'title_ar')\n    ordering = ('title_en',)\n    fieldsets = (\n        (None, {\n            'fields': ('title_en', 'title_ar', 'content_en', 'content_ar', 'icon_img', 'status')\n        }),\n    )",
+        "detail": "home.admin",
+        "documentation": {}
+    },
+    {
+        "label": "CommentsAdmin",
+        "kind": 6,
+        "importPath": "home.admin",
+        "description": "home.admin",
+        "peekOfCode": "class CommentsAdmin(admin.ModelAdmin):\n    list_display = ('fullname_en', 'fullname_ar', 'status', 'image')\n    list_filter = ('status',)\n    search_fields = ('fullname_en', 'fullname_ar', 'content_en', 'content_ar')\n    ordering = ['fullname_en', 'fullname_ar']\n    fieldsets = (\n        (None, {\n            'fields': ('fullname_en', 'fullname_ar', 'content_en', 'content_ar', 'image', 'status')\n        }),\n    )",
+        "detail": "home.admin",
+        "documentation": {}
+    },
+    {
+        "label": "FAQAdmin",
+        "kind": 6,
+        "importPath": "home.admin",
+        "description": "home.admin",
+        "peekOfCode": "class FAQAdmin(admin.ModelAdmin):\n    list_display = ('question_en', 'question_ar', 'status')\n    list_filter = ('status',)\n    search_fields = ('question_en', 'question_ar', 'answer_en', 'answer_ar')\n    fieldsets = (\n        (None, {\n            'fields': ('question_en', 'question_ar', 'answer_en', 'answer_ar','status')\n        }),\n    )\nadmin.site.register(FAQ, FAQAdmin)",
+        "detail": "home.admin",
+        "documentation": {}
+    },
+    {
+        "label": "HomeConfig",
+        "kind": 6,
+        "importPath": "home.apps",
+        "description": "home.apps",
+        "peekOfCode": "class HomeConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'home'",
+        "detail": "home.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Sliders",
+        "kind": 6,
+        "importPath": "home.models",
+        "description": "home.models",
+        "peekOfCode": "class Sliders(models.Model):\n    title_en = models.CharField(max_length=255, verbose_name=\"Title EN\")\n    title_ar = models.CharField(max_length=255, verbose_name=\"Title AR\")\n    sub_title_en = models.CharField(\n        max_length=255, verbose_name=\"Sub Title EN\")\n    sub_title_ar = models.CharField(\n        max_length=255, verbose_name=\"Sub Title AR\")\n    image = models.ImageField(\n        upload_to=upload_image_sliders, null=True, blank=True, verbose_name='Image')\n    status = models.BooleanField(",
+        "detail": "home.models",
+        "documentation": {}
+    },
+    {
+        "label": "AboutUs",
+        "kind": 6,
+        "importPath": "home.models",
+        "description": "home.models",
+        "peekOfCode": "class AboutUs(models.Model):\n    title_en = models.CharField(max_length=255, verbose_name=\"Title EN\")\n    title_ar = models.CharField(max_length=255, verbose_name=\"Title AR\")\n    content_en = models.TextField(verbose_name=\"Content EN\")\n    content_ar = models.TextField(verbose_name=\"Content AR\")\n    count_employee = models.IntegerField(verbose_name=\"Number of employees\")\n    count_product = models.IntegerField(verbose_name=\"Number of products\")\n    image = models.ImageField(\n        upload_to=upload_image_about, null=True, blank=True, verbose_name='Image')\n    class Meta:",
+        "detail": "home.models",
+        "documentation": {}
+    },
+    {
+        "label": "ChooseUs",
+        "kind": 6,
+        "importPath": "home.models",
+        "description": "home.models",
+        "peekOfCode": "class ChooseUs(models.Model):\n    title_en = models.CharField(max_length=255, verbose_name=\"Title EN\")\n    title_ar = models.CharField(max_length=255, verbose_name=\"Title AR\")\n    content_en = models.TextField(verbose_name=\"Content EN\")\n    content_ar = models.TextField(verbose_name=\"Content AR\")\n    image = models.ImageField(\n        upload_to=upload_image_choose_us, null=True, blank=True, verbose_name='Image')\n    class Meta:\n        verbose_name = 'ChooseUs'\n        verbose_name_plural = 'ChooseUs'",
+        "detail": "home.models",
+        "documentation": {}
+    },
+    {
+        "label": "Service",
+        "kind": 6,
+        "importPath": "home.models",
+        "description": "home.models",
+        "peekOfCode": "class Service(models.Model):\n    title_en = models.CharField(max_length=255, verbose_name=\"Title EN\")\n    title_ar = models.CharField(max_length=255, verbose_name=\"Title AR\")\n    content_en = models.TextField(verbose_name=\"Content EN\")\n    content_ar = models.TextField(verbose_name=\"Content AR\")\n    image = models.ImageField(\n        upload_to=upload_image_service, null=True, blank=True, verbose_name='Image')\n    icon_img = models.ImageField(\n        upload_to=upload_image_service_icon, null=True, blank=True, verbose_name='Image Icon')\n    status = models.BooleanField(",
+        "detail": "home.models",
+        "documentation": {}
+    },
+    {
+        "label": "Comments",
+        "kind": 6,
+        "importPath": "home.models",
+        "description": "home.models",
+        "peekOfCode": "class Comments(models.Model):\n    image = models.ImageField(\n        upload_to=upload_image_comment, null=True, blank=True, verbose_name='Image')\n    content_en = models.TextField(verbose_name=\"Content EN\")\n    content_ar = models.TextField(verbose_name=\"Content AR\")\n    fullname_en = models.CharField(\n        max_length=255, null=True, blank=True, verbose_name=\"Full Name EN\")\n    fullname_ar = models.CharField(\n        max_length=255, null=True, blank=True, verbose_name=\"Full Name AR\")\n    status = models.BooleanField(",
+        "detail": "home.models",
+        "documentation": {}
+    },
+    {
+        "label": "Suggestions",
+        "kind": 6,
+        "importPath": "home.models",
+        "description": "home.models",
+        "peekOfCode": "class Suggestions(models.Model):\n    title_en = models.CharField(max_length=255, verbose_name=\"Title EN\")\n    title_ar = models.CharField(max_length=255, verbose_name=\"Title AR\")\n    content_en = models.TextField(verbose_name=\"Content EN\")\n    content_ar = models.TextField(verbose_name=\"Content AR\")\n    icon_img = models.ImageField(\n        upload_to=upload_image_suggestions_icon, null=True, blank=True, verbose_name='Image Icon')\n    status = models.BooleanField(\n        default=True, verbose_name='Is Active?')\n    class Meta:",
+        "detail": "home.models",
+        "documentation": {}
+    },
+    {
+        "label": "FAQ",
+        "kind": 6,
+        "importPath": "home.models",
+        "description": "home.models",
+        "peekOfCode": "class FAQ(models.Model):\n    question_en = models.CharField(max_length=255, verbose_name=\"Question EN\")\n    question_ar = models.CharField(max_length=255, verbose_name=\"Question AR\")\n    answer_en = models.TextField(verbose_name=\"Answer EN\")\n    answer_ar = models.TextField(verbose_name=\"Answer AR\")\n    status = models.BooleanField(default=True, verbose_name=\"Is Active?\")\n    class Meta:\n        verbose_name = \"FAQ\"\n        verbose_name_plural = \"FAQs\"\n    def __str__(self):",
+        "detail": "home.models",
+        "documentation": {}
+    },
+    {
+        "label": "SliderEnglishSerializer",
+        "kind": 6,
+        "importPath": "home.serializers",
+        "description": "home.serializers",
+        "peekOfCode": "class SliderEnglishSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Sliders\n        exclude = [\"title_ar\", \"sub_title_ar\"]\nclass SliderArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Sliders\n        exclude = [\"title_en\", \"sub_title_en\"]\nclass AboutUsEnglishSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "home.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "SliderArabicSerializer",
+        "kind": 6,
+        "importPath": "home.serializers",
+        "description": "home.serializers",
+        "peekOfCode": "class SliderArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Sliders\n        exclude = [\"title_en\", \"sub_title_en\"]\nclass AboutUsEnglishSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = AboutUs\n        exclude = [\"title_ar\", \"content_ar\"]\nclass AboutUsArabicSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "home.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "AboutUsEnglishSerializer",
+        "kind": 6,
+        "importPath": "home.serializers",
+        "description": "home.serializers",
+        "peekOfCode": "class AboutUsEnglishSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = AboutUs\n        exclude = [\"title_ar\", \"content_ar\"]\nclass AboutUsArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = AboutUs\n        exclude = [\"title_en\", \"content_en\"]\nclass ChooseUsEnglishSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "home.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "AboutUsArabicSerializer",
+        "kind": 6,
+        "importPath": "home.serializers",
+        "description": "home.serializers",
+        "peekOfCode": "class AboutUsArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = AboutUs\n        exclude = [\"title_en\", \"content_en\"]\nclass ChooseUsEnglishSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = ChooseUs\n        exclude = [\"title_ar\", \"content_ar\"]\nclass ChooseUsArabicSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "home.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ChooseUsEnglishSerializer",
+        "kind": 6,
+        "importPath": "home.serializers",
+        "description": "home.serializers",
+        "peekOfCode": "class ChooseUsEnglishSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = ChooseUs\n        exclude = [\"title_ar\", \"content_ar\"]\nclass ChooseUsArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = ChooseUs\n        exclude = [\"title_en\", \"content_en\"]\nclass ServiceEnglishSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "home.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ChooseUsArabicSerializer",
+        "kind": 6,
+        "importPath": "home.serializers",
+        "description": "home.serializers",
+        "peekOfCode": "class ChooseUsArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = ChooseUs\n        exclude = [\"title_en\", \"content_en\"]\nclass ServiceEnglishSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Service\n        exclude = [\"title_ar\", \"content_ar\"]\nclass ServiceArabicSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "home.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ServiceEnglishSerializer",
+        "kind": 6,
+        "importPath": "home.serializers",
+        "description": "home.serializers",
+        "peekOfCode": "class ServiceEnglishSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Service\n        exclude = [\"title_ar\", \"content_ar\"]\nclass ServiceArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Service\n        exclude = [\"title_en\", \"content_en\"]\nclass CommentsEnglishSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "home.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ServiceArabicSerializer",
+        "kind": 6,
+        "importPath": "home.serializers",
+        "description": "home.serializers",
+        "peekOfCode": "class ServiceArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Service\n        exclude = [\"title_en\", \"content_en\"]\nclass CommentsEnglishSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Comments\n        exclude = [\"fullname_ar\", \"content_ar\"]\nclass CommentsArabicSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "home.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CommentsEnglishSerializer",
+        "kind": 6,
+        "importPath": "home.serializers",
+        "description": "home.serializers",
+        "peekOfCode": "class CommentsEnglishSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Comments\n        exclude = [\"fullname_ar\", \"content_ar\"]\nclass CommentsArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Comments\n        exclude = [\"fullname_en\", \"content_en\"]\nclass SuggestionsEnglishSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "home.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CommentsArabicSerializer",
+        "kind": 6,
+        "importPath": "home.serializers",
+        "description": "home.serializers",
+        "peekOfCode": "class CommentsArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Comments\n        exclude = [\"fullname_en\", \"content_en\"]\nclass SuggestionsEnglishSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Suggestions\n        exclude = [\"title_ar\", \"content_ar\"]\nclass SuggestionsArabicSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "home.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "SuggestionsEnglishSerializer",
+        "kind": 6,
+        "importPath": "home.serializers",
+        "description": "home.serializers",
+        "peekOfCode": "class SuggestionsEnglishSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Suggestions\n        exclude = [\"title_ar\", \"content_ar\"]\nclass SuggestionsArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Suggestions\n        exclude = [\"title_en\", \"content_en\"]\nclass FAQEnglishSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "home.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "SuggestionsArabicSerializer",
+        "kind": 6,
+        "importPath": "home.serializers",
+        "description": "home.serializers",
+        "peekOfCode": "class SuggestionsArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Suggestions\n        exclude = [\"title_en\", \"content_en\"]\nclass FAQEnglishSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = FAQ\n        exclude = [\"question_ar\", \"answer_ar\"]\nclass FAQArabicSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "home.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "FAQEnglishSerializer",
+        "kind": 6,
+        "importPath": "home.serializers",
+        "description": "home.serializers",
+        "peekOfCode": "class FAQEnglishSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = FAQ\n        exclude = [\"question_ar\", \"answer_ar\"]\nclass FAQArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = FAQ\n        exclude = [\"question_en\", \"answer_en\"]",
+        "detail": "home.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "FAQArabicSerializer",
+        "kind": 6,
+        "importPath": "home.serializers",
+        "description": "home.serializers",
+        "peekOfCode": "class FAQArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = FAQ\n        exclude = [\"question_en\", \"answer_en\"]",
+        "detail": "home.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "app_name",
+        "kind": 5,
+        "importPath": "home.urls",
+        "description": "home.urls",
+        "peekOfCode": "app_name = \"state\"\nurlpatterns = [\n    path(\"sliders/en/\", views.SliderEnglishListView.as_view(), name=\"slider_english_list\"),\n    path(\"sliders/ar/\", views.SliderArabicListView.as_view(), name=\"slider_arabic_list\"),\n    path(\"about/en/\", views.AboutUsEnglishListView.as_view(), name=\"about_english_list\"),\n    path(\"about/ar/\", views.AboutUsArabicListView.as_view(), name=\"about_arabic_list\"),\n    path(\"choose_us/en/\", views.ChooseUsEnglishListView.as_view(), name=\"choose_us_english_list\"),\n    path(\"choose_us/ar/\", views.ChooseUsArabicListView.as_view(), name=\"choose_us_arabic_list\"),\n    path(\"service/en/\", views.ServiceEnglishListView.as_view(), name=\"service_english_list\"),\n    path(\"service/ar/\", views.ServiceArabicListView.as_view(), name=\"service_arabic_list\"),",
+        "detail": "home.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "home.urls",
+        "description": "home.urls",
+        "peekOfCode": "urlpatterns = [\n    path(\"sliders/en/\", views.SliderEnglishListView.as_view(), name=\"slider_english_list\"),\n    path(\"sliders/ar/\", views.SliderArabicListView.as_view(), name=\"slider_arabic_list\"),\n    path(\"about/en/\", views.AboutUsEnglishListView.as_view(), name=\"about_english_list\"),\n    path(\"about/ar/\", views.AboutUsArabicListView.as_view(), name=\"about_arabic_list\"),\n    path(\"choose_us/en/\", views.ChooseUsEnglishListView.as_view(), name=\"choose_us_english_list\"),\n    path(\"choose_us/ar/\", views.ChooseUsArabicListView.as_view(), name=\"choose_us_arabic_list\"),\n    path(\"service/en/\", views.ServiceEnglishListView.as_view(), name=\"service_english_list\"),\n    path(\"service/ar/\", views.ServiceArabicListView.as_view(), name=\"service_arabic_list\"),\n    path(\"comments/en/\", views.CommentsEnglishListView.as_view(), name=\"comments_english_list\"),",
+        "detail": "home.urls",
+        "documentation": {}
+    },
+    {
+        "label": "upload_image_sliders",
+        "kind": 2,
+        "importPath": "home.utils",
+        "description": "home.utils",
+        "peekOfCode": "def upload_image_sliders(instance, filename):\n    path = 'uploads/' + 'sliders/' + \\\n        slugify(instance.title_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename\n    return path + '/' + name\ndef upload_image_about(instance, filename):\n    path = 'uploads/' + 'abouts/' + \\\n        slugify(instance.title_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename\n    return path + '/' + name",
+        "detail": "home.utils",
+        "documentation": {}
+    },
+    {
+        "label": "upload_image_about",
+        "kind": 2,
+        "importPath": "home.utils",
+        "description": "home.utils",
+        "peekOfCode": "def upload_image_about(instance, filename):\n    path = 'uploads/' + 'abouts/' + \\\n        slugify(instance.title_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename\n    return path + '/' + name\ndef upload_image_choose_us(instance, filename):\n    path = 'uploads/' + 'choose_us/' + \\\n        slugify(instance.title_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename\n    return path + '/' + name",
+        "detail": "home.utils",
+        "documentation": {}
+    },
+    {
+        "label": "upload_image_choose_us",
+        "kind": 2,
+        "importPath": "home.utils",
+        "description": "home.utils",
+        "peekOfCode": "def upload_image_choose_us(instance, filename):\n    path = 'uploads/' + 'choose_us/' + \\\n        slugify(instance.title_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename\n    return path + '/' + name\ndef upload_image_service(instance, filename):\n    path = 'uploads/' + 'service/' + \\\n        slugify(instance.title_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename\n    return path + '/' + name",
+        "detail": "home.utils",
+        "documentation": {}
+    },
+    {
+        "label": "upload_image_service",
+        "kind": 2,
+        "importPath": "home.utils",
+        "description": "home.utils",
+        "peekOfCode": "def upload_image_service(instance, filename):\n    path = 'uploads/' + 'service/' + \\\n        slugify(instance.title_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename\n    return path + '/' + name\ndef upload_image_service_icon(instance, filename):\n    path = 'uploads/' + 'service/' + \\\n        slugify(instance.title_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename\n    return path + '/' + name",
+        "detail": "home.utils",
+        "documentation": {}
+    },
+    {
+        "label": "upload_image_service_icon",
+        "kind": 2,
+        "importPath": "home.utils",
+        "description": "home.utils",
+        "peekOfCode": "def upload_image_service_icon(instance, filename):\n    path = 'uploads/' + 'service/' + \\\n        slugify(instance.title_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename\n    return path + '/' + name\ndef upload_image_comment(instance, filename):\n    path = 'uploads/' + 'comment/' + \\\n        slugify(instance.fullname, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.fullname) + '-' + filename\n    return path + '/' + name",
+        "detail": "home.utils",
+        "documentation": {}
+    },
+    {
+        "label": "upload_image_comment",
+        "kind": 2,
+        "importPath": "home.utils",
+        "description": "home.utils",
+        "peekOfCode": "def upload_image_comment(instance, filename):\n    path = 'uploads/' + 'comment/' + \\\n        slugify(instance.fullname, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.fullname) + '-' + filename\n    return path + '/' + name\ndef upload_image_suggestions_icon(instance, filename):\n    path = 'uploads/' + 'suggestions/' + \\\n        slugify(instance.title_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename\n    return path + '/' + name",
+        "detail": "home.utils",
+        "documentation": {}
+    },
+    {
+        "label": "upload_image_suggestions_icon",
+        "kind": 2,
+        "importPath": "home.utils",
+        "description": "home.utils",
+        "peekOfCode": "def upload_image_suggestions_icon(instance, filename):\n    path = 'uploads/' + 'suggestions/' + \\\n        slugify(instance.title_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename\n    return path + '/' + name",
+        "detail": "home.utils",
+        "documentation": {}
+    },
+    {
+        "label": "SliderEnglishListView",
+        "kind": 6,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "class SliderEnglishListView(ListAPIView):\n    queryset = Sliders.objects.filter(status=True)\n    serializer_class = SliderEnglishSerializer\nclass SliderArabicListView(ListAPIView):\n    queryset = Sliders.objects.filter(status=True)\n    serializer_class = SliderArabicSerializer\n# * =================== AboutUs ===================\nclass AboutUsEnglishListView(ListAPIView):\n    queryset = AboutUs.objects.all()\n    serializer_class = AboutUsEnglishSerializer",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "SliderArabicListView",
+        "kind": 6,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "class SliderArabicListView(ListAPIView):\n    queryset = Sliders.objects.filter(status=True)\n    serializer_class = SliderArabicSerializer\n# * =================== AboutUs ===================\nclass AboutUsEnglishListView(ListAPIView):\n    queryset = AboutUs.objects.all()\n    serializer_class = AboutUsEnglishSerializer\nclass AboutUsArabicListView(ListAPIView):\n    queryset = AboutUs.objects.all()\n    serializer_class = AboutUsArabicSerializer",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "AboutUsEnglishListView",
+        "kind": 6,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "class AboutUsEnglishListView(ListAPIView):\n    queryset = AboutUs.objects.all()\n    serializer_class = AboutUsEnglishSerializer\nclass AboutUsArabicListView(ListAPIView):\n    queryset = AboutUs.objects.all()\n    serializer_class = AboutUsArabicSerializer\n# * =================== ChooseUs ===================\nclass ChooseUsEnglishListView(ListAPIView):\n    queryset = ChooseUs.objects.all()\n    serializer_class = ChooseUsEnglishSerializer",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "AboutUsArabicListView",
+        "kind": 6,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "class AboutUsArabicListView(ListAPIView):\n    queryset = AboutUs.objects.all()\n    serializer_class = AboutUsArabicSerializer\n# * =================== ChooseUs ===================\nclass ChooseUsEnglishListView(ListAPIView):\n    queryset = ChooseUs.objects.all()\n    serializer_class = ChooseUsEnglishSerializer\nclass ChooseUsArabicListView(ListAPIView):\n    queryset = ChooseUs.objects.all()\n    serializer_class = ChooseUsArabicSerializer",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "ChooseUsEnglishListView",
+        "kind": 6,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "class ChooseUsEnglishListView(ListAPIView):\n    queryset = ChooseUs.objects.all()\n    serializer_class = ChooseUsEnglishSerializer\nclass ChooseUsArabicListView(ListAPIView):\n    queryset = ChooseUs.objects.all()\n    serializer_class = ChooseUsArabicSerializer\n# * =================== Service ===================\nclass ServiceEnglishListView(ListAPIView):\n    queryset = Service.objects.filter(status=True)\n    serializer_class = ServiceEnglishSerializer",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "ChooseUsArabicListView",
+        "kind": 6,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "class ChooseUsArabicListView(ListAPIView):\n    queryset = ChooseUs.objects.all()\n    serializer_class = ChooseUsArabicSerializer\n# * =================== Service ===================\nclass ServiceEnglishListView(ListAPIView):\n    queryset = Service.objects.filter(status=True)\n    serializer_class = ServiceEnglishSerializer\nclass ServiceArabicListView(ListAPIView):\n    queryset = Service.objects.filter(status=True)\n    serializer_class = ServiceArabicSerializer",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "ServiceEnglishListView",
+        "kind": 6,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "class ServiceEnglishListView(ListAPIView):\n    queryset = Service.objects.filter(status=True)\n    serializer_class = ServiceEnglishSerializer\nclass ServiceArabicListView(ListAPIView):\n    queryset = Service.objects.filter(status=True)\n    serializer_class = ServiceArabicSerializer\n# * =================== Comments ===================\nclass CommentsEnglishListView(ListAPIView):\n    queryset = Comments.objects.filter(status=True)\n    serializer_class = CommentsEnglishSerializer",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "ServiceArabicListView",
+        "kind": 6,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "class ServiceArabicListView(ListAPIView):\n    queryset = Service.objects.filter(status=True)\n    serializer_class = ServiceArabicSerializer\n# * =================== Comments ===================\nclass CommentsEnglishListView(ListAPIView):\n    queryset = Comments.objects.filter(status=True)\n    serializer_class = CommentsEnglishSerializer\nclass CommentsArabicListView(ListAPIView):\n    queryset = Comments.objects.filter(status=True)\n    serializer_class = CommentsArabicSerializer",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "CommentsEnglishListView",
+        "kind": 6,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "class CommentsEnglishListView(ListAPIView):\n    queryset = Comments.objects.filter(status=True)\n    serializer_class = CommentsEnglishSerializer\nclass CommentsArabicListView(ListAPIView):\n    queryset = Comments.objects.filter(status=True)\n    serializer_class = CommentsArabicSerializer\n# * =================== Suggestions ===================\nclass SuggestionsEnglishListView(ListAPIView):\n    queryset = Suggestions.objects.filter(status=True)\n    serializer_class = SuggestionsEnglishSerializer",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "CommentsArabicListView",
+        "kind": 6,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "class CommentsArabicListView(ListAPIView):\n    queryset = Comments.objects.filter(status=True)\n    serializer_class = CommentsArabicSerializer\n# * =================== Suggestions ===================\nclass SuggestionsEnglishListView(ListAPIView):\n    queryset = Suggestions.objects.filter(status=True)\n    serializer_class = SuggestionsEnglishSerializer\nclass SuggestionsArabicListView(ListAPIView):\n    queryset = Suggestions.objects.filter(status=True)\n    serializer_class = SuggestionsArabicSerializer",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "SuggestionsEnglishListView",
+        "kind": 6,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "class SuggestionsEnglishListView(ListAPIView):\n    queryset = Suggestions.objects.filter(status=True)\n    serializer_class = SuggestionsEnglishSerializer\nclass SuggestionsArabicListView(ListAPIView):\n    queryset = Suggestions.objects.filter(status=True)\n    serializer_class = SuggestionsArabicSerializer\n# * =================== FAQ ===================\nclass FAQEnglishListView(ListAPIView):\n    queryset = FAQ.objects.filter(status=True)\n    serializer_class = FAQEnglishSerializer",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "SuggestionsArabicListView",
+        "kind": 6,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "class SuggestionsArabicListView(ListAPIView):\n    queryset = Suggestions.objects.filter(status=True)\n    serializer_class = SuggestionsArabicSerializer\n# * =================== FAQ ===================\nclass FAQEnglishListView(ListAPIView):\n    queryset = FAQ.objects.filter(status=True)\n    serializer_class = FAQEnglishSerializer\nclass FAQArabicListView(ListAPIView):\n    queryset = FAQ.objects.filter(status=True)\n    serializer_class = FAQArabicSerializer",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "FAQEnglishListView",
+        "kind": 6,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "class FAQEnglishListView(ListAPIView):\n    queryset = FAQ.objects.filter(status=True)\n    serializer_class = FAQEnglishSerializer\nclass FAQArabicListView(ListAPIView):\n    queryset = FAQ.objects.filter(status=True)\n    serializer_class = FAQArabicSerializer",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "FAQArabicListView",
+        "kind": 6,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "class FAQArabicListView(ListAPIView):\n    queryset = FAQ.objects.filter(status=True)\n    serializer_class = FAQArabicSerializer",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]

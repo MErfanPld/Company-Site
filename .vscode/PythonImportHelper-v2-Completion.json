@@ -414,6 +414,15 @@
         "documentation": {}
     },
     {
+        "label": "APICorsMiddleware",
+        "kind": 6,
+        "importPath": "config.middleware",
+        "description": "config.middleware",
+        "peekOfCode": "class APICorsMiddleware:\n    def __init__(self, get_response):\n        self.get_response = get_response\n    def __call__(self, request):\n        response = self.get_response(request)\n        response[\"Access-Control-Allow-Origin\"] = \"*\"\n        response[\"Access-Control-Allow-Methods\"] = \"GET, POST, PUT, DELETE, OPTIONS\"\n        response[\"Access-Control-Allow-Headers\"] = \"Content-Type, Authorization\"\n        return response",
+        "detail": "config.middleware",
+        "documentation": {}
+    },
+    {
         "label": "BASE_DIR",
         "kind": 5,
         "importPath": "config.settings",
@@ -454,7 +463,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',\n    'drf_spectacular',\n    'corsheaders',",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',\n    'drf_spectacular',\n    # 'corsheaders',",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -463,7 +472,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'corsheaders.middleware.CorsMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    # 'corsheaders.middleware.CorsMiddleware',\n    'config.middleware.APICorsMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -607,7 +616,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',\n}\nSPECTACULAR_SETTINGS = {\n    'TITLE': 'Project API',\n    'DESCRIPTION': 'Project description',\n    'VERSION': '1.0.0',\n    'SERVE_INCLUDE_SCHEMA': False,\n}\nCORS_ALLOWED_ORIGINS = [",
+        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',\n}\nSPECTACULAR_SETTINGS = {\n    'TITLE': 'Project API',\n    'DESCRIPTION': 'Project description',\n    'VERSION': '1.0.0',\n    'SERVE_INCLUDE_SCHEMA': False,\n}\n# CORS_ALLOWED_ORIGINS = [",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -616,16 +625,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "SPECTACULAR_SETTINGS = {\n    'TITLE': 'Project API',\n    'DESCRIPTION': 'Project description',\n    'VERSION': '1.0.0',\n    'SERVE_INCLUDE_SCHEMA': False,\n}\nCORS_ALLOWED_ORIGINS = [\n    'http://localhost:3030',\n]",
-        "detail": "config.settings",
-        "documentation": {}
-    },
-    {
-        "label": "CORS_ALLOWED_ORIGINS",
-        "kind": 5,
-        "importPath": "config.settings",
-        "description": "config.settings",
-        "peekOfCode": "CORS_ALLOWED_ORIGINS = [\n    'http://localhost:3030',\n]",
+        "peekOfCode": "SPECTACULAR_SETTINGS = {\n    'TITLE': 'Project API',\n    'DESCRIPTION': 'Project description',\n    'VERSION': '1.0.0',\n    'SERVE_INCLUDE_SCHEMA': False,\n}\n# CORS_ALLOWED_ORIGINS = [\n#     'http://localhost:3030',\n# ]",
         "detail": "config.settings",
         "documentation": {}
     },

@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     
     'rest_framework',
     'drf_spectacular',
-    'corsheaders',
+    # 'corsheaders',
 
     'home',
     'regulation',
@@ -50,7 +50,8 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
+    # 'corsheaders.middleware.CorsMiddleware',
+    'config.middleware.APICorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -151,6 +152,6 @@ SPECTACULAR_SETTINGS = {
     'SERVE_INCLUDE_SCHEMA': False,
 }
 
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3030',
-]
+# CORS_ALLOWED_ORIGINS = [
+#     'http://localhost:3030',
+# ]

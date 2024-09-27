@@ -12,6 +12,6 @@ def upload_image_setting(instance, filename):
 
 def upload_image_social(instance, filename):
     path = 'uploads/' + 'social/' + \
-        slugify(instance.link, allow_unicode=True)
-    name = str(time.time()) + '-' + str(instance.link) + '-' + filename
+        slugify("one", allow_unicode=True)
+    name = str(time.time()) + '-' + str('one') + '-' + filename
     return path + '/' + name

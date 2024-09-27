@@ -1280,7 +1280,7 @@
         "kind": 2,
         "importPath": "regulation.utils",
         "description": "regulation.utils",
-        "peekOfCode": "def upload_image_setting(instance, filename):\n    path = 'uploads/' + 'setting/' + \\\n        slugify(instance.title_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename\n    return path + '/' + name\ndef upload_image_social(instance, filename):\n    path = 'uploads/' + 'social/' + \\\n        slugify(instance.link, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.link) + '-' + filename\n    return path + '/' + name",
+        "peekOfCode": "def upload_image_setting(instance, filename):\n    path = 'uploads/' + 'setting/' + \\\n        slugify(instance.title_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename\n    return path + '/' + name\ndef upload_image_social(instance, filename):\n    path = 'uploads/' + 'social/' + \\\n        slugify(\"one\", allow_unicode=True)\n    name = str(time.time()) + '-' + str('one') + '-' + filename\n    return path + '/' + name",
         "detail": "regulation.utils",
         "documentation": {}
     },
@@ -1289,7 +1289,7 @@
         "kind": 2,
         "importPath": "regulation.utils",
         "description": "regulation.utils",
-        "peekOfCode": "def upload_image_social(instance, filename):\n    path = 'uploads/' + 'social/' + \\\n        slugify(instance.link, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.link) + '-' + filename\n    return path + '/' + name",
+        "peekOfCode": "def upload_image_social(instance, filename):\n    path = 'uploads/' + 'social/' + \\\n        slugify(\"one\", allow_unicode=True)\n    name = str(time.time()) + '-' + str('one') + '-' + filename\n    return path + '/' + name",
         "detail": "regulation.utils",
         "documentation": {}
     },

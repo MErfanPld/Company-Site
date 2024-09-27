@@ -274,6 +274,22 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -1170,6 +1186,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "regulation.migrations.0002_alter_social_logo",
+        "description": "regulation.migrations.0002_alter_social_logo",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('regulation', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='social',\n            name='logo',\n            field=models.ImageField(blank=True, null=True, upload_to=regulation.utils.upload_image_social, verbose_name='Logo'),\n        ),",
+        "detail": "regulation.migrations.0002_alter_social_logo",
+        "documentation": {}
+    },
+    {
         "label": "SettingAdmin",
         "kind": 6,
         "importPath": "regulation.admin",
@@ -1210,7 +1235,7 @@
         "kind": 6,
         "importPath": "regulation.models",
         "description": "regulation.models",
-        "peekOfCode": "class Social(models.Model):\n    link = models.URLField(verbose_name=\"Link\")\n    logo = models.ImageField(\n        upload_to=upload_image_setting, null=True, blank=True, verbose_name='Logo')\n    class Meta:\n        verbose_name = 'Social'\n        verbose_name_plural = 'Social'\n    def __str__(self):\n        return f\"{self.link}\"",
+        "peekOfCode": "class Social(models.Model):\n    link = models.URLField(verbose_name=\"Link\")\n    logo = models.ImageField(\n        upload_to=upload_image_social, null=True, blank=True, verbose_name='Logo')\n    class Meta:\n        verbose_name = 'Social'\n        verbose_name_plural = 'Social'\n    def __str__(self):\n        return f\"{self.link}\"",
         "detail": "regulation.models",
         "documentation": {}
     },
@@ -1255,7 +1280,16 @@
         "kind": 2,
         "importPath": "regulation.utils",
         "description": "regulation.utils",
-        "peekOfCode": "def upload_image_setting(instance, filename):\n    path = 'uploads/' + 'setting/' + \\\n        slugify(instance.title_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename\n    return path + '/' + name",
+        "peekOfCode": "def upload_image_setting(instance, filename):\n    path = 'uploads/' + 'setting/' + \\\n        slugify(instance.title_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename\n    return path + '/' + name\ndef upload_image_social(instance, filename):\n    path = 'uploads/' + 'social/' + \\\n        slugify(instance.link, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.link) + '-' + filename\n    return path + '/' + name",
+        "detail": "regulation.utils",
+        "documentation": {}
+    },
+    {
+        "label": "upload_image_social",
+        "kind": 2,
+        "importPath": "regulation.utils",
+        "description": "regulation.utils",
+        "peekOfCode": "def upload_image_social(instance, filename):\n    path = 'uploads/' + 'social/' + \\\n        slugify(instance.link, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.link) + '-' + filename\n    return path + '/' + name",
         "detail": "regulation.utils",
         "documentation": {}
     },

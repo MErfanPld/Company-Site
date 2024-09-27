@@ -22,7 +22,7 @@ class Settings(models.Model):
 class Social(models.Model):
     link = models.URLField(verbose_name="Link")
     logo = models.ImageField(
-        upload_to=upload_image_setting, null=True, blank=True, verbose_name='Logo')
+        upload_to=upload_image_social, null=True, blank=True, verbose_name='Logo')
 
     class Meta:
         verbose_name = 'Social'

@@ -3,10 +3,10 @@ from django.urls import reverse
 from django.utils.text import slugify
 
 
-def upload_image_sliders(instance):
+def upload_image_sliders(instance, filename):
     path = 'uploads/' + 'sliders/' + \
         slugify(instance.title_en, allow_unicode=True)
-    name = str(time.time()) + '-' + str(instance.title_en)
+    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename
     return path + '/' + name
 
 

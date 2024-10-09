@@ -95,7 +95,7 @@ class Comments(models.Model):
         verbose_name_plural = 'Comments'
 
     def __str__(self):
-        return f"{self.fullname} | {self.image} | {self.status}"
+        return f"{self.fullname_en} | {self.image} | {self.status}"
 
 
 class Suggestions(models.Model):

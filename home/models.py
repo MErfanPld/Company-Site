@@ -8,9 +8,9 @@ class Sliders(models.Model):
     title_en = models.CharField(max_length=255, verbose_name="Title EN")
     title_ar = models.CharField(max_length=255, verbose_name="Title AR")
     sub_title_en = models.CharField(
-        max_length=255, verbose_name="Sub Title EN")
+        max_length=255, null=True, blank=True,verbose_name="Sub Title EN")
     sub_title_ar = models.CharField(
-        max_length=255, verbose_name="Sub Title AR")
+        max_length=255, null=True, blank=True,verbose_name="Sub Title AR")
     image = models.ImageField(
         upload_to=upload_image_sliders, null=True, blank=True, verbose_name='Image')
     status = models.BooleanField(

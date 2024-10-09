@@ -29,6 +29,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
     path('', include('regulation.urls')),
+    path('', include('contact.urls')),
 ]
 
 if settings.DEBUG:

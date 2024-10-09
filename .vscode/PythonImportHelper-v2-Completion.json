@@ -1028,7 +1028,7 @@
         "kind": 2,
         "importPath": "home.utils",
         "description": "home.utils",
-        "peekOfCode": "def upload_image_service_icon(instance, filename):\n    path = 'uploads/' + 'service/' + \\\n        slugify(instance.title_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename\n    return path + '/' + name\ndef upload_image_comment(instance, filename):\n    path = 'uploads/' + 'comment/' + \\\n        slugify(instance.fullname, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.fullname) + '-' + filename\n    return path + '/' + name",
+        "peekOfCode": "def upload_image_service_icon(instance, filename):\n    path = 'uploads/' + 'service/' + \\\n        slugify(instance.title_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename\n    return path + '/' + name\ndef upload_image_comment(instance, filename):\n    path = 'uploads/' + 'comment/' + \\\n        slugify(instance.fullname_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.fullname_en) + '-' + filename\n    return path + '/' + name",
         "detail": "home.utils",
         "documentation": {}
     },
@@ -1037,7 +1037,7 @@
         "kind": 2,
         "importPath": "home.utils",
         "description": "home.utils",
-        "peekOfCode": "def upload_image_comment(instance, filename):\n    path = 'uploads/' + 'comment/' + \\\n        slugify(instance.fullname, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.fullname) + '-' + filename\n    return path + '/' + name\ndef upload_image_suggestions_icon(instance, filename):\n    path = 'uploads/' + 'suggestions/' + \\\n        slugify(instance.title_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename\n    return path + '/' + name",
+        "peekOfCode": "def upload_image_comment(instance, filename):\n    path = 'uploads/' + 'comment/' + \\\n        slugify(instance.fullname_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.fullname_en) + '-' + filename\n    return path + '/' + name\ndef upload_image_suggestions_icon(instance, filename):\n    path = 'uploads/' + 'suggestions/' + \\\n        slugify(instance.title_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename\n    return path + '/' + name",
         "detail": "home.utils",
         "documentation": {}
     },

@@ -40,8 +40,8 @@ def upload_image_service_icon(instance, filename):
 
 def upload_image_comment(instance, filename):
     path = 'uploads/' + 'comment/' + \
-        slugify(instance.fullname, allow_unicode=True)
-    name = str(time.time()) + '-' + str(instance.fullname) + '-' + filename
+        slugify(instance.fullname_en, allow_unicode=True)
+    name = str(time.time()) + '-' + str(instance.fullname_en) + '-' + filename
     return path + '/' + name
 
 

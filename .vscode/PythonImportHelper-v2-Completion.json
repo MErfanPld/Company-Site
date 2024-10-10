@@ -57,6 +57,30 @@
         "documentation": {}
     },
     {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -225,14 +249,6 @@
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -321,6 +337,38 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -366,6 +414,14 @@
         "description": "django.db",
         "isExtraImport": true,
         "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
         "documentation": {}
     },
     {
@@ -433,6 +489,22 @@
         "documentation": {}
     },
     {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -489,6 +561,22 @@
         "documentation": {}
     },
     {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "rest_framework.generics",
+        "description": "rest_framework.generics",
+        "isExtraImport": true,
+        "detail": "rest_framework.generics",
+        "documentation": {}
+    },
+    {
         "label": "*",
         "importPath": "rest_framework.generics",
         "description": "rest_framework.generics",
@@ -510,6 +598,22 @@
         "description": "rest_framework.generics",
         "isExtraImport": true,
         "detail": "rest_framework.generics",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "home.models",
+        "description": "home.models",
+        "isExtraImport": true,
+        "detail": "home.models",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "home.models",
+        "description": "home.models",
+        "isExtraImport": true,
+        "detail": "home.models",
         "documentation": {}
     },
     {
@@ -898,6 +1002,357 @@
         "documentation": {}
     },
     {
+        "label": "DashboardConfig",
+        "kind": 6,
+        "importPath": "dashboard.apps",
+        "description": "dashboard.apps",
+        "peekOfCode": "class DashboardConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'dashboard'",
+        "detail": "dashboard.apps",
+        "documentation": {}
+    },
+    {
+        "label": "SliderSerializer",
+        "kind": 6,
+        "importPath": "dashboard.serializers",
+        "description": "dashboard.serializers",
+        "peekOfCode": "class SliderSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Sliders\n        fields = \"__all__\"\nclass AboutUsSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = AboutUs\n        fields = \"__all__\"\nclass ChooseUsSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "dashboard.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "AboutUsSerializer",
+        "kind": 6,
+        "importPath": "dashboard.serializers",
+        "description": "dashboard.serializers",
+        "peekOfCode": "class AboutUsSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = AboutUs\n        fields = \"__all__\"\nclass ChooseUsSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = ChooseUs\n        fields = \"__all__\"\nclass ServiceSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "dashboard.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ChooseUsSerializer",
+        "kind": 6,
+        "importPath": "dashboard.serializers",
+        "description": "dashboard.serializers",
+        "peekOfCode": "class ChooseUsSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = ChooseUs\n        fields = \"__all__\"\nclass ServiceSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Service\n        fields = \"__all__\"\nclass CommentsSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "dashboard.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ServiceSerializer",
+        "kind": 6,
+        "importPath": "dashboard.serializers",
+        "description": "dashboard.serializers",
+        "peekOfCode": "class ServiceSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Service\n        fields = \"__all__\"\nclass CommentsSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Comments\n        fields = \"__all__\"\nclass SuggestionsSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "dashboard.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CommentsSerializer",
+        "kind": 6,
+        "importPath": "dashboard.serializers",
+        "description": "dashboard.serializers",
+        "peekOfCode": "class CommentsSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Comments\n        fields = \"__all__\"\nclass SuggestionsSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Suggestions\n        fields = \"__all__\"\n# class FAQEnglishSerializer(serializers.ModelSerializer):\n#     class Meta:",
+        "detail": "dashboard.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "SuggestionsSerializer",
+        "kind": 6,
+        "importPath": "dashboard.serializers",
+        "description": "dashboard.serializers",
+        "peekOfCode": "class SuggestionsSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Suggestions\n        fields = \"__all__\"\n# class FAQEnglishSerializer(serializers.ModelSerializer):\n#     class Meta:\n#         model = FAQ\n#         exclude = [\"question_ar\", \"answer_ar\"]",
+        "detail": "dashboard.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "app_name",
+        "kind": 5,
+        "importPath": "dashboard.urls",
+        "description": "dashboard.urls",
+        "peekOfCode": "app_name = \"dashboard\"\nurlpatterns = [\n    # =============== Slider ===============\n    path(\"sliders/\", views.SliderListView.as_view(),\n         name=\"slider_dashboard_list\"),\n    path(\"sliders/create/\", views.SliderCreateView.as_view(),\n         name=\"slider_dashboard_create\"),\n    path(\"sliders/<int:id>/\", views.SliderDetailView.as_view(),\n         name=\"slider_dashboard_detail\"),\n    path(\"sliders/<int:id>/update/\", views.SliderUpdateView.as_view(),",
+        "detail": "dashboard.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "dashboard.urls",
+        "description": "dashboard.urls",
+        "peekOfCode": "urlpatterns = [\n    # =============== Slider ===============\n    path(\"sliders/\", views.SliderListView.as_view(),\n         name=\"slider_dashboard_list\"),\n    path(\"sliders/create/\", views.SliderCreateView.as_view(),\n         name=\"slider_dashboard_create\"),\n    path(\"sliders/<int:id>/\", views.SliderDetailView.as_view(),\n         name=\"slider_dashboard_detail\"),\n    path(\"sliders/<int:id>/update/\", views.SliderUpdateView.as_view(),\n         name=\"slider_dashboard_update\"),",
+        "detail": "dashboard.urls",
+        "documentation": {}
+    },
+    {
+        "label": "SliderListView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class SliderListView(ListAPIView):\n    queryset = Sliders.objects.all()\n    serializer_class = SliderSerializer\nclass SliderCreateView(CreateAPIView):\n    queryset = Sliders.objects.all()\n    serializer_class = SliderSerializer\nclass SliderDetailView(RetrieveAPIView):\n    queryset = Sliders.objects.all()\n    serializer_class = SliderSerializer\n    lookup_field = 'id'",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "SliderCreateView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class SliderCreateView(CreateAPIView):\n    queryset = Sliders.objects.all()\n    serializer_class = SliderSerializer\nclass SliderDetailView(RetrieveAPIView):\n    queryset = Sliders.objects.all()\n    serializer_class = SliderSerializer\n    lookup_field = 'id'\nclass SliderUpdateView(UpdateAPIView):\n    queryset = Sliders.objects.all()\n    serializer_class = SliderSerializer",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "SliderDetailView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class SliderDetailView(RetrieveAPIView):\n    queryset = Sliders.objects.all()\n    serializer_class = SliderSerializer\n    lookup_field = 'id'\nclass SliderUpdateView(UpdateAPIView):\n    queryset = Sliders.objects.all()\n    serializer_class = SliderSerializer\n    lookup_field = 'id'\nclass SliderDeleteView(DestroyAPIView):\n    queryset = Sliders.objects.all()",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "SliderUpdateView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class SliderUpdateView(UpdateAPIView):\n    queryset = Sliders.objects.all()\n    serializer_class = SliderSerializer\n    lookup_field = 'id'\nclass SliderDeleteView(DestroyAPIView):\n    queryset = Sliders.objects.all()\n    serializer_class = SliderSerializer\n    lookup_field = 'id'\n# * =================== AboutUs Dashboard ===================\nclass AboutUsListView(ListAPIView):",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "SliderDeleteView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class SliderDeleteView(DestroyAPIView):\n    queryset = Sliders.objects.all()\n    serializer_class = SliderSerializer\n    lookup_field = 'id'\n# * =================== AboutUs Dashboard ===================\nclass AboutUsListView(ListAPIView):\n    queryset = AboutUs.objects.all()\n    serializer_class = AboutUsSerializer\nclass AboutUsCreateView(CreateAPIView):\n    queryset = AboutUs.objects.all()",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "AboutUsListView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class AboutUsListView(ListAPIView):\n    queryset = AboutUs.objects.all()\n    serializer_class = AboutUsSerializer\nclass AboutUsCreateView(CreateAPIView):\n    queryset = AboutUs.objects.all()\n    serializer_class = AboutUsSerializer\nclass AboutUsDetailView(RetrieveAPIView):\n    queryset = AboutUs.objects.all()\n    serializer_class = AboutUsSerializer\n    lookup_field = 'id'",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "AboutUsCreateView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class AboutUsCreateView(CreateAPIView):\n    queryset = AboutUs.objects.all()\n    serializer_class = AboutUsSerializer\nclass AboutUsDetailView(RetrieveAPIView):\n    queryset = AboutUs.objects.all()\n    serializer_class = AboutUsSerializer\n    lookup_field = 'id'\nclass AboutUsUpdateView(UpdateAPIView):\n    queryset = AboutUs.objects.all()\n    serializer_class = AboutUsSerializer",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "AboutUsDetailView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class AboutUsDetailView(RetrieveAPIView):\n    queryset = AboutUs.objects.all()\n    serializer_class = AboutUsSerializer\n    lookup_field = 'id'\nclass AboutUsUpdateView(UpdateAPIView):\n    queryset = AboutUs.objects.all()\n    serializer_class = AboutUsSerializer\n    lookup_field = 'id'\nclass AboutUsDeleteView(DestroyAPIView):\n    queryset = AboutUs.objects.all()",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "AboutUsUpdateView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class AboutUsUpdateView(UpdateAPIView):\n    queryset = AboutUs.objects.all()\n    serializer_class = AboutUsSerializer\n    lookup_field = 'id'\nclass AboutUsDeleteView(DestroyAPIView):\n    queryset = AboutUs.objects.all()\n    serializer_class = AboutUsSerializer\n    lookup_field = 'id'\n# * =================== ChooseUs Dashboard ===================\nclass ChooseUsListView(ListAPIView):",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "AboutUsDeleteView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class AboutUsDeleteView(DestroyAPIView):\n    queryset = AboutUs.objects.all()\n    serializer_class = AboutUsSerializer\n    lookup_field = 'id'\n# * =================== ChooseUs Dashboard ===================\nclass ChooseUsListView(ListAPIView):\n    queryset = ChooseUs.objects.all()\n    serializer_class = ChooseUsSerializer\nclass ChooseUsCreateView(CreateAPIView):\n    queryset = ChooseUs.objects.all()",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "ChooseUsListView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class ChooseUsListView(ListAPIView):\n    queryset = ChooseUs.objects.all()\n    serializer_class = ChooseUsSerializer\nclass ChooseUsCreateView(CreateAPIView):\n    queryset = ChooseUs.objects.all()\n    serializer_class = ChooseUsSerializer\nclass ChooseUsDetailView(RetrieveAPIView):\n    queryset = ChooseUs.objects.all()\n    serializer_class = ChooseUsSerializer\n    lookup_field = 'id'",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "ChooseUsCreateView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class ChooseUsCreateView(CreateAPIView):\n    queryset = ChooseUs.objects.all()\n    serializer_class = ChooseUsSerializer\nclass ChooseUsDetailView(RetrieveAPIView):\n    queryset = ChooseUs.objects.all()\n    serializer_class = ChooseUsSerializer\n    lookup_field = 'id'\nclass ChooseUsUpdateView(UpdateAPIView):\n    queryset = ChooseUs.objects.all()\n    serializer_class = ChooseUsSerializer",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "ChooseUsDetailView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class ChooseUsDetailView(RetrieveAPIView):\n    queryset = ChooseUs.objects.all()\n    serializer_class = ChooseUsSerializer\n    lookup_field = 'id'\nclass ChooseUsUpdateView(UpdateAPIView):\n    queryset = ChooseUs.objects.all()\n    serializer_class = ChooseUsSerializer\n    lookup_field = 'id'\nclass ChooseUsDeleteView(DestroyAPIView):\n    queryset = ChooseUs.objects.all()",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "ChooseUsUpdateView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class ChooseUsUpdateView(UpdateAPIView):\n    queryset = ChooseUs.objects.all()\n    serializer_class = ChooseUsSerializer\n    lookup_field = 'id'\nclass ChooseUsDeleteView(DestroyAPIView):\n    queryset = ChooseUs.objects.all()\n    serializer_class = ChooseUsSerializer\n    lookup_field = 'id'\n# * =================== Service Dashboard ===================\nclass ServiceListView(ListAPIView):",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "ChooseUsDeleteView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class ChooseUsDeleteView(DestroyAPIView):\n    queryset = ChooseUs.objects.all()\n    serializer_class = ChooseUsSerializer\n    lookup_field = 'id'\n# * =================== Service Dashboard ===================\nclass ServiceListView(ListAPIView):\n    queryset = Service.objects.all()\n    serializer_class = ServiceSerializer\nclass ServiceCreateView(CreateAPIView):\n    queryset = Service.objects.all()",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "ServiceListView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class ServiceListView(ListAPIView):\n    queryset = Service.objects.all()\n    serializer_class = ServiceSerializer\nclass ServiceCreateView(CreateAPIView):\n    queryset = Service.objects.all()\n    serializer_class = ServiceSerializer\nclass ServiceDetailView(RetrieveAPIView):\n    queryset = Service.objects.all()\n    serializer_class = ServiceSerializer\n    lookup_field = 'id'",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "ServiceCreateView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class ServiceCreateView(CreateAPIView):\n    queryset = Service.objects.all()\n    serializer_class = ServiceSerializer\nclass ServiceDetailView(RetrieveAPIView):\n    queryset = Service.objects.all()\n    serializer_class = ServiceSerializer\n    lookup_field = 'id'\nclass ServiceUpdateView(UpdateAPIView):\n    queryset = Service.objects.all()\n    serializer_class = ServiceSerializer",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "ServiceDetailView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class ServiceDetailView(RetrieveAPIView):\n    queryset = Service.objects.all()\n    serializer_class = ServiceSerializer\n    lookup_field = 'id'\nclass ServiceUpdateView(UpdateAPIView):\n    queryset = Service.objects.all()\n    serializer_class = ServiceSerializer\n    lookup_field = 'id'\nclass ServiceDeleteView(DestroyAPIView):\n    queryset = Service.objects.all()",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "ServiceUpdateView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class ServiceUpdateView(UpdateAPIView):\n    queryset = Service.objects.all()\n    serializer_class = ServiceSerializer\n    lookup_field = 'id'\nclass ServiceDeleteView(DestroyAPIView):\n    queryset = Service.objects.all()\n    serializer_class = ServiceSerializer\n    lookup_field = 'id'\n# * =================== Comments Dashboard ===================\nclass CommentsListView(ListAPIView):",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "ServiceDeleteView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class ServiceDeleteView(DestroyAPIView):\n    queryset = Service.objects.all()\n    serializer_class = ServiceSerializer\n    lookup_field = 'id'\n# * =================== Comments Dashboard ===================\nclass CommentsListView(ListAPIView):\n    queryset = Comments.objects.all()\n    serializer_class = CommentsSerializer\nclass CommentsCreateView(CreateAPIView):\n    queryset = Comments.objects.all()",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "CommentsListView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class CommentsListView(ListAPIView):\n    queryset = Comments.objects.all()\n    serializer_class = CommentsSerializer\nclass CommentsCreateView(CreateAPIView):\n    queryset = Comments.objects.all()\n    serializer_class = CommentsSerializer\nclass CommentsDetailView(RetrieveAPIView):\n    queryset = Comments.objects.all()\n    serializer_class = CommentsSerializer\n    lookup_field = 'id'",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "CommentsCreateView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class CommentsCreateView(CreateAPIView):\n    queryset = Comments.objects.all()\n    serializer_class = CommentsSerializer\nclass CommentsDetailView(RetrieveAPIView):\n    queryset = Comments.objects.all()\n    serializer_class = CommentsSerializer\n    lookup_field = 'id'\nclass CommentsUpdateView(UpdateAPIView):\n    queryset = Comments.objects.all()\n    serializer_class = CommentsSerializer",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "CommentsDetailView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class CommentsDetailView(RetrieveAPIView):\n    queryset = Comments.objects.all()\n    serializer_class = CommentsSerializer\n    lookup_field = 'id'\nclass CommentsUpdateView(UpdateAPIView):\n    queryset = Comments.objects.all()\n    serializer_class = CommentsSerializer\n    lookup_field = 'id'\nclass CommentsDeleteView(DestroyAPIView):\n    queryset = Comments.objects.all()",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "CommentsUpdateView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class CommentsUpdateView(UpdateAPIView):\n    queryset = Comments.objects.all()\n    serializer_class = CommentsSerializer\n    lookup_field = 'id'\nclass CommentsDeleteView(DestroyAPIView):\n    queryset = Comments.objects.all()\n    serializer_class = CommentsSerializer\n    lookup_field = 'id'\n# * =================== Suggestions Dashboard ===================\nclass SuggestionsListView(ListAPIView):",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "CommentsDeleteView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class CommentsDeleteView(DestroyAPIView):\n    queryset = Comments.objects.all()\n    serializer_class = CommentsSerializer\n    lookup_field = 'id'\n# * =================== Suggestions Dashboard ===================\nclass SuggestionsListView(ListAPIView):\n    queryset = Suggestions.objects.all()\n    serializer_class = SuggestionsSerializer\nclass SuggestionsCreateView(CreateAPIView):\n    queryset = Suggestions.objects.all()",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "SuggestionsListView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class SuggestionsListView(ListAPIView):\n    queryset = Suggestions.objects.all()\n    serializer_class = SuggestionsSerializer\nclass SuggestionsCreateView(CreateAPIView):\n    queryset = Suggestions.objects.all()\n    serializer_class = SuggestionsSerializer\nclass SuggestionsDetailView(RetrieveAPIView):\n    queryset = Suggestions.objects.all()\n    serializer_class = SuggestionsSerializer\n    lookup_field = 'id'",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "SuggestionsCreateView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class SuggestionsCreateView(CreateAPIView):\n    queryset = Suggestions.objects.all()\n    serializer_class = SuggestionsSerializer\nclass SuggestionsDetailView(RetrieveAPIView):\n    queryset = Suggestions.objects.all()\n    serializer_class = SuggestionsSerializer\n    lookup_field = 'id'\nclass SuggestionsUpdateView(UpdateAPIView):\n    queryset = Suggestions.objects.all()\n    serializer_class = SuggestionsSerializer",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "SuggestionsDetailView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class SuggestionsDetailView(RetrieveAPIView):\n    queryset = Suggestions.objects.all()\n    serializer_class = SuggestionsSerializer\n    lookup_field = 'id'\nclass SuggestionsUpdateView(UpdateAPIView):\n    queryset = Suggestions.objects.all()\n    serializer_class = SuggestionsSerializer\n    lookup_field = 'id'\nclass SuggestionsDeleteView(DestroyAPIView):\n    queryset = Suggestions.objects.all()",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "SuggestionsUpdateView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class SuggestionsUpdateView(UpdateAPIView):\n    queryset = Suggestions.objects.all()\n    serializer_class = SuggestionsSerializer\n    lookup_field = 'id'\nclass SuggestionsDeleteView(DestroyAPIView):\n    queryset = Suggestions.objects.all()\n    serializer_class = SuggestionsSerializer\n    lookup_field = 'id'",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "SuggestionsDeleteView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class SuggestionsDeleteView(DestroyAPIView):\n    queryset = Suggestions.objects.all()\n    serializer_class = SuggestionsSerializer\n    lookup_field = 'id'",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
         "label": "Migration",
         "kind": 6,
         "importPath": "home.migrations.0001_initial",
@@ -949,6 +1404,15 @@
         "description": "home.migrations.0006_alter_sliders_sub_title_ar_and_more",
         "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('home', '0005_faq_alter_comments_status_alter_service_status_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='sliders',\n            name='sub_title_ar',\n            field=models.CharField(blank=True, max_length=255, null=True, verbose_name='Sub Title AR'),\n        ),",
         "detail": "home.migrations.0006_alter_sliders_sub_title_ar_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "home.migrations.0007_comments_country_ar_comments_country_en",
+        "description": "home.migrations.0007_comments_country_ar_comments_country_en",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('home', '0006_alter_sliders_sub_title_ar_and_more'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='comments',\n            name='country_ar',\n            field=models.CharField(blank=True, max_length=255, null=True, verbose_name='Country EN'),\n        ),",
+        "detail": "home.migrations.0007_comments_country_ar_comments_country_en",
         "documentation": {}
     },
     {
@@ -1006,15 +1470,6 @@
         "documentation": {}
     },
     {
-        "label": "FAQAdmin",
-        "kind": 6,
-        "importPath": "home.admin",
-        "description": "home.admin",
-        "peekOfCode": "class FAQAdmin(admin.ModelAdmin):\n    list_display = ('question_en', 'question_ar', 'status')\n    list_filter = ('status',)\n    search_fields = ('question_en', 'question_ar', 'answer_en', 'answer_ar')\n    fieldsets = (\n        (None, {\n            'fields': ('question_en', 'question_ar', 'answer_en', 'answer_ar','status')\n        }),\n    )\nadmin.site.register(FAQ, FAQAdmin)",
-        "detail": "home.admin",
-        "documentation": {}
-    },
-    {
         "label": "HomeConfig",
         "kind": 6,
         "importPath": "home.apps",
@@ -1064,7 +1519,7 @@
         "kind": 6,
         "importPath": "home.models",
         "description": "home.models",
-        "peekOfCode": "class Comments(models.Model):\n    image = models.ImageField(\n        upload_to=upload_image_comment, null=True, blank=True, verbose_name='Image')\n    content_en = models.TextField(verbose_name=\"Content EN\")\n    content_ar = models.TextField(verbose_name=\"Content AR\")\n    fullname_en = models.CharField(\n        max_length=255, null=True, blank=True, verbose_name=\"Full Name EN\")\n    fullname_ar = models.CharField(\n        max_length=255, null=True, blank=True, verbose_name=\"Full Name AR\")\n    status = models.BooleanField(",
+        "peekOfCode": "class Comments(models.Model):\n    image = models.ImageField(\n        upload_to=upload_image_comment, null=True, blank=True, verbose_name='Image')\n    content_en = models.TextField(verbose_name=\"Content EN\")\n    content_ar = models.TextField(verbose_name=\"Content AR\")\n    fullname_en = models.CharField(\n        max_length=255, null=True, blank=True, verbose_name=\"Full Name EN\")\n    fullname_ar = models.CharField(\n        max_length=255, null=True, blank=True, verbose_name=\"Full Name AR\")\n    country_en = models.CharField(",
         "detail": "home.models",
         "documentation": {}
     },
@@ -1154,7 +1609,7 @@
         "kind": 6,
         "importPath": "home.serializers",
         "description": "home.serializers",
-        "peekOfCode": "class ServiceArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Service\n        exclude = [\"title_en\", \"content_en\"]\nclass CommentsEnglishSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Comments\n        exclude = [\"fullname_ar\", \"content_ar\"]\nclass CommentsArabicSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "peekOfCode": "class ServiceArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Service\n        exclude = [\"title_en\", \"content_en\"]\nclass CommentsEnglishSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Comments\n        exclude = [\"fullname_ar\", \"content_ar\", \"country_ar\"]\nclass CommentsArabicSerializer(serializers.ModelSerializer):\n    class Meta:",
         "detail": "home.serializers",
         "documentation": {}
     },
@@ -1163,7 +1618,7 @@
         "kind": 6,
         "importPath": "home.serializers",
         "description": "home.serializers",
-        "peekOfCode": "class CommentsEnglishSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Comments\n        exclude = [\"fullname_ar\", \"content_ar\"]\nclass CommentsArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Comments\n        exclude = [\"fullname_en\", \"content_en\"]\nclass SuggestionsEnglishSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "peekOfCode": "class CommentsEnglishSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Comments\n        exclude = [\"fullname_ar\", \"content_ar\", \"country_ar\"]\nclass CommentsArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Comments\n        exclude = [\"fullname_en\", \"content_en\", \"country_en\"]\nclass SuggestionsEnglishSerializer(serializers.ModelSerializer):\n    class Meta:",
         "detail": "home.serializers",
         "documentation": {}
     },
@@ -1172,7 +1627,7 @@
         "kind": 6,
         "importPath": "home.serializers",
         "description": "home.serializers",
-        "peekOfCode": "class CommentsArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Comments\n        exclude = [\"fullname_en\", \"content_en\"]\nclass SuggestionsEnglishSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Suggestions\n        exclude = [\"title_ar\", \"content_ar\"]\nclass SuggestionsArabicSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "peekOfCode": "class CommentsArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Comments\n        exclude = [\"fullname_en\", \"content_en\", \"country_en\"]\nclass SuggestionsEnglishSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Suggestions\n        exclude = [\"title_ar\", \"content_ar\"]\nclass SuggestionsArabicSerializer(serializers.ModelSerializer):\n    class Meta:",
         "detail": "home.serializers",
         "documentation": {}
     },
@@ -1217,7 +1672,7 @@
         "kind": 5,
         "importPath": "home.urls",
         "description": "home.urls",
-        "peekOfCode": "app_name = \"state\"\nurlpatterns = [\n    path(\"sliders/en/\", views.SliderEnglishListView.as_view(), name=\"slider_english_list\"),\n    path(\"sliders/ar/\", views.SliderArabicListView.as_view(), name=\"slider_arabic_list\"),\n    path(\"about/en/\", views.AboutUsEnglishListView.as_view(), name=\"about_english_list\"),\n    path(\"about/ar/\", views.AboutUsArabicListView.as_view(), name=\"about_arabic_list\"),\n    path(\"choose_us/en/\", views.ChooseUsEnglishListView.as_view(), name=\"choose_us_english_list\"),\n    path(\"choose_us/ar/\", views.ChooseUsArabicListView.as_view(), name=\"choose_us_arabic_list\"),\n    path(\"service/en/\", views.ServiceEnglishListView.as_view(), name=\"service_english_list\"),\n    path(\"service/ar/\", views.ServiceArabicListView.as_view(), name=\"service_arabic_list\"),",
+        "peekOfCode": "app_name = \"home\"\nurlpatterns = [\n    path(\"sliders/en/\", views.SliderEnglishListView.as_view(), name=\"slider_english_list\"),\n    path(\"sliders/ar/\", views.SliderArabicListView.as_view(), name=\"slider_arabic_list\"),\n    path(\"about/en/\", views.AboutUsEnglishListView.as_view(), name=\"about_english_list\"),\n    path(\"about/ar/\", views.AboutUsArabicListView.as_view(), name=\"about_arabic_list\"),\n    path(\"choose_us/en/\", views.ChooseUsEnglishListView.as_view(), name=\"choose_us_english_list\"),\n    path(\"choose_us/ar/\", views.ChooseUsArabicListView.as_view(), name=\"choose_us_arabic_list\"),\n    path(\"service/en/\", views.ServiceEnglishListView.as_view(), name=\"service_english_list\"),\n    path(\"service/ar/\", views.ServiceArabicListView.as_view(), name=\"service_arabic_list\"),",
         "detail": "home.urls",
         "documentation": {}
     },

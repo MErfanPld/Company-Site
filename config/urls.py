@@ -30,6 +30,7 @@ urlpatterns = [
     path('', include('home.urls')),
     path('', include('regulation.urls')),
     path('', include('contact.urls')),
+    path('dashboard/', include('dashboard.urls')),
 ]
 
 if settings.DEBUG:

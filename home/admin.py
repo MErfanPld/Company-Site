@@ -73,18 +73,18 @@ class CommentsAdmin(admin.ModelAdmin):
     )
 
 
-class FAQAdmin(admin.ModelAdmin):
-    list_display = ('question_en', 'question_ar', 'status')
-    list_filter = ('status',)
-    search_fields = ('question_en', 'question_ar', 'answer_en', 'answer_ar')
-    fieldsets = (
-        (None, {
-            'fields': ('question_en', 'question_ar', 'answer_en', 'answer_ar','status')
-        }),
-    )
+# class FAQAdmin(admin.ModelAdmin):
+#     list_display = ('question_en', 'question_ar', 'status')
+#     list_filter = ('status',)
+#     search_fields = ('question_en', 'question_ar', 'answer_en', 'answer_ar')
+#     fieldsets = (
+#         (None, {
+#             'fields': ('question_en', 'question_ar', 'answer_en', 'answer_ar','status')
+#         }),
+#     )
 
 
-admin.site.register(FAQ, FAQAdmin)
+# admin.site.register(FAQ, FAQAdmin)
 admin.site.register(Sliders, SlidersAdmin)
 admin.site.register(AboutUs, AboutUsAdmin)
 admin.site.register(ChooseUs, ChooseUsAdmin)

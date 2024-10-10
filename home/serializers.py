@@ -53,13 +53,13 @@ class ServiceArabicSerializer(serializers.ModelSerializer):
 class CommentsEnglishSerializer(serializers.ModelSerializer):
     class Meta:
         model = Comments
-        exclude = ["fullname_ar", "content_ar"]
+        exclude = ["fullname_ar", "content_ar", "country_ar"]
 
 
 class CommentsArabicSerializer(serializers.ModelSerializer):
     class Meta:
         model = Comments
-        exclude = ["fullname_en", "content_en"]
+        exclude = ["fullname_en", "content_en", "country_en"]
 
 
 class SuggestionsEnglishSerializer(serializers.ModelSerializer):

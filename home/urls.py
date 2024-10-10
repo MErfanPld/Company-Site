@@ -1,7 +1,7 @@
 from django.urls import path, include
 from . import views
 
-app_name = "state"
+app_name = "home"
 
 urlpatterns = [
     path("sliders/en/", views.SliderEnglishListView.as_view(), name="slider_english_list"),

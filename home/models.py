@@ -87,6 +87,10 @@ class Comments(models.Model):
         max_length=255, null=True, blank=True, verbose_name="Full Name EN")
     fullname_ar = models.CharField(
         max_length=255, null=True, blank=True, verbose_name="Full Name AR")
+    country_en = models.CharField(
+        max_length=255, null=True, blank=True, verbose_name="Country EN")
+    country_ar = models.CharField(
+        max_length=255, null=True, blank=True, verbose_name="Country EN")
     status = models.BooleanField(
         default=True, verbose_name='Is Active?')
 

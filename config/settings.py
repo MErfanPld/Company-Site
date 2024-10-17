@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'regulation',
     'contact',
     'dashboard',
+    'news',
 ]
 
 MIDDLEWARE = [

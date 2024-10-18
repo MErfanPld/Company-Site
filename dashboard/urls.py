@@ -75,4 +75,28 @@ urlpatterns = [
          name="suggestions_dashboard_update"),
     path("suggestions/<int:id>/delete/", views.SuggestionsDeleteView.as_view(),
          name="suggestions_dashboard_delete"),
+
+    # =============== FAQ ===============
+    path("faq/", views.FAQListView.as_view(),
+         name="faq_dashboard_list"),
+    path("faq/create/", views.FAQCreateView.as_view(),
+         name="faq_dashboard_create"),
+    path("faq/<int:id>/", views.FAQDetailView.as_view(),
+         name="faq_dashboard_detail"),
+    path("faq/<int:id>/update/", views.FAQUpdateView.as_view(),
+         name="faq_dashboard_update"),
+    path("faq/<int:id>/delete/", views.FAQDeleteView.as_view(),
+         name="faq_dashboard_delete"),
+
+    # =============== News ===============
+    path("news/", views.NewsListView.as_view(),
+         name="news_dashboard_list"),
+    path("news/create/", views.NewsCreateView.as_view(),
+         name="news_dashboard_create"),
+    path("news/<int:id>/", views.NewsDetailView.as_view(),
+         name="news_dashboard_detail"),
+    path("news/<int:id>/update/", views.NewsUpdateView.as_view(),
+         name="news_dashboard_update"),
+    path("news/<int:id>/delete/", views.NewsDeleteView.as_view(),
+         name="news_dashboard_delete"),
 ]

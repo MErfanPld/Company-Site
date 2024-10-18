@@ -713,6 +713,22 @@
         "documentation": {}
     },
     {
+        "label": "News",
+        "importPath": "news.models",
+        "description": "news.models",
+        "isExtraImport": true,
+        "detail": "news.models",
+        "documentation": {}
+    },
+    {
+        "label": "News",
+        "importPath": "news.models",
+        "description": "news.models",
+        "isExtraImport": true,
+        "detail": "news.models",
+        "documentation": {}
+    },
+    {
         "label": "home.utils",
         "kind": 6,
         "isExtraImport": true,
@@ -1172,7 +1188,7 @@
         "kind": 6,
         "importPath": "dashboard.serializers",
         "description": "dashboard.serializers",
-        "peekOfCode": "class CommentsSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Comments\n        fields = \"__all__\"\nclass SuggestionsSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Suggestions\n        fields = \"__all__\"\n# class FAQEnglishSerializer(serializers.ModelSerializer):\n#     class Meta:",
+        "peekOfCode": "class CommentsSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Comments\n        fields = \"__all__\"\nclass SuggestionsSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Suggestions\n        fields = \"__all__\"\nclass FAQSerializer(serializers.ModelSerializer):\n    class Meta:",
         "detail": "dashboard.serializers",
         "documentation": {}
     },
@@ -1181,7 +1197,25 @@
         "kind": 6,
         "importPath": "dashboard.serializers",
         "description": "dashboard.serializers",
-        "peekOfCode": "class SuggestionsSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Suggestions\n        fields = \"__all__\"\n# class FAQEnglishSerializer(serializers.ModelSerializer):\n#     class Meta:\n#         model = FAQ\n#         exclude = [\"question_ar\", \"answer_ar\"]",
+        "peekOfCode": "class SuggestionsSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Suggestions\n        fields = \"__all__\"\nclass FAQSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = FAQ\n        fields = \"__all__\"\nclass NewsSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "dashboard.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "FAQSerializer",
+        "kind": 6,
+        "importPath": "dashboard.serializers",
+        "description": "dashboard.serializers",
+        "peekOfCode": "class FAQSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = FAQ\n        fields = \"__all__\"\nclass NewsSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = News\n        fields = \"__all__\"",
+        "detail": "dashboard.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "NewsSerializer",
+        "kind": 6,
+        "importPath": "dashboard.serializers",
+        "description": "dashboard.serializers",
+        "peekOfCode": "class NewsSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = News\n        fields = \"__all__\"",
         "detail": "dashboard.serializers",
         "documentation": {}
     },
@@ -1460,7 +1494,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class SuggestionsUpdateView(UpdateAPIView):\n    queryset = Suggestions.objects.all()\n    serializer_class = SuggestionsSerializer\n    lookup_field = 'id'\nclass SuggestionsDeleteView(DestroyAPIView):\n    queryset = Suggestions.objects.all()\n    serializer_class = SuggestionsSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class SuggestionsUpdateView(UpdateAPIView):\n    queryset = Suggestions.objects.all()\n    serializer_class = SuggestionsSerializer\n    lookup_field = 'id'\nclass SuggestionsDeleteView(DestroyAPIView):\n    queryset = Suggestions.objects.all()\n    serializer_class = SuggestionsSerializer\n    lookup_field = 'id'\n# * =================== FAQ Dashboard ===================\nclass FAQListView(ListAPIView):",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -1469,7 +1503,97 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class SuggestionsDeleteView(DestroyAPIView):\n    queryset = Suggestions.objects.all()\n    serializer_class = SuggestionsSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class SuggestionsDeleteView(DestroyAPIView):\n    queryset = Suggestions.objects.all()\n    serializer_class = SuggestionsSerializer\n    lookup_field = 'id'\n# * =================== FAQ Dashboard ===================\nclass FAQListView(ListAPIView):\n    queryset = FAQ.objects.all()\n    serializer_class = FAQSerializer\nclass FAQCreateView(CreateAPIView):\n    queryset = FAQ.objects.all()",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "FAQListView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class FAQListView(ListAPIView):\n    queryset = FAQ.objects.all()\n    serializer_class = FAQSerializer\nclass FAQCreateView(CreateAPIView):\n    queryset = FAQ.objects.all()\n    serializer_class = FAQSerializer\nclass FAQDetailView(RetrieveAPIView):\n    queryset = FAQ.objects.all()\n    serializer_class = FAQSerializer\n    lookup_field = 'id'",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "FAQCreateView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class FAQCreateView(CreateAPIView):\n    queryset = FAQ.objects.all()\n    serializer_class = FAQSerializer\nclass FAQDetailView(RetrieveAPIView):\n    queryset = FAQ.objects.all()\n    serializer_class = FAQSerializer\n    lookup_field = 'id'\nclass FAQUpdateView(UpdateAPIView):\n    queryset = FAQ.objects.all()\n    serializer_class = FAQSerializer",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "FAQDetailView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class FAQDetailView(RetrieveAPIView):\n    queryset = FAQ.objects.all()\n    serializer_class = FAQSerializer\n    lookup_field = 'id'\nclass FAQUpdateView(UpdateAPIView):\n    queryset = FAQ.objects.all()\n    serializer_class = FAQSerializer\n    lookup_field = 'id'\nclass FAQDeleteView(DestroyAPIView):\n    queryset = FAQ.objects.all()",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "FAQUpdateView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class FAQUpdateView(UpdateAPIView):\n    queryset = FAQ.objects.all()\n    serializer_class = FAQSerializer\n    lookup_field = 'id'\nclass FAQDeleteView(DestroyAPIView):\n    queryset = FAQ.objects.all()\n    serializer_class = FAQSerializer\n    lookup_field = 'id'\n# * =================== News Dashboard ===================\nclass NewsListView(ListAPIView):",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "FAQDeleteView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class FAQDeleteView(DestroyAPIView):\n    queryset = FAQ.objects.all()\n    serializer_class = FAQSerializer\n    lookup_field = 'id'\n# * =================== News Dashboard ===================\nclass NewsListView(ListAPIView):\n    queryset = News.objects.all()\n    serializer_class = NewsSerializer\nclass NewsCreateView(CreateAPIView):\n    queryset = News.objects.all()",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "NewsListView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class NewsListView(ListAPIView):\n    queryset = News.objects.all()\n    serializer_class = NewsSerializer\nclass NewsCreateView(CreateAPIView):\n    queryset = News.objects.all()\n    serializer_class = NewsSerializer\nclass NewsDetailView(RetrieveAPIView):\n    queryset = News.objects.all()\n    serializer_class = NewsSerializer\n    lookup_field = 'id'",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "NewsCreateView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class NewsCreateView(CreateAPIView):\n    queryset = News.objects.all()\n    serializer_class = NewsSerializer\nclass NewsDetailView(RetrieveAPIView):\n    queryset = News.objects.all()\n    serializer_class = NewsSerializer\n    lookup_field = 'id'\nclass NewsUpdateView(UpdateAPIView):\n    queryset = News.objects.all()\n    serializer_class = NewsSerializer",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "NewsDetailView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class NewsDetailView(RetrieveAPIView):\n    queryset = News.objects.all()\n    serializer_class = NewsSerializer\n    lookup_field = 'id'\nclass NewsUpdateView(UpdateAPIView):\n    queryset = News.objects.all()\n    serializer_class = NewsSerializer\n    lookup_field = 'id'\nclass NewsDeleteView(DestroyAPIView):\n    queryset = News.objects.all()",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "NewsUpdateView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class NewsUpdateView(UpdateAPIView):\n    queryset = News.objects.all()\n    serializer_class = NewsSerializer\n    lookup_field = 'id'\nclass NewsDeleteView(DestroyAPIView):\n    queryset = News.objects.all()\n    serializer_class = NewsSerializer\n    lookup_field = 'id'",
+        "detail": "dashboard.views",
+        "documentation": {}
+    },
+    {
+        "label": "NewsDeleteView",
+        "kind": 6,
+        "importPath": "dashboard.views",
+        "description": "dashboard.views",
+        "peekOfCode": "class NewsDeleteView(DestroyAPIView):\n    queryset = News.objects.all()\n    serializer_class = NewsSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },

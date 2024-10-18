@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from home.models import *
+from news.models import News
 
 
 class SliderSerializer(serializers.ModelSerializer):
@@ -14,12 +15,10 @@ class AboutUsSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
-
 class ChooseUsSerializer(serializers.ModelSerializer):
     class Meta:
         model = ChooseUs
         fields = "__all__"
-
 
 
 class ServiceSerializer(serializers.ModelSerializer):
@@ -28,12 +27,10 @@ class ServiceSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
-
 class CommentsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Comments
         fields = "__all__"
-
 
 
 class SuggestionsSerializer(serializers.ModelSerializer):
@@ -42,9 +39,13 @@ class SuggestionsSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
+class FAQSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = FAQ
+        fields = "__all__"
 
-# class FAQEnglishSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = FAQ
-#         exclude = ["question_ar", "answer_ar"]
 
+class NewsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = News
+        fields = "__all__"

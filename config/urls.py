@@ -31,6 +31,7 @@ urlpatterns = [
     path('', include('regulation.urls')),
     path('', include('contact.urls')),
     path('', include('news.urls')),
+    path('', include('products.urls')),
     path('dashboard/', include('dashboard.urls')),
 ]
 

@@ -4,65 +4,104 @@ from .utils import *
 # Create your models here.
 
 
-class Sliders(models.Model):
-    title_en = models.CharField(max_length=255, verbose_name="Title EN")
-    title_ar = models.CharField(max_length=255, verbose_name="Title AR")
-    sub_title_en = models.CharField(
-        max_length=255, null=True, blank=True,verbose_name="Sub Title EN")
-    sub_title_ar = models.CharField(
-        max_length=255, null=True, blank=True,verbose_name="Sub Title AR")
+class SlidersEnglish(models.Model):
+    title = models.CharField(max_length=255, verbose_name="Title")
+    sub_title = models.CharField(
+        max_length=255, null=True, blank=True, verbose_name="Sub Title")
     image = models.ImageField(
         upload_to=upload_image_sliders, null=True, blank=True, verbose_name='Image')
     status = models.BooleanField(
         default=True, verbose_name='Is Active?')
 
     class Meta:
-        verbose_name = 'Slider'
-        verbose_name_plural = 'Sliders'
+        verbose_name = 'Slider English'
+        verbose_name_plural = 'Sliders English'
 
     def __str__(self):
-        return f"{self.title_en} | {self.title_ar} | {self.image} | {self.status}"
+        return f"{self.title} | {self.image} | {self.status}"
 
 
-class AboutUs(models.Model):
-    title_en = models.CharField(max_length=255, verbose_name="Title EN")
+class SlidersArabic(models.Model):
+    title = models.CharField(max_length=255, verbose_name="Title EN")
     title_ar = models.CharField(max_length=255, verbose_name="Title AR")
-    content_en = models.TextField(verbose_name="Content EN")
-    content_ar = models.TextField(verbose_name="Content AR")
+    sub_title = models.CharField(
+        max_length=255, null=True, blank=True, verbose_name="Sub Title EN")
+    image = models.ImageField(
+        upload_to=upload_image_sliders, null=True, blank=True, verbose_name='Image')
+    status = models.BooleanField(
+        default=True, verbose_name='Is Active?')
+
+    class Meta:
+        verbose_name = 'Slider Arabic'
+        verbose_name_plural = 'Sliders Arabic'
+
+    def __str__(self):
+        return f"{self.title}  | {self.image} | {self.status}"
+
+
+class AboutUsEnglish(models.Model):
+    title = models.CharField(max_length=255, verbose_name="Title")
+    content = models.TextField(verbose_name="Content")
     count_employee = models.IntegerField(verbose_name="Number of employees")
     count_product = models.IntegerField(verbose_name="Number of products")
     image = models.ImageField(
         upload_to=upload_image_about, null=True, blank=True, verbose_name='Image')
 
     class Meta:
-        verbose_name = 'AboutUs'
-        verbose_name_plural = 'AboutUs'
+        verbose_name = 'AboutUs English'
+        verbose_name_plural = 'AboutUs English'
 
     def __str__(self):
-        return f"{self.title_en} | {self.title_ar} | {self.image}"
+        return f"{self.title}  | {self.image}"
 
 
-class ChooseUs(models.Model):
-    title_en = models.CharField(max_length=255, verbose_name="Title EN")
-    title_ar = models.CharField(max_length=255, verbose_name="Title AR")
-    content_en = models.TextField(verbose_name="Content EN")
-    content_ar = models.TextField(verbose_name="Content AR")
+class AboutUsArabic(models.Model):
+    title = models.CharField(max_length=255, verbose_name="Title")
+    content = models.TextField(verbose_name="Content")
+    count_employee = models.IntegerField(verbose_name="Number of employees")
+    count_product = models.IntegerField(verbose_name="Number of products")
+    image = models.ImageField(
+        upload_to=upload_image_about, null=True, blank=True, verbose_name='Image')
+
+    class Meta:
+        verbose_name = 'AboutUs Arabic'
+        verbose_name_plural = 'AboutUs Arabic'
+
+    def __str__(self):
+        return f"{self.title} | {self.image}"
+
+
+class ChooseUsEnglish(models.Model):
+    title = models.CharField(max_length=255, verbose_name="Title EN")
+    content = models.TextField(verbose_name="Content EN")
     image = models.ImageField(
         upload_to=upload_image_choose_us, null=True, blank=True, verbose_name='Image')
 
     class Meta:
-        verbose_name = 'ChooseUs'
-        verbose_name_plural = 'ChooseUs'
+        verbose_name = 'ChooseUs English'
+        verbose_name_plural = 'ChooseUs English'
 
     def __str__(self):
-        return f"{self.title_en} | {self.title_ar} | {self.image}"
+        return f"{self.title} | {self.image}"
 
 
-class Service(models.Model):
-    title_en = models.CharField(max_length=255, verbose_name="Title EN")
-    title_ar = models.CharField(max_length=255, verbose_name="Title AR")
-    content_en = models.TextField(verbose_name="Content EN")
-    content_ar = models.TextField(verbose_name="Content AR")
+class ChooseUsArabic(models.Model):
+    title = models.CharField(max_length=255, verbose_name="Title EN")
+    content = models.TextField(verbose_name="Content EN")
+    image = models.ImageField(
+        upload_to=upload_image_choose_us, null=True, blank=True, verbose_name='Image')
+
+    class Meta:
+        verbose_name = 'ChooseUs Arabic'
+        verbose_name_plural = 'ChooseUs Arabic'
+
+    def __str__(self):
+        return f"{self.title} | {self.image}"
+
+
+class ServiceEnglish(models.Model):
+    title = models.CharField(max_length=255, verbose_name="Title EN")
+    content = models.TextField(verbose_name="Content EN")
     image = models.ImageField(
         upload_to=upload_image_service, null=True, blank=True, verbose_name='Image')
     icon_img = models.ImageField(
@@ -71,65 +110,119 @@ class Service(models.Model):
         default=True, verbose_name='Is Active?')
 
     class Meta:
-        verbose_name = 'Service'
-        verbose_name_plural = 'Service'
+        verbose_name = 'Service English'
+        verbose_name_plural = 'Service English'
 
     def __str__(self):
-        return f"{self.title_en} | {self.title_ar} | {self.image} | {self.status}"
+        return f"{self.title} | {self.image} | {self.status}"
 
 
-class Comments(models.Model):
+class ServiceArabic(models.Model):
+    title = models.CharField(max_length=255, verbose_name="Title EN")
+    content = models.TextField(verbose_name="Content EN")
+    image = models.ImageField(
+        upload_to=upload_image_service, null=True, blank=True, verbose_name='Image')
+    icon_img = models.ImageField(
+        upload_to=upload_image_service_icon, null=True, blank=True, verbose_name='Image Icon')
+    status = models.BooleanField(
+        default=True, verbose_name='Is Active?')
+
+    class Meta:
+        verbose_name = 'Service Arabic'
+        verbose_name_plural = 'Service Arabic'
+
+    def __str__(self):
+        return f"{self.title} | {self.image} | {self.status}"
+
+
+class CommentsEnglish(models.Model):
     image = models.ImageField(
         upload_to=upload_image_comment, null=True, blank=True, verbose_name='Image')
-    content_en = models.TextField(verbose_name="Content EN")
-    content_ar = models.TextField(verbose_name="Content AR")
-    fullname_en = models.CharField(
+    content = models.TextField(verbose_name="Content EN")
+    fullname = models.CharField(
         max_length=255, null=True, blank=True, verbose_name="Full Name EN")
-    fullname_ar = models.CharField(
-        max_length=255, null=True, blank=True, verbose_name="Full Name AR")
-    country_en = models.CharField(
-        max_length=255, null=True, blank=True, verbose_name="Country EN")
-    country_ar = models.CharField(
+    country = models.CharField(
         max_length=255, null=True, blank=True, verbose_name="Country EN")
     status = models.BooleanField(
         default=True, verbose_name='Is Active?')
 
     class Meta:
-        verbose_name = 'Comments'
-        verbose_name_plural = 'Comments'
+        verbose_name = 'Comments English'
+        verbose_name_plural = 'Comments English'
 
     def __str__(self):
-        return f"{self.fullname_en} | {self.image} | {self.status}"
+        return f"{self.fullname} | {self.image} | {self.status}"
+
+class CommentsArabic(models.Model):
+    image = models.ImageField(
+        upload_to=upload_image_comment, null=True, blank=True, verbose_name='Image')
+    content = models.TextField(verbose_name="Content EN")
+    fullname = models.CharField(
+        max_length=255, null=True, blank=True, verbose_name="Full Name EN")
+    country = models.CharField(
+        max_length=255, null=True, blank=True, verbose_name="Country EN")
+    status = models.BooleanField(
+        default=True, verbose_name='Is Active?')
+
+    class Meta:
+        verbose_name = 'Comments Arabic'
+        verbose_name_plural = 'Comments Arabic'
+
+    def __str__(self):
+        return f"{self.fullname} | {self.image} | {self.status}"
 
 
-class Suggestions(models.Model):
-    title_en = models.CharField(max_length=255, verbose_name="Title EN")
-    title_ar = models.CharField(max_length=255, verbose_name="Title AR")
-    content_en = models.TextField(verbose_name="Content EN")
-    content_ar = models.TextField(verbose_name="Content AR")
+class SuggestionsEnglish(models.Model):
+    title = models.CharField(max_length=255, verbose_name="Title EN")
+    content = models.TextField(verbose_name="Content EN")
     icon_img = models.ImageField(
         upload_to=upload_image_suggestions_icon, null=True, blank=True, verbose_name='Image Icon')
     status = models.BooleanField(
         default=True, verbose_name='Is Active?')
 
     class Meta:
-        verbose_name = 'Suggestions'
-        verbose_name_plural = 'Suggestions'
+        verbose_name = 'Suggestions English'
+        verbose_name_plural = 'Suggestions English'
 
     def __str__(self):
-        return f"{self.title_en} | {self.title_ar} | {self.status}"
+        return f"{self.title} |{self.status}"
 
+class SuggestionsArabic(models.Model):
+    title = models.CharField(max_length=255, verbose_name="Title EN")
+    content = models.TextField(verbose_name="Content EN")
+    icon_img = models.ImageField(
+        upload_to=upload_image_suggestions_icon, null=True, blank=True, verbose_name='Image Icon')
+    status = models.BooleanField(
+        default=True, verbose_name='Is Active?')
 
-class FAQ(models.Model):
-    question_en = models.CharField(max_length=255, verbose_name="Question EN")
-    question_ar = models.CharField(max_length=255, verbose_name="Question AR")
-    answer_en = models.TextField(verbose_name="Answer EN")
-    answer_ar = models.TextField(verbose_name="Answer AR")
-    status = models.BooleanField(default=True, verbose_name="Is Active?")
-    
     class Meta:
-        verbose_name = "FAQ"
-        verbose_name_plural = "FAQs"
+        verbose_name = 'Suggestions Arabic'
+        verbose_name_plural = 'Suggestions Arabic'
 
     def __str__(self):
-        return f"{self.question_en} | {self.question_ar}"
+        return f"{self.title} |{self.status}"
+
+
+class FAQEnglish(models.Model):
+    question = models.CharField(max_length=255, verbose_name="Question EN")
+    answer = models.TextField(verbose_name="Answer EN")
+    status = models.BooleanField(default=True, verbose_name="Is Active?")
+
+    class Meta:
+        verbose_name = "FAQ English"
+        verbose_name_plural = "FAQs English"
+
+    def __str__(self):
+        return f"{self.question} |{self.status} "
+
+class FAQArabic(models.Model):
+    question = models.CharField(max_length=255, verbose_name="Question EN")
+    answer = models.TextField(verbose_name="Answer EN")
+    status = models.BooleanField(default=True, verbose_name="Is Active?")
+
+    class Meta:
+        verbose_name = "FAQ Arabic"
+        verbose_name_plural = "FAQs Arabic"
+
+    def __str__(self):
+        return f"{self.question} |{self.status} "

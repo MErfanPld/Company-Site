@@ -4,83 +4,86 @@ from .models import *
 
 class SliderEnglishSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Sliders
-        exclude = ["title_ar", "sub_title_ar"]
+        model = SlidersEnglish
+        fields = "__all__"
 
 
 class SliderArabicSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Sliders
-        exclude = ["title_en", "sub_title_en"]
+        model = SlidersArabic
+        fields = "__all__"
 
 
 class AboutUsEnglishSerializer(serializers.ModelSerializer):
     class Meta:
-        model = AboutUs
-        exclude = ["title_ar", "content_ar"]
+        model = AboutUsEnglish
+        fields = "__all__"
+
 
 
 class AboutUsArabicSerializer(serializers.ModelSerializer):
     class Meta:
-        model = AboutUs
-        exclude = ["title_en", "content_en"]
+        model = AboutUsArabic
+        fields = "__all__"
+
 
 
 class ChooseUsEnglishSerializer(serializers.ModelSerializer):
     class Meta:
-        model = ChooseUs
-        exclude = ["title_ar", "content_ar"]
+        model = ChooseUsEnglish
+        fields = "__all__"
 
 
 class ChooseUsArabicSerializer(serializers.ModelSerializer):
     class Meta:
-        model = ChooseUs
-        exclude = ["title_en", "content_en"]
+        model = ChooseUsArabic
+        fields = "__all__"
 
 
 class ServiceEnglishSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Service
-        exclude = ["title_ar", "content_ar"]
+        model = ServiceEnglish
+        fields = "__all__"
 
 
 class ServiceArabicSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Service
-        exclude = ["title_en", "content_en"]
+        model = ServiceArabic
+        fields = "__all__"
 
 
 class CommentsEnglishSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Comments
-        exclude = ["fullname_ar", "content_ar", "country_ar"]
+        model = CommentsEnglish
+        fields = "__all__"
 
 
 class CommentsArabicSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Comments
-        exclude = ["fullname_en", "content_en", "country_en"]
+        model = CommentsArabic
+        fields = "__all__"
 
 
 class SuggestionsEnglishSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Suggestions
-        exclude = ["title_ar", "content_ar"]
+        model = SuggestionsEnglish
+        fields = "__all__"
 
 
 class SuggestionsArabicSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Suggestions
-        exclude = ["title_en", "content_en"]
+        model = SuggestionsArabic
+        fields = "__all__"
+
 
 
 class FAQEnglishSerializer(serializers.ModelSerializer):
     class Meta:
-        model = FAQ
-        exclude = ["question_ar", "answer_ar"]
+        model = FAQEnglish
+        fields = "__all__"
 
 
 class FAQArabicSerializer(serializers.ModelSerializer):
     class Meta:
-        model = FAQ
-        exclude = ["question_en", "answer_en"]
+        model = FAQArabic
+        fields = "__all__"

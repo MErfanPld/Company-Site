@@ -4,22 +4,38 @@ from .utils import upload_image_product
 
 # Create your models here.
 
-class Product(models.Model):
-    title_en = models.CharField(max_length=255)
-    title_ar = models.CharField(max_length=255)
+
+class ProductEnglish(models.Model):
+    title = models.CharField(max_length=255)
     price = models.FloatField()
-    desc_en = models.TextField()
-    desc_ar = models.TextField()
-    content_en = models.TextField(verbose_name="Content EN")
-    content_ar = models.TextField(verbose_name="Content AR")
+    desc = models.TextField()
+    content = models.TextField(verbose_name="Content EN")
     image = models.ImageField(
         upload_to=upload_image_product, null=True, blank=True, verbose_name='Image')
     status = models.BooleanField(
         default=True, verbose_name='Is Active?')
-    
+
     class Meta:
-        verbose_name = 'Product'
-        verbose_name_plural = 'Products'
+        verbose_name = 'Product English'
+        verbose_name_plural = 'Products English'
 
     def __str__(self):
-        return f"{self.title_en} | {self.title_ar} | {self.image} | {self.status}"
+        return f"{self.title} | {self.image} | {self.status}"
+
+
+class ProductArbic(models.Model):
+    title = models.CharField(max_length=255)
+    price = models.FloatField()
+    desc = models.TextField()
+    content = models.TextField(verbose_name="Content EN")
+    image = models.ImageField(
+        upload_to=upload_image_product, null=True, blank=True, verbose_name='Image')
+    status = models.BooleanField(
+        default=True, verbose_name='Is Active?')
+
+    class Meta:
+        verbose_name = 'Product Arbic'
+        verbose_name_plural = 'Products Arbic'
+
+    def __str__(self):
+        return f"{self.title} | {self.image} | {self.status}"

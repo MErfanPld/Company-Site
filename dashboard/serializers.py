@@ -1,51 +1,96 @@
 from rest_framework import serializers
 from home.models import *
-from news.models import News
+# from news.models import News
 
 
-class SliderSerializer(serializers.ModelSerializer):
+class SliderEnglishSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Sliders
+        model = SlidersEnglish
         fields = "__all__"
 
 
-class AboutUsSerializer(serializers.ModelSerializer):
+class SliderArabicSerializer(serializers.ModelSerializer):
     class Meta:
-        model = AboutUs
+        model = SlidersArabic
         fields = "__all__"
 
 
-class ChooseUsSerializer(serializers.ModelSerializer):
+class AboutUsEnglishSerializer(serializers.ModelSerializer):
     class Meta:
-        model = ChooseUs
+        model = AboutUsEnglish
         fields = "__all__"
 
 
-class ServiceSerializer(serializers.ModelSerializer):
+
+class AboutUsArabicSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Service
+        model = AboutUsArabic
         fields = "__all__"
 
 
-class CommentsSerializer(serializers.ModelSerializer):
+
+class ChooseUsEnglishSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Comments
+        model = ChooseUsEnglish
         fields = "__all__"
 
 
-class SuggestionsSerializer(serializers.ModelSerializer):
+class ChooseUsArabicSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Suggestions
+        model = ChooseUsArabic
         fields = "__all__"
 
 
-class FAQSerializer(serializers.ModelSerializer):
+class ServiceEnglishSerializer(serializers.ModelSerializer):
     class Meta:
-        model = FAQ
+        model = ServiceEnglish
         fields = "__all__"
 
 
-class NewsSerializer(serializers.ModelSerializer):
+class ServiceArabicSerializer(serializers.ModelSerializer):
     class Meta:
-        model = News
+        model = ServiceArabic
         fields = "__all__"
+
+
+class CommentsEnglishSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CommentsEnglish
+        fields = "__all__"
+
+
+class CommentsArabicSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CommentsArabic
+        fields = "__all__"
+
+
+class SuggestionsEnglishSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = SuggestionsEnglish
+        fields = "__all__"
+
+
+class SuggestionsArabicSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = SuggestionsArabic
+        fields = "__all__"
+
+
+
+class FAQEnglishSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = FAQEnglish
+        fields = "__all__"
+
+
+class FAQArabicSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = FAQArabic
+        fields = "__all__"
+
+
+# class NewsSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = News
+#         fields = "__all__"

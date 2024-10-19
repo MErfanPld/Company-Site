@@ -8,10 +8,10 @@ from .serializers import *
 # * =================== Product ===================
 
 class ProductEnglishListView(ListAPIView):
-    queryset = Product.objects.filter(status=True)
+    queryset = ProductEnglish.objects.filter(status=True)
     serializer_class = ProductEnglishSerializer
 
 
 class ProductArabicListView(ListAPIView):
-    queryset = Product.objects.filter(status=True)
+    queryset = ProductArbic.objects.filter(status=True)
     serializer_class = ProductArabicSerializer

@@ -5,11 +5,11 @@ from .models import *
 
 class ProductEnglishSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Product
-        exclude = ["title_ar", "price","desc_ar","content_ar"]
+        model = ProductEnglish
+        fields = "__all__"
 
 
 class ProductArabicSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Product
-        exclude = ["title_en", "price","desc_en","content_en"]
+        model = ProductArbic
+        fields = "__all__"

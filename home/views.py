@@ -9,72 +9,72 @@ from .serializers import *
 
 
 class SliderEnglishListView(ListAPIView):
-    queryset = Sliders.objects.filter(status=True)
+    queryset = SlidersEnglish.objects.filter(status=True)
     serializer_class = SliderEnglishSerializer
 
 
 class SliderArabicListView(ListAPIView):
-    queryset = Sliders.objects.filter(status=True)
+    queryset = SlidersArabic.objects.filter(status=True)
     serializer_class = SliderArabicSerializer
 
 # * =================== AboutUs ===================
 
 
 class AboutUsEnglishListView(ListAPIView):
-    queryset = AboutUs.objects.all()
+    queryset = AboutUsEnglish.objects.all()
     serializer_class = AboutUsEnglishSerializer
 
 
 class AboutUsArabicListView(ListAPIView):
-    queryset = AboutUs.objects.all()
+    queryset = AboutUsArabic.objects.all()
     serializer_class = AboutUsArabicSerializer
 
 # * =================== ChooseUs ===================
 
 
 class ChooseUsEnglishListView(ListAPIView):
-    queryset = ChooseUs.objects.all()
+    queryset = ChooseUsEnglish.objects.all()
     serializer_class = ChooseUsEnglishSerializer
 
 
 class ChooseUsArabicListView(ListAPIView):
-    queryset = ChooseUs.objects.all()
+    queryset = ChooseUsArabic.objects.all()
     serializer_class = ChooseUsArabicSerializer
 
 # * =================== Service ===================
 
 
 class ServiceEnglishListView(ListAPIView):
-    queryset = Service.objects.filter(status=True)
+    queryset = ServiceEnglish.objects.filter(status=True)
     serializer_class = ServiceEnglishSerializer
 
 
 class ServiceArabicListView(ListAPIView):
-    queryset = Service.objects.filter(status=True)
+    queryset = ServiceArabic.objects.filter(status=True)
     serializer_class = ServiceArabicSerializer
 
 # * =================== Comments ===================
 
 
 class CommentsEnglishListView(ListAPIView):
-    queryset = Comments.objects.filter(status=True)
+    queryset = CommentsEnglish.objects.filter(status=True)
     serializer_class = CommentsEnglishSerializer
 
 
 class CommentsArabicListView(ListAPIView):
-    queryset = Comments.objects.filter(status=True)
+    queryset = CommentsArabic.objects.filter(status=True)
     serializer_class = CommentsArabicSerializer
 
 # * =================== Suggestions ===================
 
 
 class SuggestionsEnglishListView(ListAPIView):
-    queryset = Suggestions.objects.filter(status=True)
+    queryset = SuggestionsEnglish.objects.filter(status=True)
     serializer_class = SuggestionsEnglishSerializer
 
 
 class SuggestionsArabicListView(ListAPIView):
-    queryset = Suggestions.objects.filter(status=True)
+    queryset = SuggestionsArabic.objects.filter(status=True)
     serializer_class = SuggestionsArabicSerializer
 
 
@@ -82,10 +82,10 @@ class SuggestionsArabicListView(ListAPIView):
 
 
 class FAQEnglishListView(ListAPIView):
-    queryset = FAQ.objects.filter(status=True)
+    queryset = FAQEnglish.objects.filter(status=True)
     serializer_class = FAQEnglishSerializer
 
 
 class FAQArabicListView(ListAPIView):
-    queryset = FAQ.objects.filter(status=True)
+    queryset = FAQArabic.objects.filter(status=True)
     serializer_class = FAQArabicSerializer

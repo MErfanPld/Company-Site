@@ -8,10 +8,10 @@ from .serializers import *
 # * =================== News ===================
 
 class NewsEnglishListView(ListAPIView):
-    queryset = News.objects.filter(status=True)
+    queryset = NewsEnglish.objects.filter(status=True)
     serializer_class = NewsEnglishSerializer
 
 
 class NewsArabicListView(ListAPIView):
-    queryset = News.objects.filter(status=True)
+    queryset = NewsArabic.objects.filter(status=True)
     serializer_class = NewsArabicSerializer

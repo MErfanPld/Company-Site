@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from home.models import *
-# from news.models import News
+from news.models import *
+from products.models import ProductArabic, ProductEnglish
 
 
 class SliderEnglishSerializer(serializers.ModelSerializer):
@@ -21,12 +22,10 @@ class AboutUsEnglishSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
-
 class AboutUsArabicSerializer(serializers.ModelSerializer):
     class Meta:
         model = AboutUsArabic
         fields = "__all__"
-
 
 
 class ChooseUsEnglishSerializer(serializers.ModelSerializer):
@@ -77,7 +76,6 @@ class SuggestionsArabicSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
-
 class FAQEnglishSerializer(serializers.ModelSerializer):
     class Meta:
         model = FAQEnglish
@@ -90,7 +88,25 @@ class FAQArabicSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
-# class NewsSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = News
-#         fields = "__all__"
+class NewsEnglishSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = NewsEnglish
+        fields = "__all__"
+
+
+class NewsArabicSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = NewsArabic
+        fields = "__all__"
+
+
+class ProductEnglishSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ProductEnglish
+        fields = "__all__"
+
+
+class ProductArabicSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ProductArabic
+        fields = "__all__"

@@ -13,5 +13,5 @@ class ProductEnglishListView(ListAPIView):
 
 
 class ProductArabicListView(ListAPIView):
-    queryset = ProductArbic.objects.filter(status=True)
+    queryset = ProductArabic.objects.filter(status=True)
     serializer_class = ProductArabicSerializer

@@ -23,7 +23,7 @@ class ProductEnglish(models.Model):
         return f"{self.title} | {self.image} | {self.status}"
 
 
-class ProductArbic(models.Model):
+class ProductArabic(models.Model):
     title = models.CharField(max_length=255)
     price = models.FloatField()
     desc = models.TextField()

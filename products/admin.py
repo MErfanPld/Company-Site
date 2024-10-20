@@ -16,4 +16,4 @@ from .models import *
 
 
 admin.site.register(ProductEnglish)
-admin.site.register(ProductArbic)
+admin.site.register(ProductArabic)

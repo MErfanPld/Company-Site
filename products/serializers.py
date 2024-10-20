@@ -11,5 +11,5 @@ class ProductEnglishSerializer(serializers.ModelSerializer):
 
 class ProductArabicSerializer(serializers.ModelSerializer):
     class Meta:
-        model = ProductArbic
+        model = ProductArabic
         fields = "__all__"

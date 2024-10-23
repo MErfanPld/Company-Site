@@ -22,10 +22,9 @@ class SlidersEnglish(models.Model):
 
 
 class SlidersArabic(models.Model):
-    title = models.CharField(max_length=255, verbose_name="Title EN")
-    title_ar = models.CharField(max_length=255, verbose_name="Title AR")
+    title = models.CharField(max_length=255, verbose_name="Title")
     sub_title = models.CharField(
-        max_length=255, null=True, blank=True, verbose_name="Sub Title EN")
+        max_length=255, null=True, blank=True, verbose_name="Sub Title")
     image = models.ImageField(
         upload_to=upload_image_sliders, null=True, blank=True, verbose_name='Image')
     status = models.BooleanField(

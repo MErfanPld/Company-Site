@@ -8,7 +8,6 @@ from .utils import upload_image_product
 class ProductEnglish(models.Model):
     title = models.CharField(max_length=255)
     price = models.FloatField()
-    desc = models.TextField()
     content = models.TextField(verbose_name="Content EN")
     image = models.ImageField(
         upload_to=upload_image_product, null=True, blank=True, verbose_name='Image')
@@ -26,7 +25,6 @@ class ProductEnglish(models.Model):
 class ProductArabic(models.Model):
     title = models.CharField(max_length=255)
     price = models.FloatField()
-    desc = models.TextField()
     content = models.TextField(verbose_name="Content EN")
     image = models.ImageField(
         upload_to=upload_image_product, null=True, blank=True, verbose_name='Image')

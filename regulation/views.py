@@ -6,9 +6,14 @@ from .serializers import *
 # Create your views here.
 
 
-class SettingListView(ListAPIView):
-    queryset = Settings.objects.all()
-    serializer_class = SettingSerializer
+class SettingsEnglishListView(ListAPIView):
+    queryset = SettingsArabic.objects.all()
+    serializer_class = SettingsEnglishSerializer
+
+
+class SettingsArabicListView(ListAPIView):
+    queryset = SettingsArabic.objects.all()
+    serializer_class = SettingsArabicSerializer
 
 
 class SocialListView(ListAPIView):

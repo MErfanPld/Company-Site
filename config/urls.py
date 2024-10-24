@@ -32,6 +32,7 @@ urlpatterns = [
     path('', include('contact.urls')),
     path('', include('news.urls')),
     path('', include('products.urls')),
+    path('', include('aboutus.urls')),
     path('dashboard/', include('dashboard.urls')),
 ]
 

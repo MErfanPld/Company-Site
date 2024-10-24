@@ -1184,7 +1184,7 @@
         "kind": 6,
         "importPath": "aboutus.models",
         "description": "aboutus.models",
-        "peekOfCode": "class TeamEnglish(models.Model):\n    fullname = models.CharField(max_length=255)\n    skill = models.CharField(max_length=500)\n    image = models.ImageField(\n        upload_to=upload_image_team, null=True, blank=True, verbose_name='Image')\n    class Meta:\n        verbose_name = 'Team English'\n        verbose_name_plural = 'Team English'\n    def __str__(self):\n        return f\"{self.title} | {self.image}\"",
+        "peekOfCode": "class TeamEnglish(models.Model):\n    fullname = models.CharField(max_length=255)\n    skill = models.CharField(max_length=500)\n    image = models.ImageField(\n        upload_to=upload_image_team, null=True, blank=True, verbose_name='Image')\n    class Meta:\n        verbose_name = 'Team English'\n        verbose_name_plural = 'Team English'\n    def __str__(self):\n        return f\"{self.fullname} | {self.image}\"",
         "detail": "aboutus.models",
         "documentation": {}
     },
@@ -1193,7 +1193,7 @@
         "kind": 6,
         "importPath": "aboutus.models",
         "description": "aboutus.models",
-        "peekOfCode": "class TeamArabic(models.Model):\n    fullname = models.CharField(max_length=255)\n    skill = models.CharField(max_length=500)\n    image = models.ImageField(\n        upload_to=upload_image_team, null=True, blank=True, verbose_name='Image')\n    class Meta:\n        verbose_name = 'Team Arabic'\n        verbose_name_plural = 'Team Arabic'\n    def __str__(self):\n        return f\"{self.title} | {self.image}\"",
+        "peekOfCode": "class TeamArabic(models.Model):\n    fullname = models.CharField(max_length=255)\n    skill = models.CharField(max_length=500)\n    image = models.ImageField(\n        upload_to=upload_image_team, null=True, blank=True, verbose_name='Image')\n    class Meta:\n        verbose_name = 'Team Arabic'\n        verbose_name_plural = 'Team Arabic'\n    def __str__(self):\n        return f\"{self.fullname} | {self.image}\"",
         "detail": "aboutus.models",
         "documentation": {}
     },

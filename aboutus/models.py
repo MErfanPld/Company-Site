@@ -48,7 +48,7 @@ class TeamEnglish(models.Model):
         verbose_name_plural = 'Team English'
 
     def __str__(self):
-        return f"{self.title} | {self.image}"
+        return f"{self.fullname} | {self.image}"
 
 
 class TeamArabic(models.Model):
@@ -62,4 +62,4 @@ class TeamArabic(models.Model):
         verbose_name_plural = 'Team Arabic'
 
     def __str__(self):
-        return f"{self.title} | {self.image}"
+        return f"{self.fullname} | {self.image}"

@@ -14,3 +14,9 @@ def upload_image_team(instance, filename):
         slugify(instance.fullname, allow_unicode=True)
     name = str(time.time()) + '-' + str(instance.fullname) + '-' + filename
     return path + '/' + name
+
+def upload_image_sliders(instance, filename):
+    path = 'uploads/' + 'about/' +'sliders/' + \
+        slugify(instance.title_en, allow_unicode=True)
+    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename
+    return path + '/' + name

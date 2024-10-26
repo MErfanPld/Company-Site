@@ -33,6 +33,22 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -73,7 +89,39 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -697,6 +745,14 @@
         "documentation": {}
     },
     {
+        "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -815,6 +871,14 @@
         "importPath": "time",
         "description": "time",
         "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "slugify",
+        "importPath": "django.utils.text",
+        "description": "django.utils.text",
+        "isExtraImport": true,
+        "detail": "django.utils.text",
         "documentation": {}
     },
     {
@@ -1043,6 +1107,23 @@
         "documentation": {}
     },
     {
+        "label": "contact.utils",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "contact.utils",
+        "description": "contact.utils",
+        "detail": "contact.utils",
+        "documentation": {}
+    },
+    {
+        "label": "upload_image_contact_sliders",
+        "importPath": "contact.utils",
+        "description": "contact.utils",
+        "isExtraImport": true,
+        "detail": "contact.utils",
+        "documentation": {}
+    },
+    {
         "label": "DefaultRouter",
         "importPath": "rest_framework.routers",
         "description": "rest_framework.routers",
@@ -1153,12 +1234,39 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "aboutus.migrations.0002_aboutslidersarabic_aboutslidersenglish",
+        "description": "aboutus.migrations.0002_aboutslidersarabic_aboutslidersenglish",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('aboutus', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='AboutSlidersArabic',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title', models.CharField(max_length=255, verbose_name='Title')),",
+        "detail": "aboutus.migrations.0002_aboutslidersarabic_aboutslidersenglish",
+        "documentation": {}
+    },
+    {
         "label": "AboutusConfig",
         "kind": 6,
         "importPath": "aboutus.apps",
         "description": "aboutus.apps",
         "peekOfCode": "class AboutusConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'aboutus'",
         "detail": "aboutus.apps",
+        "documentation": {}
+    },
+    {
+        "label": "AboutSlidersEnglish",
+        "kind": 6,
+        "importPath": "aboutus.models",
+        "description": "aboutus.models",
+        "peekOfCode": "class AboutSlidersEnglish(models.Model):\n    title = models.CharField(max_length=255, verbose_name=\"Title\")\n    sub_title = models.CharField(\n        max_length=255, null=True, blank=True, verbose_name=\"Sub Title\")\n    image = models.ImageField(\n        upload_to=upload_image_sliders, null=True, blank=True, verbose_name='Image')\n    status = models.BooleanField(\n        default=True, verbose_name='Is Active?')\n    class Meta:\n        verbose_name = 'About Us Slider English'",
+        "detail": "aboutus.models",
+        "documentation": {}
+    },
+    {
+        "label": "AboutSlidersArabic",
+        "kind": 6,
+        "importPath": "aboutus.models",
+        "description": "aboutus.models",
+        "peekOfCode": "class AboutSlidersArabic(models.Model):\n    title = models.CharField(max_length=255, verbose_name=\"Title\")\n    sub_title = models.CharField(\n        max_length=255, null=True, blank=True, verbose_name=\"Sub Title\")\n    image = models.ImageField(\n        upload_to=upload_image_sliders, null=True, blank=True, verbose_name='Image')\n    status = models.BooleanField(\n        default=True, verbose_name='Is Active?')\n    class Meta:\n        verbose_name = 'About Us Slider Arabic'",
+        "detail": "aboutus.models",
         "documentation": {}
     },
     {
@@ -1195,6 +1303,24 @@
         "description": "aboutus.models",
         "peekOfCode": "class TeamArabic(models.Model):\n    fullname = models.CharField(max_length=255)\n    skill = models.CharField(max_length=500)\n    image = models.ImageField(\n        upload_to=upload_image_team, null=True, blank=True, verbose_name='Image')\n    class Meta:\n        verbose_name = 'Team Arabic'\n        verbose_name_plural = 'Team Arabic'\n    def __str__(self):\n        return f\"{self.fullname} | {self.image}\"",
         "detail": "aboutus.models",
+        "documentation": {}
+    },
+    {
+        "label": "AboutSliderEnglishSerializer",
+        "kind": 6,
+        "importPath": "aboutus.serializers",
+        "description": "aboutus.serializers",
+        "peekOfCode": "class AboutSliderEnglishSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = AboutSlidersEnglish\n        fields = \"__all__\"\nclass AboutSliderArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = AboutSlidersArabic\n        fields = \"__all__\"\nclass AchievementEnglishSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "aboutus.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "AboutSliderArabicSerializer",
+        "kind": 6,
+        "importPath": "aboutus.serializers",
+        "description": "aboutus.serializers",
+        "peekOfCode": "class AboutSliderArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = AboutSlidersArabic\n        fields = \"__all__\"\nclass AchievementEnglishSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = AchievementEnglish\n        fields = \"__all__\"\nclass AchievementArabicSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "aboutus.serializers",
         "documentation": {}
     },
     {
@@ -1238,7 +1364,7 @@
         "kind": 5,
         "importPath": "aboutus.urls",
         "description": "aboutus.urls",
-        "peekOfCode": "app_name = \"about-us\"\nurlpatterns = [\n    path(\"about-us/achievement/en/\", views.AchievementEnglishListView.as_view(),\n         name=\"achievement_english_list\"),\n    path(\"about-us/achievement/ar/\", views.AchievementArabicListView.as_view(),\n         name=\"achievement_arabic_list\"),\n    path(\"about-us/team/en/\", views.TeamEnglishListView.as_view(),\n         name=\"team_english_list\"),\n    path(\"about-us/team/ar/\", views.TeamArabicListView.as_view(),\n         name=\"team_arabic_list\"),",
+        "peekOfCode": "app_name = \"about-us\"\nurlpatterns = [\n    path(\"about-us/slider/en/\", views.AboutSliderEnglishListView.as_view(),\n         name=\"about_slider_english_list\"),\n    path(\"about-us/slider/ar/\", views.AboutSliderArabicListView.as_view(),\n         name=\"about_slider_arabic_list\"),\n    path(\"about-us/achievement/en/\", views.AchievementEnglishListView.as_view(),\n         name=\"achievement_english_list\"),\n    path(\"about-us/achievement/ar/\", views.AchievementArabicListView.as_view(),\n         name=\"achievement_arabic_list\"),",
         "detail": "aboutus.urls",
         "documentation": {}
     },
@@ -1247,7 +1373,7 @@
         "kind": 5,
         "importPath": "aboutus.urls",
         "description": "aboutus.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\"about-us/achievement/en/\", views.AchievementEnglishListView.as_view(),\n         name=\"achievement_english_list\"),\n    path(\"about-us/achievement/ar/\", views.AchievementArabicListView.as_view(),\n         name=\"achievement_arabic_list\"),\n    path(\"about-us/team/en/\", views.TeamEnglishListView.as_view(),\n         name=\"team_english_list\"),\n    path(\"about-us/team/ar/\", views.TeamArabicListView.as_view(),\n         name=\"team_arabic_list\"),\n]",
+        "peekOfCode": "urlpatterns = [\n    path(\"about-us/slider/en/\", views.AboutSliderEnglishListView.as_view(),\n         name=\"about_slider_english_list\"),\n    path(\"about-us/slider/ar/\", views.AboutSliderArabicListView.as_view(),\n         name=\"about_slider_arabic_list\"),\n    path(\"about-us/achievement/en/\", views.AchievementEnglishListView.as_view(),\n         name=\"achievement_english_list\"),\n    path(\"about-us/achievement/ar/\", views.AchievementArabicListView.as_view(),\n         name=\"achievement_arabic_list\"),\n    path(\"about-us/team/en/\", views.TeamEnglishListView.as_view(),",
         "detail": "aboutus.urls",
         "documentation": {}
     },
@@ -1265,8 +1391,35 @@
         "kind": 2,
         "importPath": "aboutus.utils",
         "description": "aboutus.utils",
-        "peekOfCode": "def upload_image_team(instance, filename):\n    path = 'uploads/' + 'team/' + \\\n        slugify(instance.fullname, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.fullname) + '-' + filename\n    return path + '/' + name",
+        "peekOfCode": "def upload_image_team(instance, filename):\n    path = 'uploads/' + 'team/' + \\\n        slugify(instance.fullname, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.fullname) + '-' + filename\n    return path + '/' + name\ndef upload_image_sliders(instance, filename):\n    path = 'uploads/' + 'about/' +'sliders/' + \\\n        slugify(instance.title_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename\n    return path + '/' + name",
         "detail": "aboutus.utils",
+        "documentation": {}
+    },
+    {
+        "label": "upload_image_sliders",
+        "kind": 2,
+        "importPath": "aboutus.utils",
+        "description": "aboutus.utils",
+        "peekOfCode": "def upload_image_sliders(instance, filename):\n    path = 'uploads/' + 'about/' +'sliders/' + \\\n        slugify(instance.title_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename\n    return path + '/' + name",
+        "detail": "aboutus.utils",
+        "documentation": {}
+    },
+    {
+        "label": "AboutSliderEnglishListView",
+        "kind": 6,
+        "importPath": "aboutus.views",
+        "description": "aboutus.views",
+        "peekOfCode": "class AboutSliderEnglishListView(ListAPIView):\n    queryset = AboutSlidersEnglish.objects.filter(status=True)\n    serializer_class = AboutSliderEnglishSerializer\nclass AboutSliderArabicListView(ListAPIView):\n    queryset = AboutSlidersArabic.objects.filter(status=True)\n    serializer_class = AboutSliderArabicSerializer\n# * =================== Achievement ===================\nclass AchievementEnglishListView(ListAPIView):\n    queryset = AchievementEnglish.objects.filter(status=True)\n    serializer_class = AchievementEnglishSerializer",
+        "detail": "aboutus.views",
+        "documentation": {}
+    },
+    {
+        "label": "AboutSliderArabicListView",
+        "kind": 6,
+        "importPath": "aboutus.views",
+        "description": "aboutus.views",
+        "peekOfCode": "class AboutSliderArabicListView(ListAPIView):\n    queryset = AboutSlidersArabic.objects.filter(status=True)\n    serializer_class = AboutSliderArabicSerializer\n# * =================== Achievement ===================\nclass AchievementEnglishListView(ListAPIView):\n    queryset = AchievementEnglish.objects.filter(status=True)\n    serializer_class = AchievementEnglishSerializer\nclass AchievementArabicListView(ListAPIView):\n    queryset = AchievementArabic.objects.filter(status=True)\n    serializer_class = AchievementArabicSerializer",
+        "detail": "aboutus.views",
         "documentation": {}
     },
     {
@@ -1567,11 +1720,20 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "contact.migrations.0003_contactslidersarabic_contactslidersenglish",
+        "description": "contact.migrations.0003_contactslidersarabic_contactslidersenglish",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('contact', '0002_alter_contactus_status'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='ContactSlidersArabic',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title', models.CharField(max_length=255, verbose_name='Title')),",
+        "detail": "contact.migrations.0003_contactslidersarabic_contactslidersenglish",
+        "documentation": {}
+    },
+    {
         "label": "ContactUsAdmin",
         "kind": 6,
         "importPath": "contact.admin",
         "description": "contact.admin",
-        "peekOfCode": "class ContactUsAdmin(admin.ModelAdmin):\n    list_display = ('fullname', 'email', 'phone','status')\n    list_filter = ('status',)\n    search_fields = ('fullname', 'email', 'phone')\nadmin.site.register(ContactUs, ContactUsAdmin)",
+        "peekOfCode": "class ContactUsAdmin(admin.ModelAdmin):\n    list_display = ('fullname', 'email', 'phone','status')\n    list_filter = ('status',)\n    search_fields = ('fullname', 'email', 'phone')\nadmin.site.register(ContactUs, ContactUsAdmin)\nadmin.site.register(ContactSlidersArabic)\nadmin.site.register(ContactSlidersEnglish)",
         "detail": "contact.admin",
         "documentation": {}
     },
@@ -1594,11 +1756,47 @@
         "documentation": {}
     },
     {
+        "label": "ContactSlidersEnglish",
+        "kind": 6,
+        "importPath": "contact.models",
+        "description": "contact.models",
+        "peekOfCode": "class ContactSlidersEnglish(models.Model):\n    title = models.CharField(max_length=255, verbose_name=\"Title\")\n    sub_title = models.CharField(\n        max_length=255, null=True, blank=True, verbose_name=\"Sub Title\")\n    image = models.ImageField(\n        upload_to=upload_image_contact_sliders, null=True, blank=True, verbose_name='Image')\n    status = models.BooleanField(\n        default=True, verbose_name='Is Active?')\n    class Meta:\n        verbose_name = 'Contact Slider English'",
+        "detail": "contact.models",
+        "documentation": {}
+    },
+    {
+        "label": "ContactSlidersArabic",
+        "kind": 6,
+        "importPath": "contact.models",
+        "description": "contact.models",
+        "peekOfCode": "class ContactSlidersArabic(models.Model):\n    title = models.CharField(max_length=255, verbose_name=\"Title\")\n    sub_title = models.CharField(\n        max_length=255, null=True, blank=True, verbose_name=\"Sub Title\")\n    image = models.ImageField(\n        upload_to=upload_image_contact_sliders, null=True, blank=True, verbose_name='Image')\n    status = models.BooleanField(\n        default=True, verbose_name='Is Active?')\n    class Meta:\n        verbose_name = 'Contact Slider Arabic'",
+        "detail": "contact.models",
+        "documentation": {}
+    },
+    {
         "label": "ContactUsSerializer",
         "kind": 6,
         "importPath": "contact.serializers",
         "description": "contact.serializers",
-        "peekOfCode": "class ContactUsSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = ContactUs\n        fields = ['fullname', 'email','phone', 'content']",
+        "peekOfCode": "class ContactUsSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = ContactUs\n        fields = ['fullname', 'email', 'phone', 'content']\nclass ContactSliderEnglishSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = ContactSlidersEnglish\n        fields = \"__all__\"\nclass ContactSliderArabicSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "contact.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ContactSliderEnglishSerializer",
+        "kind": 6,
+        "importPath": "contact.serializers",
+        "description": "contact.serializers",
+        "peekOfCode": "class ContactSliderEnglishSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = ContactSlidersEnglish\n        fields = \"__all__\"\nclass ContactSliderArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = ContactSlidersArabic\n        fields = \"__all__\"",
+        "detail": "contact.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ContactSliderArabicSerializer",
+        "kind": 6,
+        "importPath": "contact.serializers",
+        "description": "contact.serializers",
+        "peekOfCode": "class ContactSliderArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = ContactSlidersArabic\n        fields = \"__all__\"",
         "detail": "contact.serializers",
         "documentation": {}
     },
@@ -1607,7 +1805,7 @@
         "kind": 5,
         "importPath": "contact.urls",
         "description": "contact.urls",
-        "peekOfCode": "app_name = \"contacts\"\nrouter = DefaultRouter()\nrouter.register(r'contacts', ContactUsViewSet)\nurlpatterns = [\n    path('', include(router.urls)),\n]",
+        "peekOfCode": "app_name = \"contacts\"\nrouter = DefaultRouter()\nrouter.register(r'contacts', ContactUsViewSet)\nurlpatterns = [\n    path('', include(router.urls)),\n    path(\"contacts/slider/en/\", ContactSliderEnglishListView.as_view(),\n         name=\"contact_slider_english_list\"),\n    path(\"contacts/slider/ar/\", ContactSliderArabicListView.as_view(),\n         name=\"contact_slider_arabic_list\"),\n]",
         "detail": "contact.urls",
         "documentation": {}
     },
@@ -1616,7 +1814,7 @@
         "kind": 5,
         "importPath": "contact.urls",
         "description": "contact.urls",
-        "peekOfCode": "router = DefaultRouter()\nrouter.register(r'contacts', ContactUsViewSet)\nurlpatterns = [\n    path('', include(router.urls)),\n]",
+        "peekOfCode": "router = DefaultRouter()\nrouter.register(r'contacts', ContactUsViewSet)\nurlpatterns = [\n    path('', include(router.urls)),\n    path(\"contacts/slider/en/\", ContactSliderEnglishListView.as_view(),\n         name=\"contact_slider_english_list\"),\n    path(\"contacts/slider/ar/\", ContactSliderArabicListView.as_view(),\n         name=\"contact_slider_arabic_list\"),\n]",
         "detail": "contact.urls",
         "documentation": {}
     },
@@ -1625,8 +1823,17 @@
         "kind": 5,
         "importPath": "contact.urls",
         "description": "contact.urls",
-        "peekOfCode": "urlpatterns = [\n    path('', include(router.urls)),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('', include(router.urls)),\n    path(\"contacts/slider/en/\", ContactSliderEnglishListView.as_view(),\n         name=\"contact_slider_english_list\"),\n    path(\"contacts/slider/ar/\", ContactSliderArabicListView.as_view(),\n         name=\"contact_slider_arabic_list\"),\n]",
         "detail": "contact.urls",
+        "documentation": {}
+    },
+    {
+        "label": "upload_image_contact_sliders",
+        "kind": 2,
+        "importPath": "contact.utils",
+        "description": "contact.utils",
+        "peekOfCode": "def upload_image_contact_sliders(instance, filename):\n    path = 'uploads/' + 'contact/' +'sliders/' + \\\n        slugify(instance.title_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename\n    return path + '/' + name",
+        "detail": "contact.utils",
         "documentation": {}
     },
     {
@@ -1634,7 +1841,25 @@
         "kind": 6,
         "importPath": "contact.views",
         "description": "contact.views",
-        "peekOfCode": "class ContactUsViewSet(viewsets.ModelViewSet):\n    queryset = ContactUs.objects.all()\n    serializer_class = ContactUsSerializer",
+        "peekOfCode": "class ContactUsViewSet(viewsets.ModelViewSet):\n    queryset = ContactUs.objects.all()\n    serializer_class = ContactUsSerializer\n# * =================== Slider ===================\nclass ContactSliderEnglishListView(ListAPIView):\n    queryset = ContactSlidersEnglish.objects.filter(status=True)\n    serializer_class = ContactSliderEnglishSerializer\nclass ContactSliderArabicListView(ListAPIView):\n    queryset = ContactSlidersArabic.objects.filter(status=True)\n    serializer_class = ContactSliderArabicSerializer",
+        "detail": "contact.views",
+        "documentation": {}
+    },
+    {
+        "label": "ContactSliderEnglishListView",
+        "kind": 6,
+        "importPath": "contact.views",
+        "description": "contact.views",
+        "peekOfCode": "class ContactSliderEnglishListView(ListAPIView):\n    queryset = ContactSlidersEnglish.objects.filter(status=True)\n    serializer_class = ContactSliderEnglishSerializer\nclass ContactSliderArabicListView(ListAPIView):\n    queryset = ContactSlidersArabic.objects.filter(status=True)\n    serializer_class = ContactSliderArabicSerializer",
+        "detail": "contact.views",
+        "documentation": {}
+    },
+    {
+        "label": "ContactSliderArabicListView",
+        "kind": 6,
+        "importPath": "contact.views",
+        "description": "contact.views",
+        "peekOfCode": "class ContactSliderArabicListView(ListAPIView):\n    queryset = ContactSlidersArabic.objects.filter(status=True)\n    serializer_class = ContactSliderArabicSerializer",
         "detail": "contact.views",
         "documentation": {}
     },
@@ -2719,6 +2944,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "home.migrations.0010_serviceslidersarabic_serviceslidersenglish",
+        "description": "home.migrations.0010_serviceslidersarabic_serviceslidersenglish",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('home', '0009_remove_slidersarabic_title_ar_and_more'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='ServiceSlidersArabic',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('title', models.CharField(max_length=255, verbose_name='Title')),",
+        "detail": "home.migrations.0010_serviceslidersarabic_serviceslidersenglish",
+        "documentation": {}
+    },
+    {
         "label": "HomeConfig",
         "kind": 6,
         "importPath": "home.apps",
@@ -2849,7 +3083,25 @@
         "kind": 6,
         "importPath": "home.models",
         "description": "home.models",
-        "peekOfCode": "class FAQArabic(models.Model):\n    question = models.CharField(max_length=255, verbose_name=\"Question EN\")\n    answer = models.TextField(verbose_name=\"Answer EN\")\n    status = models.BooleanField(default=True, verbose_name=\"Is Active?\")\n    class Meta:\n        verbose_name = \"FAQ Arabic\"\n        verbose_name_plural = \"FAQs Arabic\"\n    def __str__(self):\n        return f\"{self.question} |{self.status} \"",
+        "peekOfCode": "class FAQArabic(models.Model):\n    question = models.CharField(max_length=255, verbose_name=\"Question EN\")\n    answer = models.TextField(verbose_name=\"Answer EN\")\n    status = models.BooleanField(default=True, verbose_name=\"Is Active?\")\n    class Meta:\n        verbose_name = \"FAQ Arabic\"\n        verbose_name_plural = \"FAQs Arabic\"\n    def __str__(self):\n        return f\"{self.question} |{self.status} \"\nclass ServiceSlidersEnglish(models.Model):",
+        "detail": "home.models",
+        "documentation": {}
+    },
+    {
+        "label": "ServiceSlidersEnglish",
+        "kind": 6,
+        "importPath": "home.models",
+        "description": "home.models",
+        "peekOfCode": "class ServiceSlidersEnglish(models.Model):\n    title = models.CharField(max_length=255, verbose_name=\"Title\")\n    sub_title = models.CharField(\n        max_length=255, null=True, blank=True, verbose_name=\"Sub Title\")\n    image = models.ImageField(\n        upload_to=upload_image_sliders, null=True, blank=True, verbose_name='Image')\n    status = models.BooleanField(\n        default=True, verbose_name='Is Active?')\n    class Meta:\n        verbose_name = 'Service Slider English'",
+        "detail": "home.models",
+        "documentation": {}
+    },
+    {
+        "label": "ServiceSlidersArabic",
+        "kind": 6,
+        "importPath": "home.models",
+        "description": "home.models",
+        "peekOfCode": "class ServiceSlidersArabic(models.Model):\n    title = models.CharField(max_length=255, verbose_name=\"Title\")\n    sub_title = models.CharField(\n        max_length=255, null=True, blank=True, verbose_name=\"Sub Title\")\n    image = models.ImageField(\n        upload_to=upload_image_sliders, null=True, blank=True, verbose_name='Image')\n    status = models.BooleanField(\n        default=True, verbose_name='Is Active?')\n    class Meta:\n        verbose_name = 'Service Slider Arabic'",
         "detail": "home.models",
         "documentation": {}
     },
@@ -2966,7 +3218,7 @@
         "kind": 6,
         "importPath": "home.serializers",
         "description": "home.serializers",
-        "peekOfCode": "class FAQEnglishSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = FAQEnglish\n        fields = \"__all__\"\nclass FAQArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = FAQArabic\n        fields = \"__all__\"",
+        "peekOfCode": "class FAQEnglishSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = FAQEnglish\n        fields = \"__all__\"\nclass FAQArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = FAQArabic\n        fields = \"__all__\"\nclass ServiceSliderEnglishSerializer(serializers.ModelSerializer):\n    class Meta:",
         "detail": "home.serializers",
         "documentation": {}
     },
@@ -2975,7 +3227,25 @@
         "kind": 6,
         "importPath": "home.serializers",
         "description": "home.serializers",
-        "peekOfCode": "class FAQArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = FAQArabic\n        fields = \"__all__\"",
+        "peekOfCode": "class FAQArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = FAQArabic\n        fields = \"__all__\"\nclass ServiceSliderEnglishSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = ServiceSlidersEnglish\n        fields = \"__all__\"\nclass ServiceSliderArabicSerializer(serializers.ModelSerializer):\n    class Meta:",
+        "detail": "home.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ServiceSliderEnglishSerializer",
+        "kind": 6,
+        "importPath": "home.serializers",
+        "description": "home.serializers",
+        "peekOfCode": "class ServiceSliderEnglishSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = ServiceSlidersEnglish\n        fields = \"__all__\"\nclass ServiceSliderArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = ServiceSlidersArabic\n        fields = \"__all__\"",
+        "detail": "home.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ServiceSliderArabicSerializer",
+        "kind": 6,
+        "importPath": "home.serializers",
+        "description": "home.serializers",
+        "peekOfCode": "class ServiceSliderArabicSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = ServiceSlidersArabic\n        fields = \"__all__\"",
         "detail": "home.serializers",
         "documentation": {}
     },
@@ -2984,7 +3254,7 @@
         "kind": 5,
         "importPath": "home.urls",
         "description": "home.urls",
-        "peekOfCode": "app_name = \"home\"\nurlpatterns = [\n    path(\"sliders/en/\", views.SliderEnglishListView.as_view(), name=\"slider_english_list\"),\n    path(\"sliders/ar/\", views.SliderArabicListView.as_view(), name=\"slider_arabic_list\"),\n    path(\"about/en/\", views.AboutUsEnglishListView.as_view(), name=\"about_english_list\"),\n    path(\"about/ar/\", views.AboutUsArabicListView.as_view(), name=\"about_arabic_list\"),\n    path(\"choose_us/en/\", views.ChooseUsEnglishListView.as_view(), name=\"choose_us_english_list\"),\n    path(\"choose_us/ar/\", views.ChooseUsArabicListView.as_view(), name=\"choose_us_arabic_list\"),\n    path(\"service/en/\", views.ServiceEnglishListView.as_view(), name=\"service_english_list\"),\n    path(\"service/ar/\", views.ServiceArabicListView.as_view(), name=\"service_arabic_list\"),",
+        "peekOfCode": "app_name = \"home\"\nurlpatterns = [\n    path(\"sliders/en/\", views.SliderEnglishListView.as_view(),\n         name=\"slider_english_list\"),\n    path(\"sliders/ar/\", views.SliderArabicListView.as_view(),\n         name=\"slider_arabic_list\"),\n    path(\"about/en/\", views.AboutUsEnglishListView.as_view(),\n         name=\"about_english_list\"),\n    path(\"about/ar/\", views.AboutUsArabicListView.as_view(),\n         name=\"about_arabic_list\"),",
         "detail": "home.urls",
         "documentation": {}
     },
@@ -2993,7 +3263,7 @@
         "kind": 5,
         "importPath": "home.urls",
         "description": "home.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\"sliders/en/\", views.SliderEnglishListView.as_view(), name=\"slider_english_list\"),\n    path(\"sliders/ar/\", views.SliderArabicListView.as_view(), name=\"slider_arabic_list\"),\n    path(\"about/en/\", views.AboutUsEnglishListView.as_view(), name=\"about_english_list\"),\n    path(\"about/ar/\", views.AboutUsArabicListView.as_view(), name=\"about_arabic_list\"),\n    path(\"choose_us/en/\", views.ChooseUsEnglishListView.as_view(), name=\"choose_us_english_list\"),\n    path(\"choose_us/ar/\", views.ChooseUsArabicListView.as_view(), name=\"choose_us_arabic_list\"),\n    path(\"service/en/\", views.ServiceEnglishListView.as_view(), name=\"service_english_list\"),\n    path(\"service/ar/\", views.ServiceArabicListView.as_view(), name=\"service_arabic_list\"),\n    path(\"comments/en/\", views.CommentsEnglishListView.as_view(), name=\"comments_english_list\"),",
+        "peekOfCode": "urlpatterns = [\n    path(\"sliders/en/\", views.SliderEnglishListView.as_view(),\n         name=\"slider_english_list\"),\n    path(\"sliders/ar/\", views.SliderArabicListView.as_view(),\n         name=\"slider_arabic_list\"),\n    path(\"about/en/\", views.AboutUsEnglishListView.as_view(),\n         name=\"about_english_list\"),\n    path(\"about/ar/\", views.AboutUsArabicListView.as_view(),\n         name=\"about_arabic_list\"),\n    path(\"choose_us/en/\", views.ChooseUsEnglishListView.as_view(),",
         "detail": "home.urls",
         "documentation": {}
     },
@@ -3173,7 +3443,7 @@
         "kind": 6,
         "importPath": "home.views",
         "description": "home.views",
-        "peekOfCode": "class FAQEnglishListView(ListAPIView):\n    queryset = FAQEnglish.objects.filter(status=True)\n    serializer_class = FAQEnglishSerializer\nclass FAQArabicListView(ListAPIView):\n    queryset = FAQArabic.objects.filter(status=True)\n    serializer_class = FAQArabicSerializer",
+        "peekOfCode": "class FAQEnglishListView(ListAPIView):\n    queryset = FAQEnglish.objects.filter(status=True)\n    serializer_class = FAQEnglishSerializer\nclass FAQArabicListView(ListAPIView):\n    queryset = FAQArabic.objects.filter(status=True)\n    serializer_class = FAQArabicSerializer\n# * =================== Service Slider ===================\nclass ServiceSliderEnglishListView(ListAPIView):\n    queryset = ServiceSlidersEnglish.objects.filter(status=True)\n    serializer_class = ServiceSliderEnglishSerializer",
         "detail": "home.views",
         "documentation": {}
     },
@@ -3182,7 +3452,25 @@
         "kind": 6,
         "importPath": "home.views",
         "description": "home.views",
-        "peekOfCode": "class FAQArabicListView(ListAPIView):\n    queryset = FAQArabic.objects.filter(status=True)\n    serializer_class = FAQArabicSerializer",
+        "peekOfCode": "class FAQArabicListView(ListAPIView):\n    queryset = FAQArabic.objects.filter(status=True)\n    serializer_class = FAQArabicSerializer\n# * =================== Service Slider ===================\nclass ServiceSliderEnglishListView(ListAPIView):\n    queryset = ServiceSlidersEnglish.objects.filter(status=True)\n    serializer_class = ServiceSliderEnglishSerializer\nclass ServiceSliderArabicListView(ListAPIView):\n    queryset = ServiceSlidersArabic.objects.filter(status=True)\n    serializer_class = ServiceSliderArabicSerializer",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "ServiceSliderEnglishListView",
+        "kind": 6,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "class ServiceSliderEnglishListView(ListAPIView):\n    queryset = ServiceSlidersEnglish.objects.filter(status=True)\n    serializer_class = ServiceSliderEnglishSerializer\nclass ServiceSliderArabicListView(ListAPIView):\n    queryset = ServiceSlidersArabic.objects.filter(status=True)\n    serializer_class = ServiceSliderArabicSerializer",
+        "detail": "home.views",
+        "documentation": {}
+    },
+    {
+        "label": "ServiceSliderArabicListView",
+        "kind": 6,
+        "importPath": "home.views",
+        "description": "home.views",
+        "peekOfCode": "class ServiceSliderArabicListView(ListAPIView):\n    queryset = ServiceSlidersArabic.objects.filter(status=True)\n    serializer_class = ServiceSliderArabicSerializer",
         "detail": "home.views",
         "documentation": {}
     },

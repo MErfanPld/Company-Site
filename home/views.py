@@ -89,3 +89,15 @@ class FAQEnglishListView(ListAPIView):
 class FAQArabicListView(ListAPIView):
     queryset = FAQArabic.objects.filter(status=True)
     serializer_class = FAQArabicSerializer
+
+# * =================== Service Slider ===================
+
+
+class ServiceSliderEnglishListView(ListAPIView):
+    queryset = ServiceSlidersEnglish.objects.filter(status=True)
+    serializer_class = ServiceSliderEnglishSerializer
+
+
+class ServiceSliderArabicListView(ListAPIView):
+    queryset = ServiceSlidersArabic.objects.filter(status=True)
+    serializer_class = ServiceSliderArabicSerializer

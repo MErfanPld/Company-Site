@@ -1,5 +1,7 @@
 from django.db import models
 
+from contact.utils import upload_image_contact_sliders
+
 # Create your models here.
 
 
@@ -20,3 +22,40 @@ class ContactUs(models.Model):
 
     def __str__(self):
         return f"{self.fullname} | {self.email} | {self.phone}"
+
+
+
+class ContactSlidersEnglish(models.Model):
+    title = models.CharField(max_length=255, verbose_name="Title")
+    sub_title = models.CharField(
+        max_length=255, null=True, blank=True, verbose_name="Sub Title")
+    image = models.ImageField(
+        upload_to=upload_image_contact_sliders, null=True, blank=True, verbose_name='Image')
+    status = models.BooleanField(
+        default=True, verbose_name='Is Active?')
+
+    class Meta:
+        verbose_name = 'Contact Slider English'
+        verbose_name_plural = 'Contact Sliders English'
+
+    def __str__(self):
+        return f"{self.title} | {self.image} | {self.status}"
+
+
+class ContactSlidersArabic(models.Model):
+    title = models.CharField(max_length=255, verbose_name="Title")
+    sub_title = models.CharField(
+        max_length=255, null=True, blank=True, verbose_name="Sub Title")
+    image = models.ImageField(
+        upload_to=upload_image_contact_sliders, null=True, blank=True, verbose_name='Image')
+    status = models.BooleanField(
+        default=True, verbose_name='Is Active?')
+
+    class Meta:
+        verbose_name = 'Contact Slider Arabic'
+        verbose_name_plural = 'Contact Sliders Arabic'
+
+    def __str__(self):
+        return f"{self.title}  | {self.image} | {self.status}"
+
+

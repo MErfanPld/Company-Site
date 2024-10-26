@@ -13,3 +13,16 @@ from .serializers import *
 class ContactUsViewSet(viewsets.ModelViewSet):
     queryset = ContactUs.objects.all()
     serializer_class = ContactUsSerializer
+
+
+# * =================== Slider ===================
+
+
+class ContactSliderEnglishListView(ListAPIView):
+    queryset = ContactSlidersEnglish.objects.filter(status=True)
+    serializer_class = ContactSliderEnglishSerializer
+
+
+class ContactSliderArabicListView(ListAPIView):
+    queryset = ContactSlidersArabic.objects.filter(status=True)
+    serializer_class = ContactSliderArabicSerializer

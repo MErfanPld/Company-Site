@@ -225,3 +225,39 @@ class FAQArabic(models.Model):
 
     def __str__(self):
         return f"{self.question} |{self.status} "
+    
+
+class ServiceSlidersEnglish(models.Model):
+    title = models.CharField(max_length=255, verbose_name="Title")
+    sub_title = models.CharField(
+        max_length=255, null=True, blank=True, verbose_name="Sub Title")
+    image = models.ImageField(
+        upload_to=upload_image_sliders, null=True, blank=True, verbose_name='Image')
+    status = models.BooleanField(
+        default=True, verbose_name='Is Active?')
+
+    class Meta:
+        verbose_name = 'Service Slider English'
+        verbose_name_plural = 'Service Sliders English'
+
+    def __str__(self):
+        return f"{self.title} | {self.image} | {self.status}"
+
+
+class ServiceSlidersArabic(models.Model):
+    title = models.CharField(max_length=255, verbose_name="Title")
+    sub_title = models.CharField(
+        max_length=255, null=True, blank=True, verbose_name="Sub Title")
+    image = models.ImageField(
+        upload_to=upload_image_sliders, null=True, blank=True, verbose_name='Image')
+    status = models.BooleanField(
+        default=True, verbose_name='Is Active?')
+
+    class Meta:
+        verbose_name = 'Service Slider Arabic'
+        verbose_name_plural = 'Service Sliders Arabic'
+
+    def __str__(self):
+        return f"{self.title}  | {self.image} | {self.status}"
+
+

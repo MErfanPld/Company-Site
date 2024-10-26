@@ -4,6 +4,11 @@ from . import views
 app_name = "about-us"
 
 urlpatterns = [
+    path("about-us/slider/en/", views.AboutSliderEnglishListView.as_view(),
+         name="about_slider_english_list"),
+    path("about-us/slider/ar/", views.AboutSliderArabicListView.as_view(),
+         name="about_slider_arabic_list"),
+
     path("about-us/achievement/en/", views.AchievementEnglishListView.as_view(),
          name="achievement_english_list"),
     path("about-us/achievement/ar/", views.AchievementArabicListView.as_view(),

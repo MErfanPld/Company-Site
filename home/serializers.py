@@ -20,12 +20,10 @@ class AboutUsEnglishSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
-
 class AboutUsArabicSerializer(serializers.ModelSerializer):
     class Meta:
         model = AboutUsArabic
         fields = "__all__"
-
 
 
 class ChooseUsEnglishSerializer(serializers.ModelSerializer):
@@ -76,7 +74,6 @@ class SuggestionsArabicSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
-
 class FAQEnglishSerializer(serializers.ModelSerializer):
     class Meta:
         model = FAQEnglish
@@ -86,4 +83,16 @@ class FAQEnglishSerializer(serializers.ModelSerializer):
 class FAQArabicSerializer(serializers.ModelSerializer):
     class Meta:
         model = FAQArabic
+        fields = "__all__"
+
+
+class ServiceSliderEnglishSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ServiceSlidersEnglish
+        fields = "__all__"
+
+
+class ServiceSliderArabicSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ServiceSlidersArabic
         fields = "__all__"

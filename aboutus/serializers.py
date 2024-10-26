@@ -1,6 +1,17 @@
 from rest_framework import serializers
 from .models import *
 
+class AboutSliderEnglishSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = AboutSlidersEnglish
+        fields = "__all__"
+
+
+class AboutSliderArabicSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = AboutSlidersArabic
+        fields = "__all__"
+
 
 class AchievementEnglishSerializer(serializers.ModelSerializer):
     class Meta:

@@ -10,3 +10,5 @@ class ContactUsAdmin(admin.ModelAdmin):
 
 
 admin.site.register(ContactUs, ContactUsAdmin)
+admin.site.register(ContactSlidersArabic)
+admin.site.register(ContactSlidersEnglish)

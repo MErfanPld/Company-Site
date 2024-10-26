@@ -5,6 +5,18 @@ from .serializers import *
 
 # Create your views here.
 
+# * =================== Slider ===================
+
+
+class AboutSliderEnglishListView(ListAPIView):
+    queryset = AboutSlidersEnglish.objects.filter(status=True)
+    serializer_class = AboutSliderEnglishSerializer
+
+
+class AboutSliderArabicListView(ListAPIView):
+    queryset = AboutSlidersArabic.objects.filter(status=True)
+    serializer_class = AboutSliderArabicSerializer
+
 # * =================== Achievement ===================
 
 

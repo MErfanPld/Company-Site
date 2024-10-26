@@ -1391,7 +1391,7 @@
         "kind": 2,
         "importPath": "aboutus.utils",
         "description": "aboutus.utils",
-        "peekOfCode": "def upload_image_team(instance, filename):\n    path = 'uploads/' + 'team/' + \\\n        slugify(instance.fullname, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.fullname) + '-' + filename\n    return path + '/' + name\ndef upload_image_sliders(instance, filename):\n    path = 'uploads/' + 'about/' +'sliders/' + \\\n        slugify(instance.title_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename\n    return path + '/' + name",
+        "peekOfCode": "def upload_image_team(instance, filename):\n    path = 'uploads/' + 'team/' + \\\n        slugify(instance.fullname, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.fullname) + '-' + filename\n    return path + '/' + name\ndef upload_image_sliders(instance, filename):\n    path = 'uploads/' + 'about/' +'sliders/' + \\\n        slugify(instance.title, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title) + '-' + filename\n    return path + '/' + name",
         "detail": "aboutus.utils",
         "documentation": {}
     },
@@ -1400,7 +1400,7 @@
         "kind": 2,
         "importPath": "aboutus.utils",
         "description": "aboutus.utils",
-        "peekOfCode": "def upload_image_sliders(instance, filename):\n    path = 'uploads/' + 'about/' +'sliders/' + \\\n        slugify(instance.title_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename\n    return path + '/' + name",
+        "peekOfCode": "def upload_image_sliders(instance, filename):\n    path = 'uploads/' + 'about/' +'sliders/' + \\\n        slugify(instance.title, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title) + '-' + filename\n    return path + '/' + name",
         "detail": "aboutus.utils",
         "documentation": {}
     },
@@ -1832,7 +1832,7 @@
         "kind": 2,
         "importPath": "contact.utils",
         "description": "contact.utils",
-        "peekOfCode": "def upload_image_contact_sliders(instance, filename):\n    path = 'uploads/' + 'contact/' +'sliders/' + \\\n        slugify(instance.title_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename\n    return path + '/' + name",
+        "peekOfCode": "def upload_image_contact_sliders(instance, filename):\n    path = 'uploads/' + 'contact/' +'sliders/' + \\\n        slugify(instance.title, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title) + '-' + filename\n    return path + '/' + name",
         "detail": "contact.utils",
         "documentation": {}
     },
@@ -3272,7 +3272,7 @@
         "kind": 2,
         "importPath": "home.utils",
         "description": "home.utils",
-        "peekOfCode": "def upload_image_sliders(instance, filename):\n    path = 'uploads/' + 'sliders/' + \\\n        slugify(instance.title_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename\n    return path + '/' + name\ndef upload_image_about(instance, filename):\n    path = 'uploads/' + 'abouts/' + \\\n        slugify(instance.title_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename\n    return path + '/' + name",
+        "peekOfCode": "def upload_image_sliders(instance, filename):\n    path = 'uploads/' + 'sliders/' + \\\n        slugify(instance.title, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title) + '-' + filename\n    return path + '/' + name\ndef upload_image_about(instance, filename):\n    path = 'uploads/' + 'abouts/' + \\\n        slugify(instance.title_en, allow_unicode=True)\n    name = str(time.time()) + '-' + str(instance.title_en) + '-' + filename\n    return path + '/' + name",
         "detail": "home.utils",
         "documentation": {}
     },

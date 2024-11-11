@@ -1,5 +1,7 @@
 from django.shortcuts import render
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.generics import *
+
 from home.models import *
 from .serializers import *
 
@@ -9,28 +11,33 @@ from .serializers import *
 
 
 class SlidersEnglishListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = SlidersEnglish.objects.all()
     serializer_class = SliderEnglishSerializer
 
 
 class SlidersEnglishCreateView(CreateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = SlidersEnglish.objects.all()
     serializer_class = SliderEnglishSerializer
 
 
 class SlidersEnglishDetailView(RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = SlidersEnglish.objects.all()
     serializer_class = SliderEnglishSerializer
     lookup_field = 'id'
 
 
 class SlidersEnglishUpdateView(UpdateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = SlidersEnglish.objects.all()
     serializer_class = SliderEnglishSerializer
     lookup_field = 'id'
 
 
 class SlidersEnglishDeleteView(DestroyAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = SlidersEnglish.objects.all()
     serializer_class = SliderEnglishSerializer
     lookup_field = 'id'
@@ -39,28 +46,33 @@ class SlidersEnglishDeleteView(DestroyAPIView):
 
 
 class SlidersArabicListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = SlidersArabic.objects.all()
     serializer_class = SliderArabicSerializer
 
 
 class SlidersArabicCreateView(CreateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = SlidersArabic.objects.all()
     serializer_class = SliderArabicSerializer
 
 
 class SlidersArabicDetailView(RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = SlidersArabic.objects.all()
     serializer_class = SliderArabicSerializer
     lookup_field = 'id'
 
 
 class SlidersArabicUpdateView(UpdateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = SlidersArabic.objects.all()
     serializer_class = SliderArabicSerializer
     lookup_field = 'id'
 
 
 class SlidersArabicDeleteView(DestroyAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = SlidersArabic.objects.all()
     serializer_class = SliderArabicSerializer
     lookup_field = 'id'
@@ -69,28 +81,33 @@ class SlidersArabicDeleteView(DestroyAPIView):
 
 
 class AboutUsEnglishListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = AboutUsEnglish.objects.all()
     serializer_class = AboutUsEnglishSerializer
 
 
 class AboutUsEnglishCreateView(CreateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = AboutUsEnglish.objects.all()
     serializer_class = AboutUsEnglishSerializer
 
 
 class AboutUsEnglishDetailView(RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = AboutUsEnglish.objects.all()
     serializer_class = AboutUsEnglishSerializer
     lookup_field = 'id'
 
 
 class AboutUsEnglishUpdateView(UpdateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = AboutUsEnglish.objects.all()
     serializer_class = AboutUsEnglishSerializer
     lookup_field = 'id'
 
 
 class AboutUsEnglishDeleteView(DestroyAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = AboutUsEnglish.objects.all()
     serializer_class = AboutUsEnglishSerializer
     lookup_field = 'id'
@@ -99,28 +116,33 @@ class AboutUsEnglishDeleteView(DestroyAPIView):
 
 
 class AboutUsArabicListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = AboutUsArabic.objects.all()
     serializer_class = AboutUsArabicSerializer
 
 
 class AboutUsArabicCreateView(CreateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = AboutUsArabic.objects.all()
     serializer_class = AboutUsArabicSerializer
 
 
 class AboutUsArabicDetailView(RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = AboutUsArabic.objects.all()
     serializer_class = AboutUsArabicSerializer
     lookup_field = 'id'
 
 
 class AboutUsArabicUpdateView(UpdateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = AboutUsArabic.objects.all()
     serializer_class = AboutUsArabicSerializer
     lookup_field = 'id'
 
 
 class AboutUsArabicDeleteView(DestroyAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = AboutUsArabic.objects.all()
     serializer_class = AboutUsArabicSerializer
     lookup_field = 'id'
@@ -129,28 +151,33 @@ class AboutUsArabicDeleteView(DestroyAPIView):
 
 
 class ChooseUsEnglishListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ChooseUsEnglish.objects.all()
     serializer_class = ChooseUsEnglishSerializer
 
 
 class ChooseUsEnglishCreateView(CreateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ChooseUsEnglish.objects.all()
     serializer_class = ChooseUsEnglishSerializer
 
 
 class ChooseUsEnglishDetailView(RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ChooseUsEnglish.objects.all()
     serializer_class = ChooseUsEnglishSerializer
     lookup_field = 'id'
 
 
 class ChooseUsEnglishUpdateView(UpdateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ChooseUsEnglish.objects.all()
     serializer_class = ChooseUsEnglishSerializer
     lookup_field = 'id'
 
 
 class ChooseUsEnglishDeleteView(DestroyAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ChooseUsEnglish.objects.all()
     serializer_class = ChooseUsEnglishSerializer
     lookup_field = 'id'
@@ -159,28 +186,33 @@ class ChooseUsEnglishDeleteView(DestroyAPIView):
 
 
 class ChooseUsArabicListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ChooseUsArabic.objects.all()
     serializer_class = ChooseUsArabicSerializer
 
 
 class ChooseUsArabicCreateView(CreateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ChooseUsArabic.objects.all()
     serializer_class = ChooseUsArabicSerializer
 
 
 class ChooseUsArabicDetailView(RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ChooseUsArabic.objects.all()
     serializer_class = ChooseUsArabicSerializer
     lookup_field = 'id'
 
 
 class ChooseUsArabicUpdateView(UpdateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ChooseUsArabic.objects.all()
     serializer_class = ChooseUsArabicSerializer
     lookup_field = 'id'
 
 
 class ChooseUsArabicDeleteView(DestroyAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ChooseUsArabic.objects.all()
     serializer_class = ChooseUsArabicSerializer
     lookup_field = 'id'
@@ -189,28 +221,33 @@ class ChooseUsArabicDeleteView(DestroyAPIView):
 
 
 class ServiceEnglishListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ServiceEnglish.objects.all()
     serializer_class = ServiceEnglishSerializer
 
 
 class ServiceEnglishCreateView(CreateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ServiceEnglish.objects.all()
     serializer_class = ServiceEnglishSerializer
 
 
 class ServiceEnglishDetailView(RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ServiceEnglish.objects.all()
     serializer_class = ServiceEnglishSerializer
     lookup_field = 'id'
 
 
 class ServiceEnglishUpdateView(UpdateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ServiceEnglish.objects.all()
     serializer_class = ServiceEnglishSerializer
     lookup_field = 'id'
 
 
 class ServiceEnglishDeleteView(DestroyAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ServiceEnglish.objects.all()
     serializer_class = ServiceEnglishSerializer
     lookup_field = 'id'
@@ -219,28 +256,33 @@ class ServiceEnglishDeleteView(DestroyAPIView):
 
 
 class ServiceArabicListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ServiceArabic.objects.all()
     serializer_class = ServiceArabicSerializer
 
 
 class ServiceArabicCreateView(CreateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ServiceArabic.objects.all()
     serializer_class = ServiceArabicSerializer
 
 
 class ServiceArabicDetailView(RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ServiceArabic.objects.all()
     serializer_class = ServiceArabicSerializer
     lookup_field = 'id'
 
 
 class ServiceArabicUpdateView(UpdateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ServiceArabic.objects.all()
     serializer_class = ServiceArabicSerializer
     lookup_field = 'id'
 
 
 class ServiceArabicDeleteView(DestroyAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ServiceArabic.objects.all()
     serializer_class = ServiceArabicSerializer
     lookup_field = 'id'
@@ -249,28 +291,33 @@ class ServiceArabicDeleteView(DestroyAPIView):
 
 
 class CommentsEnglishListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = CommentsEnglish.objects.all()
     serializer_class = CommentsEnglishSerializer
 
 
 class CommentsEnglishCreateView(CreateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = CommentsEnglish.objects.all()
     serializer_class = CommentsEnglishSerializer
 
 
 class CommentsEnglishDetailView(RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = CommentsEnglish.objects.all()
     serializer_class = CommentsEnglishSerializer
     lookup_field = 'id'
 
 
 class CommentsEnglishUpdateView(UpdateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = CommentsEnglish.objects.all()
     serializer_class = CommentsEnglishSerializer
     lookup_field = 'id'
 
 
 class CommentsEnglishDeleteView(DestroyAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = CommentsEnglish.objects.all()
     serializer_class = CommentsEnglishSerializer
     lookup_field = 'id'
@@ -279,28 +326,33 @@ class CommentsEnglishDeleteView(DestroyAPIView):
 
 
 class CommentsArabicListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = CommentsArabic.objects.all()
     serializer_class = CommentsArabicSerializer
 
 
 class CommentsArabicCreateView(CreateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = CommentsArabic.objects.all()
     serializer_class = CommentsArabicSerializer
 
 
 class CommentsArabicDetailView(RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = CommentsArabic.objects.all()
     serializer_class = CommentsArabicSerializer
     lookup_field = 'id'
 
 
 class CommentsArabicUpdateView(UpdateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = CommentsArabic.objects.all()
     serializer_class = CommentsArabicSerializer
     lookup_field = 'id'
 
 
 class CommentsArabicDeleteView(DestroyAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = CommentsArabic.objects.all()
     serializer_class = CommentsArabicSerializer
     lookup_field = 'id'
@@ -310,28 +362,33 @@ class CommentsArabicDeleteView(DestroyAPIView):
 
 
 class SuggestionsEnglishListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = SuggestionsEnglish.objects.all()
     serializer_class = SuggestionsEnglishSerializer
 
 
 class SuggestionsEnglishCreateView(CreateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = SuggestionsEnglish.objects.all()
     serializer_class = SuggestionsEnglishSerializer
 
 
 class SuggestionsEnglishDetailView(RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = SuggestionsEnglish.objects.all()
     serializer_class = SuggestionsEnglishSerializer
     lookup_field = 'id'
 
 
 class SuggestionsEnglishUpdateView(UpdateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = SuggestionsEnglish.objects.all()
     serializer_class = SuggestionsEnglishSerializer
     lookup_field = 'id'
 
 
 class SuggestionsEnglishDeleteView(DestroyAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = SuggestionsEnglish.objects.all()
     serializer_class = SuggestionsEnglishSerializer
     lookup_field = 'id'
@@ -340,28 +397,33 @@ class SuggestionsEnglishDeleteView(DestroyAPIView):
 
 
 class SuggestionsArabicListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = SuggestionsArabic.objects.all()
     serializer_class = SuggestionsArabicSerializer
 
 
 class SuggestionsArabicCreateView(CreateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = SuggestionsArabic.objects.all()
     serializer_class = SuggestionsArabicSerializer
 
 
 class SuggestionsArabicDetailView(RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = SuggestionsArabic.objects.all()
     serializer_class = SuggestionsArabicSerializer
     lookup_field = 'id'
 
 
 class SuggestionsArabicUpdateView(UpdateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = SuggestionsArabic.objects.all()
     serializer_class = SuggestionsArabicSerializer
     lookup_field = 'id'
 
 
 class SuggestionsArabicDeleteView(DestroyAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = SuggestionsArabic.objects.all()
     serializer_class = SuggestionsArabicSerializer
     lookup_field = 'id'
@@ -370,28 +432,33 @@ class SuggestionsArabicDeleteView(DestroyAPIView):
 
 
 class FAQEnglishListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = FAQEnglish.objects.all()
     serializer_class = FAQEnglishSerializer
 
 
 class FAQEnglishCreateView(CreateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = FAQEnglish.objects.all()
     serializer_class = FAQEnglishSerializer
 
 
 class FAQEnglishDetailView(RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = FAQEnglish.objects.all()
     serializer_class = FAQEnglishSerializer
     lookup_field = 'id'
 
 
 class FAQEnglishUpdateView(UpdateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = FAQEnglish.objects.all()
     serializer_class = FAQEnglishSerializer
     lookup_field = 'id'
 
 
 class FAQEnglishDeleteView(DestroyAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = FAQEnglish.objects.all()
     serializer_class = FAQEnglishSerializer
     lookup_field = 'id'
@@ -400,28 +467,33 @@ class FAQEnglishDeleteView(DestroyAPIView):
 
 
 class FAQArabicListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = FAQArabic.objects.all()
     serializer_class = FAQArabicSerializer
 
 
 class FAQArabicCreateView(CreateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = FAQArabic.objects.all()
     serializer_class = FAQArabicSerializer
 
 
 class FAQArabicDetailView(RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = FAQArabic.objects.all()
     serializer_class = FAQArabicSerializer
     lookup_field = 'id'
 
 
 class FAQArabicUpdateView(UpdateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = FAQArabic.objects.all()
     serializer_class = FAQArabicSerializer
     lookup_field = 'id'
 
 
 class FAQArabicDeleteView(DestroyAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = FAQArabic.objects.all()
     serializer_class = FAQArabicSerializer
     lookup_field = 'id'
@@ -431,28 +503,33 @@ class FAQArabicDeleteView(DestroyAPIView):
 
 
 class NewsEnglishListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = NewsEnglish.objects.all()
     serializer_class = NewsEnglishSerializer
 
 
 class NewsEnglishCreateView(CreateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = NewsEnglish.objects.all()
     serializer_class = NewsEnglishSerializer
 
 
 class NewsEnglishDetailView(RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = NewsEnglish.objects.all()
     serializer_class = NewsEnglishSerializer
     lookup_field = 'id'
 
 
 class NewsEnglishUpdateView(UpdateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = NewsEnglish.objects.all()
     serializer_class = NewsEnglishSerializer
     lookup_field = 'id'
 
 
 class NewsEnglishDeleteView(DestroyAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = NewsEnglish.objects.all()
     serializer_class = NewsEnglishSerializer
     lookup_field = 'id'
@@ -462,28 +539,33 @@ class NewsEnglishDeleteView(DestroyAPIView):
 
 
 class NewsArabicListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = NewsArabic.objects.all()
     serializer_class = NewsArabicSerializer
 
 
 class NewsArabicCreateView(CreateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = NewsArabic.objects.all()
     serializer_class = NewsArabicSerializer
 
 
 class NewsArabicDetailView(RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = NewsArabic.objects.all()
     serializer_class = NewsArabicSerializer
     lookup_field = 'id'
 
 
 class NewsArabicUpdateView(UpdateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = NewsArabic.objects.all()
     serializer_class = NewsArabicSerializer
     lookup_field = 'id'
 
 
 class NewsArabicDeleteView(DestroyAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = NewsArabic.objects.all()
     serializer_class = NewsArabicSerializer
     lookup_field = 'id'
@@ -493,28 +575,33 @@ class NewsArabicDeleteView(DestroyAPIView):
 
 
 class ProductEnglishListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ProductEnglish.objects.all()
     serializer_class = ProductEnglishSerializer
 
 
 class ProductEnglishCreateView(CreateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ProductEnglish.objects.all()
     serializer_class = ProductEnglishSerializer
 
 
 class ProductEnglishDetailView(RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ProductEnglish.objects.all()
     serializer_class = ProductEnglishSerializer
     lookup_field = 'id'
 
 
 class ProductEnglishUpdateView(UpdateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ProductEnglish.objects.all()
     serializer_class = ProductEnglishSerializer
     lookup_field = 'id'
 
 
 class ProductEnglishDeleteView(DestroyAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ProductEnglish.objects.all()
     serializer_class = ProductEnglishSerializer
     lookup_field = 'id'
@@ -524,28 +611,33 @@ class ProductEnglishDeleteView(DestroyAPIView):
 
 
 class ProductArabicListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ProductArabic.objects.all()
     serializer_class = ProductArabicSerializer
 
 
 class ProductArabicCreateView(CreateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ProductArabic.objects.all()
     serializer_class = ProductArabicSerializer
 
 
 class ProductArabicDetailView(RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ProductArabic.objects.all()
     serializer_class = ProductArabicSerializer
     lookup_field = 'id'
 
 
 class ProductArabicUpdateView(UpdateAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ProductArabic.objects.all()
     serializer_class = ProductArabicSerializer
     lookup_field = 'id'
 
 
 class ProductArabicDeleteView(DestroyAPIView):
+    permission_classes = [IsAuthenticated]
     queryset = ProductArabic.objects.all()
     serializer_class = ProductArabicSerializer
     lookup_field = 'id'

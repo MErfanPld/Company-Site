@@ -33,6 +33,7 @@ urlpatterns = [
     path('', include('news.urls')),
     path('', include('products.urls')),
     path('', include('aboutus.urls')),
+    path('', include('accounts.urls')),
     path('dashboard/', include('dashboard.urls')),
 ]
 

@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
+from datetime import timedelta
 import os
 from pathlib import Path
 
@@ -41,6 +42,7 @@ INSTALLED_APPS = [
     
     'rest_framework',
     'drf_spectacular',
+    'rest_framework_simplejwt',
     # 'corsheaders',
 
     'home',
@@ -50,6 +52,7 @@ INSTALLED_APPS = [
     'news',
     'products',
     'aboutus',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -146,7 +149,16 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "static_cdn", "media_root")
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+AUTH_USER_MODEL = 'accounts.User'
+
 REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+        "rest_framework.authentication.SessionAuthentication",
+    ),
+    'DEFAULT_THROTTLE_RATES': {
+        'login': '2/day'
+    },
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
 
@@ -160,3 +172,11 @@ SPECTACULAR_SETTINGS = {
 # CORS_ALLOWED_ORIGINS = [
 #     'http://localhost:3030',
 # ]
+
+
+SIMPLE_JWT = {
+    "ACCESS_TOKEN_LIFETIME": timedelta(days=1),
+    "REFRESH_TOKEN_LIFETIME": timedelta(seconds=5),
+    'ROTATE_REFRESH_TOKENS': True,
+    'BLACKLIST_AFTER_ROTATION': True
+}

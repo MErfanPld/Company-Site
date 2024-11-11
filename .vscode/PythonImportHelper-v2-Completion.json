@@ -73,6 +73,30 @@
         "documentation": {}
     },
     {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
@@ -502,6 +526,22 @@
         "description": "django.contrib",
         "isExtraImport": true,
         "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
         "documentation": {}
     },
     {
@@ -562,6 +602,22 @@
     },
     {
         "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
         "importPath": "rest_framework",
         "description": "rest_framework",
         "isExtraImport": true,
@@ -689,6 +745,14 @@
         "documentation": {}
     },
     {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
         "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -706,6 +770,14 @@
     },
     {
         "label": "reverse",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
         "isExtraImport": true,
@@ -978,7 +1050,31 @@
         "documentation": {}
     },
     {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "*",
+        "importPath": "rest_framework.generics",
+        "description": "rest_framework.generics",
+        "isExtraImport": true,
+        "detail": "rest_framework.generics",
+        "documentation": {}
+    },
+    {
+        "label": "GenericAPIView",
+        "importPath": "rest_framework.generics",
+        "description": "rest_framework.generics",
+        "isExtraImport": true,
+        "detail": "rest_framework.generics",
+        "documentation": {}
+    },
+    {
+        "label": "RetrieveUpdateAPIView",
         "importPath": "rest_framework.generics",
         "description": "rest_framework.generics",
         "isExtraImport": true,
@@ -1031,6 +1127,192 @@
         "description": "rest_framework.generics",
         "isExtraImport": true,
         "detail": "rest_framework.generics",
+        "documentation": {}
+    },
+    {
+        "label": "accounts.managers",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "accounts.managers",
+        "description": "accounts.managers",
+        "detail": "accounts.managers",
+        "documentation": {}
+    },
+    {
+        "label": "UserManager",
+        "importPath": "accounts.managers",
+        "description": "accounts.managers",
+        "isExtraImport": true,
+        "detail": "accounts.managers",
+        "documentation": {}
+    },
+    {
+        "label": "django.utils.timezone",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.utils.timezone",
+        "description": "django.utils.timezone",
+        "detail": "django.utils.timezone",
+        "documentation": {}
+    },
+    {
+        "label": "UserAdmin",
+        "importPath": "django.contrib.auth.admin",
+        "description": "django.contrib.auth.admin",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.admin",
+        "documentation": {}
+    },
+    {
+        "label": "Group",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractBaseUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "PermissionsMixin",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "BaseBackend",
+        "importPath": "django.contrib.auth.backends",
+        "description": "django.contrib.auth.backends",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.backends",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "BaseUserManager",
+        "importPath": "django.contrib.auth.base_user",
+        "description": "django.contrib.auth.base_user",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.base_user",
+        "documentation": {}
+    },
+    {
+        "label": "BaseUserManager",
+        "importPath": "django.contrib.auth.base_user",
+        "description": "django.contrib.auth.base_user",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.base_user",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "django.utils",
+        "description": "django.utils",
+        "isExtraImport": true,
+        "detail": "django.utils",
+        "documentation": {}
+    },
+    {
+        "label": "TokenRefreshView",
+        "importPath": "rest_framework_simplejwt.views",
+        "description": "rest_framework_simplejwt.views",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.views",
+        "documentation": {}
+    },
+    {
+        "label": "TokenObtainPairView",
+        "importPath": "rest_framework_simplejwt.views",
+        "description": "rest_framework_simplejwt.views",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.views",
+        "documentation": {}
+    },
+    {
+        "label": "TokenError",
+        "importPath": "rest_framework_simplejwt.exceptions",
+        "description": "rest_framework_simplejwt.exceptions",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "AllowAny",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticated",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticated",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "RefreshToken",
+        "importPath": "rest_framework_simplejwt.tokens",
+        "description": "rest_framework_simplejwt.tokens",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.tokens",
+        "documentation": {}
+    },
+    {
+        "label": "APIView",
+        "importPath": "rest_framework.views",
+        "description": "rest_framework.views",
+        "isExtraImport": true,
+        "detail": "rest_framework.views",
         "documentation": {}
     },
     {
@@ -1048,6 +1330,14 @@
         "description": "django.core.asgi",
         "isExtraImport": true,
         "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -1459,6 +1749,150 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "accounts.migrations.0001_initial",
+        "description": "accounts.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('auth', '0012_alter_user_first_name_max_length'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='User',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "accounts.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "UserAdmin",
+        "kind": 6,
+        "importPath": "accounts.admin",
+        "description": "accounts.admin",
+        "peekOfCode": "class UserAdmin(BaseUserAdmin):\n    list_display = ('username', 'email', 'first_name', 'last_name',\n                    'phoneNumber', 'is_superuser')\n    list_filter = ('is_superuser',)\n    readonly_fields = ('last_login',)\n    fieldsets = (\n        (\"Main\", {'fields': ('username', 'email', 'first_name',\n         'last_name', 'phoneNumber', 'is_superuser')}),\n        ('Permissions',\n         {'fields': ('is_active', 'is_staff', 'last_login')}),",
+        "detail": "accounts.admin",
+        "documentation": {}
+    },
+    {
+        "label": "AccountsConfig",
+        "kind": 6,
+        "importPath": "accounts.apps",
+        "description": "accounts.apps",
+        "peekOfCode": "class AccountsConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'accounts'",
+        "detail": "accounts.apps",
+        "documentation": {}
+    },
+    {
+        "label": "PhoneAuthenticationBackend",
+        "kind": 6,
+        "importPath": "accounts.authentication",
+        "description": "accounts.authentication",
+        "peekOfCode": "class PhoneAuthenticationBackend(BaseBackend):\n    def authenticate(self, request, phone_number=None, password=None, **kwargs):\n        try:\n            user = User.objects.get(phone_number=phone_number)\n            if user.check_password(password):\n                return user\n        except User.DoesNotExist:\n            return None",
+        "detail": "accounts.authentication",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 5,
+        "importPath": "accounts.authentication",
+        "description": "accounts.authentication",
+        "peekOfCode": "User = get_user_model()\nclass PhoneAuthenticationBackend(BaseBackend):\n    def authenticate(self, request, phone_number=None, password=None, **kwargs):\n        try:\n            user = User.objects.get(phone_number=phone_number)\n            if user.check_password(password):\n                return user\n        except User.DoesNotExist:\n            return None",
+        "detail": "accounts.authentication",
+        "documentation": {}
+    },
+    {
+        "label": "UserManager",
+        "kind": 6,
+        "importPath": "accounts.managers",
+        "description": "accounts.managers",
+        "peekOfCode": "class UserManager(BaseUserManager):\n    use_in_migrations = True\n    def normalize_phoneNumber(self, phoneNumber):\n        # اینجا می‌توانید کدهایی برای نرمال‌سازی شماره تلفن اضافه کنید\n        # برای مثال حذف فضاها، پر کردن شماره تلفن با پیش‌شماره و غیره\n        return phoneNumber.strip()  # به عنوان نمونه فقط فضای اضافی را حذف می‌کند\n    def _create_user(self, phoneNumber , username , password, **extra_fields):\n        if not phoneNumber:\n            raise ValueError('The given phoneNumber must be set')\n        if not username:",
+        "detail": "accounts.managers",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "accounts.models",
+        "description": "accounts.models",
+        "peekOfCode": "class User(AbstractBaseUser, PermissionsMixin):\n    username = models.CharField(('username'), max_length=30, unique=True)\n    email = models.EmailField(('email'), unique=True)\n    first_name = models.CharField(('first name'), max_length=30, blank=True)\n    last_name = models.CharField(('last name'), max_length=30, blank=True)\n    phoneNumber = models.CharField(('phone number'), max_length=11, blank=True, unique=True)  # اضافه کردن unique=True\n    date_joined = models.DateTimeField(('date joined'), default=timezone.now)\n    last_login = models.DateTimeField(('last login'), auto_now=True)\n    is_superuser = models.BooleanField(('is superuser'), default=False)\n    is_active = models.BooleanField(('active'), default=True)",
+        "detail": "accounts.models",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUserSerializer",
+        "kind": 6,
+        "importPath": "accounts.serializers",
+        "description": "accounts.serializers",
+        "peekOfCode": "class CustomUserSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = User\n        exclude = (\"email_verified_at\", \"date_joined\", \"last_login\",\n                   \"is_superuser\", \"is_active\", \"is_staff\", \"level\",)\nclass UserRegisterationSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = User\n        fields = (\"username\", \"email\", \"phoneNumber\", \"password\")\n        extra_kwargs = {\"password\": {\"write_only\": True}}",
+        "detail": "accounts.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "UserRegisterationSerializer",
+        "kind": 6,
+        "importPath": "accounts.serializers",
+        "description": "accounts.serializers",
+        "peekOfCode": "class UserRegisterationSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = User\n        fields = (\"username\", \"email\", \"phoneNumber\", \"password\")\n        extra_kwargs = {\"password\": {\"write_only\": True}}\n    def create(self, validated_data):\n        return User.objects.create_user(**validated_data)\nclass UserLoginSerializer(serializers.Serializer):\n    phoneNumber = serializers.CharField()\n    password = serializers.CharField()",
+        "detail": "accounts.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "UserLoginSerializer",
+        "kind": 6,
+        "importPath": "accounts.serializers",
+        "description": "accounts.serializers",
+        "peekOfCode": "class UserLoginSerializer(serializers.Serializer):\n    phoneNumber = serializers.CharField()\n    password = serializers.CharField()\n    def validate(self, data):\n        phoneNumber = data.get('phoneNumber')\n        password = data.get('password')\n        user = authenticate(username=phoneNumber, password=password)\n        if user is None:\n            raise serializers.ValidationError(\"Incorrect Credentials\")\n        return user",
+        "detail": "accounts.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "app_name",
+        "kind": 5,
+        "importPath": "accounts.urls",
+        "description": "accounts.urls",
+        "peekOfCode": "app_name = \"accounts\"\nurlpatterns = [\n    path(\"accounts/register/\", views.UserRegisterationAPIView.as_view(), name=\"create-user\"),\n    path(\"accounts/login/\", views.UserLoginAPIView.as_view(), name=\"login-user\"),\n    path(\"token/refresh/\", TokenRefreshView.as_view(), name=\"token-refresh\"),\n    path(\"accounts/logout/\", views.UserLogoutAPIView.as_view(), name=\"logout-user\"),\n]",
+        "detail": "accounts.urls",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "accounts.urls",
+        "description": "accounts.urls",
+        "peekOfCode": "urlpatterns = [\n    path(\"accounts/register/\", views.UserRegisterationAPIView.as_view(), name=\"create-user\"),\n    path(\"accounts/login/\", views.UserLoginAPIView.as_view(), name=\"login-user\"),\n    path(\"token/refresh/\", TokenRefreshView.as_view(), name=\"token-refresh\"),\n    path(\"accounts/logout/\", views.UserLogoutAPIView.as_view(), name=\"logout-user\"),\n]",
+        "detail": "accounts.urls",
+        "documentation": {}
+    },
+    {
+        "label": "UserRegisterationAPIView",
+        "kind": 6,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "class UserRegisterationAPIView(GenericAPIView):\n    permission_classes = (AllowAny,)\n    serializer_class = serializers.UserRegisterationSerializer\n    def post(self, request, *args, **kwargs):\n        serializer = self.get_serializer(data=request.data)\n        serializer.is_valid(raise_exception=True)\n        user = serializer.save()\n        token = RefreshToken.for_user(user)\n        data = serializer.data\n        data[\"tokens\"] = {\"refresh\": str(",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "UserLoginAPIView",
+        "kind": 6,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "class UserLoginAPIView(APIView):\n    permission_classes = (AllowAny,)\n    serializer_class = serializers.UserLoginSerializer\n    def post(self, request, *args, **kwargs):\n        serializer = self.serializer_class(data=request.data)\n        serializer.is_valid(raise_exception=True)\n        user = serializer.validated_data  # user being authenticated\n        if not user:\n            return Response({\"detail\": \"Incorrect Credentials\"}, status=status.HTTP_401_UNAUTHORIZED)\n        # اگر احراز هویت موفق بود، توکن جدید بسازید",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "UserLogoutAPIView",
+        "kind": 6,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "class UserLogoutAPIView(GenericAPIView):\n    permission_classes = (IsAuthenticated,)\n    def post(self, request):\n        try:\n            refresh_token = request.data[\"refresh_token\"]\n            token = RefreshToken(refresh_token)\n            token.blacklist()\n            return Response(status=status.HTTP_205_RESET_CONTENT)\n        except Exception as e:\n            return Response(status=status.HTTP_400_BAD_REQUEST)",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 5,
+        "importPath": "accounts.views",
+        "description": "accounts.views",
+        "peekOfCode": "User = get_user_model()\nclass UserRegisterationAPIView(GenericAPIView):\n    permission_classes = (AllowAny,)\n    serializer_class = serializers.UserRegisterationSerializer\n    def post(self, request, *args, **kwargs):\n        serializer = self.get_serializer(data=request.data)\n        serializer.is_valid(raise_exception=True)\n        user = serializer.save()\n        token = RefreshToken.for_user(user)\n        data = serializer.data",
+        "detail": "accounts.views",
+        "documentation": {}
+    },
+    {
         "label": "application",
         "kind": 5,
         "importPath": "config.asgi",
@@ -1517,7 +1951,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',\n    'drf_spectacular',\n    # 'corsheaders',",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',\n    'drf_spectacular',\n    'rest_framework_simplejwt',",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -1625,7 +2059,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "STATICFILES_DIRS = [\n    os.path.join(BASE_DIR, \"staticfiles\")\n]\nSTATIC_ROOT = os.path.join(BASE_DIR, \"static_cdn\")\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, \"static_cdn\", \"media_root\")\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nREST_FRAMEWORK = {",
+        "peekOfCode": "STATICFILES_DIRS = [\n    os.path.join(BASE_DIR, \"staticfiles\")\n]\nSTATIC_ROOT = os.path.join(BASE_DIR, \"static_cdn\")\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, \"static_cdn\", \"media_root\")\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'accounts.User'",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -1634,7 +2068,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "STATIC_ROOT = os.path.join(BASE_DIR, \"static_cdn\")\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, \"static_cdn\", \"media_root\")\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nREST_FRAMEWORK = {\n    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',\n}\nSPECTACULAR_SETTINGS = {",
+        "peekOfCode": "STATIC_ROOT = os.path.join(BASE_DIR, \"static_cdn\")\nMEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, \"static_cdn\", \"media_root\")\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'accounts.User'\nREST_FRAMEWORK = {\n    \"DEFAULT_AUTHENTICATION_CLASSES\": (\n        \"rest_framework_simplejwt.authentication.JWTAuthentication\",",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -1643,7 +2077,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "MEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, \"static_cdn\", \"media_root\")\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nREST_FRAMEWORK = {\n    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',\n}\nSPECTACULAR_SETTINGS = {\n    'TITLE': 'Project API',",
+        "peekOfCode": "MEDIA_URL = '/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, \"static_cdn\", \"media_root\")\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'accounts.User'\nREST_FRAMEWORK = {\n    \"DEFAULT_AUTHENTICATION_CLASSES\": (\n        \"rest_framework_simplejwt.authentication.JWTAuthentication\",\n        \"rest_framework.authentication.SessionAuthentication\",",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -1652,7 +2086,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "MEDIA_ROOT = os.path.join(BASE_DIR, \"static_cdn\", \"media_root\")\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nREST_FRAMEWORK = {\n    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',\n}\nSPECTACULAR_SETTINGS = {\n    'TITLE': 'Project API',\n    'DESCRIPTION': 'Project description',",
+        "peekOfCode": "MEDIA_ROOT = os.path.join(BASE_DIR, \"static_cdn\", \"media_root\")\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'accounts.User'\nREST_FRAMEWORK = {\n    \"DEFAULT_AUTHENTICATION_CLASSES\": (\n        \"rest_framework_simplejwt.authentication.JWTAuthentication\",\n        \"rest_framework.authentication.SessionAuthentication\",\n    ),",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -1661,7 +2095,16 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nREST_FRAMEWORK = {\n    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',\n}\nSPECTACULAR_SETTINGS = {\n    'TITLE': 'Project API',\n    'DESCRIPTION': 'Project description',\n    'VERSION': '1.0.0',\n    'SERVE_INCLUDE_SCHEMA': False,\n}",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\nAUTH_USER_MODEL = 'accounts.User'\nREST_FRAMEWORK = {\n    \"DEFAULT_AUTHENTICATION_CLASSES\": (\n        \"rest_framework_simplejwt.authentication.JWTAuthentication\",\n        \"rest_framework.authentication.SessionAuthentication\",\n    ),\n    'DEFAULT_THROTTLE_RATES': {\n        'login': '2/day'\n    },",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_USER_MODEL",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "AUTH_USER_MODEL = 'accounts.User'\nREST_FRAMEWORK = {\n    \"DEFAULT_AUTHENTICATION_CLASSES\": (\n        \"rest_framework_simplejwt.authentication.JWTAuthentication\",\n        \"rest_framework.authentication.SessionAuthentication\",\n    ),\n    'DEFAULT_THROTTLE_RATES': {\n        'login': '2/day'\n    },\n    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -1670,7 +2113,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "REST_FRAMEWORK = {\n    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',\n}\nSPECTACULAR_SETTINGS = {\n    'TITLE': 'Project API',\n    'DESCRIPTION': 'Project description',\n    'VERSION': '1.0.0',\n    'SERVE_INCLUDE_SCHEMA': False,\n}\n# CORS_ALLOWED_ORIGINS = [",
+        "peekOfCode": "REST_FRAMEWORK = {\n    \"DEFAULT_AUTHENTICATION_CLASSES\": (\n        \"rest_framework_simplejwt.authentication.JWTAuthentication\",\n        \"rest_framework.authentication.SessionAuthentication\",\n    ),\n    'DEFAULT_THROTTLE_RATES': {\n        'login': '2/day'\n    },\n    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',\n}",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -1679,7 +2122,16 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "SPECTACULAR_SETTINGS = {\n    'TITLE': 'Project API',\n    'DESCRIPTION': 'Project description',\n    'VERSION': '1.0.0',\n    'SERVE_INCLUDE_SCHEMA': False,\n}\n# CORS_ALLOWED_ORIGINS = [\n#     'http://localhost:3030',\n# ]",
+        "peekOfCode": "SPECTACULAR_SETTINGS = {\n    'TITLE': 'Project API',\n    'DESCRIPTION': 'Project description',\n    'VERSION': '1.0.0',\n    'SERVE_INCLUDE_SCHEMA': False,\n}\n# CORS_ALLOWED_ORIGINS = [\n#     'http://localhost:3030',\n# ]\nSIMPLE_JWT = {",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SIMPLE_JWT",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "SIMPLE_JWT = {\n    \"ACCESS_TOKEN_LIFETIME\": timedelta(days=1),\n    \"REFRESH_TOKEN_LIFETIME\": timedelta(seconds=5),\n    'ROTATE_REFRESH_TOKENS': True,\n    'BLACKLIST_AFTER_ROTATION': True\n}",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -2057,7 +2509,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class SlidersEnglishListView(ListAPIView):\n    queryset = SlidersEnglish.objects.all()\n    serializer_class = SliderEnglishSerializer\nclass SlidersEnglishCreateView(CreateAPIView):\n    queryset = SlidersEnglish.objects.all()\n    serializer_class = SliderEnglishSerializer\nclass SlidersEnglishDetailView(RetrieveAPIView):\n    queryset = SlidersEnglish.objects.all()\n    serializer_class = SliderEnglishSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class SlidersEnglishListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SlidersEnglish.objects.all()\n    serializer_class = SliderEnglishSerializer\nclass SlidersEnglishCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SlidersEnglish.objects.all()\n    serializer_class = SliderEnglishSerializer\nclass SlidersEnglishDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2066,7 +2518,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class SlidersEnglishCreateView(CreateAPIView):\n    queryset = SlidersEnglish.objects.all()\n    serializer_class = SliderEnglishSerializer\nclass SlidersEnglishDetailView(RetrieveAPIView):\n    queryset = SlidersEnglish.objects.all()\n    serializer_class = SliderEnglishSerializer\n    lookup_field = 'id'\nclass SlidersEnglishUpdateView(UpdateAPIView):\n    queryset = SlidersEnglish.objects.all()\n    serializer_class = SliderEnglishSerializer",
+        "peekOfCode": "class SlidersEnglishCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SlidersEnglish.objects.all()\n    serializer_class = SliderEnglishSerializer\nclass SlidersEnglishDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SlidersEnglish.objects.all()\n    serializer_class = SliderEnglishSerializer\n    lookup_field = 'id'\nclass SlidersEnglishUpdateView(UpdateAPIView):",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2075,7 +2527,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class SlidersEnglishDetailView(RetrieveAPIView):\n    queryset = SlidersEnglish.objects.all()\n    serializer_class = SliderEnglishSerializer\n    lookup_field = 'id'\nclass SlidersEnglishUpdateView(UpdateAPIView):\n    queryset = SlidersEnglish.objects.all()\n    serializer_class = SliderEnglishSerializer\n    lookup_field = 'id'\nclass SlidersEnglishDeleteView(DestroyAPIView):\n    queryset = SlidersEnglish.objects.all()",
+        "peekOfCode": "class SlidersEnglishDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SlidersEnglish.objects.all()\n    serializer_class = SliderEnglishSerializer\n    lookup_field = 'id'\nclass SlidersEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SlidersEnglish.objects.all()\n    serializer_class = SliderEnglishSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2084,7 +2536,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class SlidersEnglishUpdateView(UpdateAPIView):\n    queryset = SlidersEnglish.objects.all()\n    serializer_class = SliderEnglishSerializer\n    lookup_field = 'id'\nclass SlidersEnglishDeleteView(DestroyAPIView):\n    queryset = SlidersEnglish.objects.all()\n    serializer_class = SliderEnglishSerializer\n    lookup_field = 'id'\n# * =================== Slider Arabic Dashboard ===================\nclass SlidersArabicListView(ListAPIView):",
+        "peekOfCode": "class SlidersEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SlidersEnglish.objects.all()\n    serializer_class = SliderEnglishSerializer\n    lookup_field = 'id'\nclass SlidersEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SlidersEnglish.objects.all()\n    serializer_class = SliderEnglishSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2093,7 +2545,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class SlidersEnglishDeleteView(DestroyAPIView):\n    queryset = SlidersEnglish.objects.all()\n    serializer_class = SliderEnglishSerializer\n    lookup_field = 'id'\n# * =================== Slider Arabic Dashboard ===================\nclass SlidersArabicListView(ListAPIView):\n    queryset = SlidersArabic.objects.all()\n    serializer_class = SliderArabicSerializer\nclass SlidersArabicCreateView(CreateAPIView):\n    queryset = SlidersArabic.objects.all()",
+        "peekOfCode": "class SlidersEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SlidersEnglish.objects.all()\n    serializer_class = SliderEnglishSerializer\n    lookup_field = 'id'\n# * =================== Slider Arabic Dashboard ===================\nclass SlidersArabicListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SlidersArabic.objects.all()\n    serializer_class = SliderArabicSerializer",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2102,7 +2554,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class SlidersArabicListView(ListAPIView):\n    queryset = SlidersArabic.objects.all()\n    serializer_class = SliderArabicSerializer\nclass SlidersArabicCreateView(CreateAPIView):\n    queryset = SlidersArabic.objects.all()\n    serializer_class = SliderArabicSerializer\nclass SlidersArabicDetailView(RetrieveAPIView):\n    queryset = SlidersArabic.objects.all()\n    serializer_class = SliderArabicSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class SlidersArabicListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SlidersArabic.objects.all()\n    serializer_class = SliderArabicSerializer\nclass SlidersArabicCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SlidersArabic.objects.all()\n    serializer_class = SliderArabicSerializer\nclass SlidersArabicDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2111,7 +2563,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class SlidersArabicCreateView(CreateAPIView):\n    queryset = SlidersArabic.objects.all()\n    serializer_class = SliderArabicSerializer\nclass SlidersArabicDetailView(RetrieveAPIView):\n    queryset = SlidersArabic.objects.all()\n    serializer_class = SliderArabicSerializer\n    lookup_field = 'id'\nclass SlidersArabicUpdateView(UpdateAPIView):\n    queryset = SlidersArabic.objects.all()\n    serializer_class = SliderArabicSerializer",
+        "peekOfCode": "class SlidersArabicCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SlidersArabic.objects.all()\n    serializer_class = SliderArabicSerializer\nclass SlidersArabicDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SlidersArabic.objects.all()\n    serializer_class = SliderArabicSerializer\n    lookup_field = 'id'\nclass SlidersArabicUpdateView(UpdateAPIView):",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2120,7 +2572,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class SlidersArabicDetailView(RetrieveAPIView):\n    queryset = SlidersArabic.objects.all()\n    serializer_class = SliderArabicSerializer\n    lookup_field = 'id'\nclass SlidersArabicUpdateView(UpdateAPIView):\n    queryset = SlidersArabic.objects.all()\n    serializer_class = SliderArabicSerializer\n    lookup_field = 'id'\nclass SlidersArabicDeleteView(DestroyAPIView):\n    queryset = SlidersArabic.objects.all()",
+        "peekOfCode": "class SlidersArabicDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SlidersArabic.objects.all()\n    serializer_class = SliderArabicSerializer\n    lookup_field = 'id'\nclass SlidersArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SlidersArabic.objects.all()\n    serializer_class = SliderArabicSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2129,7 +2581,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class SlidersArabicUpdateView(UpdateAPIView):\n    queryset = SlidersArabic.objects.all()\n    serializer_class = SliderArabicSerializer\n    lookup_field = 'id'\nclass SlidersArabicDeleteView(DestroyAPIView):\n    queryset = SlidersArabic.objects.all()\n    serializer_class = SliderArabicSerializer\n    lookup_field = 'id'\n# * =================== AboutUs English Dashboard ===================\nclass AboutUsEnglishListView(ListAPIView):",
+        "peekOfCode": "class SlidersArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SlidersArabic.objects.all()\n    serializer_class = SliderArabicSerializer\n    lookup_field = 'id'\nclass SlidersArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SlidersArabic.objects.all()\n    serializer_class = SliderArabicSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2138,7 +2590,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class SlidersArabicDeleteView(DestroyAPIView):\n    queryset = SlidersArabic.objects.all()\n    serializer_class = SliderArabicSerializer\n    lookup_field = 'id'\n# * =================== AboutUs English Dashboard ===================\nclass AboutUsEnglishListView(ListAPIView):\n    queryset = AboutUsEnglish.objects.all()\n    serializer_class = AboutUsEnglishSerializer\nclass AboutUsEnglishCreateView(CreateAPIView):\n    queryset = AboutUsEnglish.objects.all()",
+        "peekOfCode": "class SlidersArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SlidersArabic.objects.all()\n    serializer_class = SliderArabicSerializer\n    lookup_field = 'id'\n# * =================== AboutUs English Dashboard ===================\nclass AboutUsEnglishListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutUsEnglish.objects.all()\n    serializer_class = AboutUsEnglishSerializer",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2147,7 +2599,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class AboutUsEnglishListView(ListAPIView):\n    queryset = AboutUsEnglish.objects.all()\n    serializer_class = AboutUsEnglishSerializer\nclass AboutUsEnglishCreateView(CreateAPIView):\n    queryset = AboutUsEnglish.objects.all()\n    serializer_class = AboutUsEnglishSerializer\nclass AboutUsEnglishDetailView(RetrieveAPIView):\n    queryset = AboutUsEnglish.objects.all()\n    serializer_class = AboutUsEnglishSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class AboutUsEnglishListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutUsEnglish.objects.all()\n    serializer_class = AboutUsEnglishSerializer\nclass AboutUsEnglishCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutUsEnglish.objects.all()\n    serializer_class = AboutUsEnglishSerializer\nclass AboutUsEnglishDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2156,7 +2608,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class AboutUsEnglishCreateView(CreateAPIView):\n    queryset = AboutUsEnglish.objects.all()\n    serializer_class = AboutUsEnglishSerializer\nclass AboutUsEnglishDetailView(RetrieveAPIView):\n    queryset = AboutUsEnglish.objects.all()\n    serializer_class = AboutUsEnglishSerializer\n    lookup_field = 'id'\nclass AboutUsEnglishUpdateView(UpdateAPIView):\n    queryset = AboutUsEnglish.objects.all()\n    serializer_class = AboutUsEnglishSerializer",
+        "peekOfCode": "class AboutUsEnglishCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutUsEnglish.objects.all()\n    serializer_class = AboutUsEnglishSerializer\nclass AboutUsEnglishDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutUsEnglish.objects.all()\n    serializer_class = AboutUsEnglishSerializer\n    lookup_field = 'id'\nclass AboutUsEnglishUpdateView(UpdateAPIView):",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2165,7 +2617,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class AboutUsEnglishDetailView(RetrieveAPIView):\n    queryset = AboutUsEnglish.objects.all()\n    serializer_class = AboutUsEnglishSerializer\n    lookup_field = 'id'\nclass AboutUsEnglishUpdateView(UpdateAPIView):\n    queryset = AboutUsEnglish.objects.all()\n    serializer_class = AboutUsEnglishSerializer\n    lookup_field = 'id'\nclass AboutUsEnglishDeleteView(DestroyAPIView):\n    queryset = AboutUsEnglish.objects.all()",
+        "peekOfCode": "class AboutUsEnglishDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutUsEnglish.objects.all()\n    serializer_class = AboutUsEnglishSerializer\n    lookup_field = 'id'\nclass AboutUsEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutUsEnglish.objects.all()\n    serializer_class = AboutUsEnglishSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2174,7 +2626,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class AboutUsEnglishUpdateView(UpdateAPIView):\n    queryset = AboutUsEnglish.objects.all()\n    serializer_class = AboutUsEnglishSerializer\n    lookup_field = 'id'\nclass AboutUsEnglishDeleteView(DestroyAPIView):\n    queryset = AboutUsEnglish.objects.all()\n    serializer_class = AboutUsEnglishSerializer\n    lookup_field = 'id'\n# * =================== AboutUs Arabic Dashboard ===================\nclass AboutUsArabicListView(ListAPIView):",
+        "peekOfCode": "class AboutUsEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutUsEnglish.objects.all()\n    serializer_class = AboutUsEnglishSerializer\n    lookup_field = 'id'\nclass AboutUsEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutUsEnglish.objects.all()\n    serializer_class = AboutUsEnglishSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2183,7 +2635,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class AboutUsEnglishDeleteView(DestroyAPIView):\n    queryset = AboutUsEnglish.objects.all()\n    serializer_class = AboutUsEnglishSerializer\n    lookup_field = 'id'\n# * =================== AboutUs Arabic Dashboard ===================\nclass AboutUsArabicListView(ListAPIView):\n    queryset = AboutUsArabic.objects.all()\n    serializer_class = AboutUsArabicSerializer\nclass AboutUsArabicCreateView(CreateAPIView):\n    queryset = AboutUsArabic.objects.all()",
+        "peekOfCode": "class AboutUsEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutUsEnglish.objects.all()\n    serializer_class = AboutUsEnglishSerializer\n    lookup_field = 'id'\n# * =================== AboutUs Arabic Dashboard ===================\nclass AboutUsArabicListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutUsArabic.objects.all()\n    serializer_class = AboutUsArabicSerializer",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2192,7 +2644,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class AboutUsArabicListView(ListAPIView):\n    queryset = AboutUsArabic.objects.all()\n    serializer_class = AboutUsArabicSerializer\nclass AboutUsArabicCreateView(CreateAPIView):\n    queryset = AboutUsArabic.objects.all()\n    serializer_class = AboutUsArabicSerializer\nclass AboutUsArabicDetailView(RetrieveAPIView):\n    queryset = AboutUsArabic.objects.all()\n    serializer_class = AboutUsArabicSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class AboutUsArabicListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutUsArabic.objects.all()\n    serializer_class = AboutUsArabicSerializer\nclass AboutUsArabicCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutUsArabic.objects.all()\n    serializer_class = AboutUsArabicSerializer\nclass AboutUsArabicDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2201,7 +2653,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class AboutUsArabicCreateView(CreateAPIView):\n    queryset = AboutUsArabic.objects.all()\n    serializer_class = AboutUsArabicSerializer\nclass AboutUsArabicDetailView(RetrieveAPIView):\n    queryset = AboutUsArabic.objects.all()\n    serializer_class = AboutUsArabicSerializer\n    lookup_field = 'id'\nclass AboutUsArabicUpdateView(UpdateAPIView):\n    queryset = AboutUsArabic.objects.all()\n    serializer_class = AboutUsArabicSerializer",
+        "peekOfCode": "class AboutUsArabicCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutUsArabic.objects.all()\n    serializer_class = AboutUsArabicSerializer\nclass AboutUsArabicDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutUsArabic.objects.all()\n    serializer_class = AboutUsArabicSerializer\n    lookup_field = 'id'\nclass AboutUsArabicUpdateView(UpdateAPIView):",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2210,7 +2662,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class AboutUsArabicDetailView(RetrieveAPIView):\n    queryset = AboutUsArabic.objects.all()\n    serializer_class = AboutUsArabicSerializer\n    lookup_field = 'id'\nclass AboutUsArabicUpdateView(UpdateAPIView):\n    queryset = AboutUsArabic.objects.all()\n    serializer_class = AboutUsArabicSerializer\n    lookup_field = 'id'\nclass AboutUsArabicDeleteView(DestroyAPIView):\n    queryset = AboutUsArabic.objects.all()",
+        "peekOfCode": "class AboutUsArabicDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutUsArabic.objects.all()\n    serializer_class = AboutUsArabicSerializer\n    lookup_field = 'id'\nclass AboutUsArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutUsArabic.objects.all()\n    serializer_class = AboutUsArabicSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2219,7 +2671,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class AboutUsArabicUpdateView(UpdateAPIView):\n    queryset = AboutUsArabic.objects.all()\n    serializer_class = AboutUsArabicSerializer\n    lookup_field = 'id'\nclass AboutUsArabicDeleteView(DestroyAPIView):\n    queryset = AboutUsArabic.objects.all()\n    serializer_class = AboutUsArabicSerializer\n    lookup_field = 'id'\n# # * =================== ChooseUs English Dashboard ===================\nclass ChooseUsEnglishListView(ListAPIView):",
+        "peekOfCode": "class AboutUsArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutUsArabic.objects.all()\n    serializer_class = AboutUsArabicSerializer\n    lookup_field = 'id'\nclass AboutUsArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutUsArabic.objects.all()\n    serializer_class = AboutUsArabicSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2228,7 +2680,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class AboutUsArabicDeleteView(DestroyAPIView):\n    queryset = AboutUsArabic.objects.all()\n    serializer_class = AboutUsArabicSerializer\n    lookup_field = 'id'\n# # * =================== ChooseUs English Dashboard ===================\nclass ChooseUsEnglishListView(ListAPIView):\n    queryset = ChooseUsEnglish.objects.all()\n    serializer_class = ChooseUsEnglishSerializer\nclass ChooseUsEnglishCreateView(CreateAPIView):\n    queryset = ChooseUsEnglish.objects.all()",
+        "peekOfCode": "class AboutUsArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutUsArabic.objects.all()\n    serializer_class = AboutUsArabicSerializer\n    lookup_field = 'id'\n# # * =================== ChooseUs English Dashboard ===================\nclass ChooseUsEnglishListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ChooseUsEnglish.objects.all()\n    serializer_class = ChooseUsEnglishSerializer",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2237,7 +2689,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ChooseUsEnglishListView(ListAPIView):\n    queryset = ChooseUsEnglish.objects.all()\n    serializer_class = ChooseUsEnglishSerializer\nclass ChooseUsEnglishCreateView(CreateAPIView):\n    queryset = ChooseUsEnglish.objects.all()\n    serializer_class = ChooseUsEnglishSerializer\nclass ChooseUsEnglishDetailView(RetrieveAPIView):\n    queryset = ChooseUsEnglish.objects.all()\n    serializer_class = ChooseUsEnglishSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class ChooseUsEnglishListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ChooseUsEnglish.objects.all()\n    serializer_class = ChooseUsEnglishSerializer\nclass ChooseUsEnglishCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ChooseUsEnglish.objects.all()\n    serializer_class = ChooseUsEnglishSerializer\nclass ChooseUsEnglishDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2246,7 +2698,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ChooseUsEnglishCreateView(CreateAPIView):\n    queryset = ChooseUsEnglish.objects.all()\n    serializer_class = ChooseUsEnglishSerializer\nclass ChooseUsEnglishDetailView(RetrieveAPIView):\n    queryset = ChooseUsEnglish.objects.all()\n    serializer_class = ChooseUsEnglishSerializer\n    lookup_field = 'id'\nclass ChooseUsEnglishUpdateView(UpdateAPIView):\n    queryset = ChooseUsEnglish.objects.all()\n    serializer_class = ChooseUsEnglishSerializer",
+        "peekOfCode": "class ChooseUsEnglishCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ChooseUsEnglish.objects.all()\n    serializer_class = ChooseUsEnglishSerializer\nclass ChooseUsEnglishDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ChooseUsEnglish.objects.all()\n    serializer_class = ChooseUsEnglishSerializer\n    lookup_field = 'id'\nclass ChooseUsEnglishUpdateView(UpdateAPIView):",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2255,7 +2707,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ChooseUsEnglishDetailView(RetrieveAPIView):\n    queryset = ChooseUsEnglish.objects.all()\n    serializer_class = ChooseUsEnglishSerializer\n    lookup_field = 'id'\nclass ChooseUsEnglishUpdateView(UpdateAPIView):\n    queryset = ChooseUsEnglish.objects.all()\n    serializer_class = ChooseUsEnglishSerializer\n    lookup_field = 'id'\nclass ChooseUsEnglishDeleteView(DestroyAPIView):\n    queryset = ChooseUsEnglish.objects.all()",
+        "peekOfCode": "class ChooseUsEnglishDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ChooseUsEnglish.objects.all()\n    serializer_class = ChooseUsEnglishSerializer\n    lookup_field = 'id'\nclass ChooseUsEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ChooseUsEnglish.objects.all()\n    serializer_class = ChooseUsEnglishSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2264,7 +2716,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ChooseUsEnglishUpdateView(UpdateAPIView):\n    queryset = ChooseUsEnglish.objects.all()\n    serializer_class = ChooseUsEnglishSerializer\n    lookup_field = 'id'\nclass ChooseUsEnglishDeleteView(DestroyAPIView):\n    queryset = ChooseUsEnglish.objects.all()\n    serializer_class = ChooseUsEnglishSerializer\n    lookup_field = 'id'\n# # * =================== ChooseUs Arabic Dashboard ===================\nclass ChooseUsArabicListView(ListAPIView):",
+        "peekOfCode": "class ChooseUsEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ChooseUsEnglish.objects.all()\n    serializer_class = ChooseUsEnglishSerializer\n    lookup_field = 'id'\nclass ChooseUsEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ChooseUsEnglish.objects.all()\n    serializer_class = ChooseUsEnglishSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2273,7 +2725,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ChooseUsEnglishDeleteView(DestroyAPIView):\n    queryset = ChooseUsEnglish.objects.all()\n    serializer_class = ChooseUsEnglishSerializer\n    lookup_field = 'id'\n# # * =================== ChooseUs Arabic Dashboard ===================\nclass ChooseUsArabicListView(ListAPIView):\n    queryset = ChooseUsArabic.objects.all()\n    serializer_class = ChooseUsArabicSerializer\nclass ChooseUsArabicCreateView(CreateAPIView):\n    queryset = ChooseUsArabic.objects.all()",
+        "peekOfCode": "class ChooseUsEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ChooseUsEnglish.objects.all()\n    serializer_class = ChooseUsEnglishSerializer\n    lookup_field = 'id'\n# # * =================== ChooseUs Arabic Dashboard ===================\nclass ChooseUsArabicListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ChooseUsArabic.objects.all()\n    serializer_class = ChooseUsArabicSerializer",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2282,7 +2734,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ChooseUsArabicListView(ListAPIView):\n    queryset = ChooseUsArabic.objects.all()\n    serializer_class = ChooseUsArabicSerializer\nclass ChooseUsArabicCreateView(CreateAPIView):\n    queryset = ChooseUsArabic.objects.all()\n    serializer_class = ChooseUsArabicSerializer\nclass ChooseUsArabicDetailView(RetrieveAPIView):\n    queryset = ChooseUsArabic.objects.all()\n    serializer_class = ChooseUsArabicSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class ChooseUsArabicListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ChooseUsArabic.objects.all()\n    serializer_class = ChooseUsArabicSerializer\nclass ChooseUsArabicCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ChooseUsArabic.objects.all()\n    serializer_class = ChooseUsArabicSerializer\nclass ChooseUsArabicDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2291,7 +2743,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ChooseUsArabicCreateView(CreateAPIView):\n    queryset = ChooseUsArabic.objects.all()\n    serializer_class = ChooseUsArabicSerializer\nclass ChooseUsArabicDetailView(RetrieveAPIView):\n    queryset = ChooseUsArabic.objects.all()\n    serializer_class = ChooseUsArabicSerializer\n    lookup_field = 'id'\nclass ChooseUsArabicUpdateView(UpdateAPIView):\n    queryset = ChooseUsArabic.objects.all()\n    serializer_class = ChooseUsArabicSerializer",
+        "peekOfCode": "class ChooseUsArabicCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ChooseUsArabic.objects.all()\n    serializer_class = ChooseUsArabicSerializer\nclass ChooseUsArabicDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ChooseUsArabic.objects.all()\n    serializer_class = ChooseUsArabicSerializer\n    lookup_field = 'id'\nclass ChooseUsArabicUpdateView(UpdateAPIView):",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2300,7 +2752,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ChooseUsArabicDetailView(RetrieveAPIView):\n    queryset = ChooseUsArabic.objects.all()\n    serializer_class = ChooseUsArabicSerializer\n    lookup_field = 'id'\nclass ChooseUsArabicUpdateView(UpdateAPIView):\n    queryset = ChooseUsArabic.objects.all()\n    serializer_class = ChooseUsArabicSerializer\n    lookup_field = 'id'\nclass ChooseUsArabicDeleteView(DestroyAPIView):\n    queryset = ChooseUsArabic.objects.all()",
+        "peekOfCode": "class ChooseUsArabicDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ChooseUsArabic.objects.all()\n    serializer_class = ChooseUsArabicSerializer\n    lookup_field = 'id'\nclass ChooseUsArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ChooseUsArabic.objects.all()\n    serializer_class = ChooseUsArabicSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2309,7 +2761,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ChooseUsArabicUpdateView(UpdateAPIView):\n    queryset = ChooseUsArabic.objects.all()\n    serializer_class = ChooseUsArabicSerializer\n    lookup_field = 'id'\nclass ChooseUsArabicDeleteView(DestroyAPIView):\n    queryset = ChooseUsArabic.objects.all()\n    serializer_class = ChooseUsArabicSerializer\n    lookup_field = 'id'\n# # * =================== Service English Dashboard ===================\nclass ServiceEnglishListView(ListAPIView):",
+        "peekOfCode": "class ChooseUsArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ChooseUsArabic.objects.all()\n    serializer_class = ChooseUsArabicSerializer\n    lookup_field = 'id'\nclass ChooseUsArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ChooseUsArabic.objects.all()\n    serializer_class = ChooseUsArabicSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2318,7 +2770,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ChooseUsArabicDeleteView(DestroyAPIView):\n    queryset = ChooseUsArabic.objects.all()\n    serializer_class = ChooseUsArabicSerializer\n    lookup_field = 'id'\n# # * =================== Service English Dashboard ===================\nclass ServiceEnglishListView(ListAPIView):\n    queryset = ServiceEnglish.objects.all()\n    serializer_class = ServiceEnglishSerializer\nclass ServiceEnglishCreateView(CreateAPIView):\n    queryset = ServiceEnglish.objects.all()",
+        "peekOfCode": "class ChooseUsArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ChooseUsArabic.objects.all()\n    serializer_class = ChooseUsArabicSerializer\n    lookup_field = 'id'\n# # * =================== Service English Dashboard ===================\nclass ServiceEnglishListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ServiceEnglish.objects.all()\n    serializer_class = ServiceEnglishSerializer",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2327,7 +2779,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ServiceEnglishListView(ListAPIView):\n    queryset = ServiceEnglish.objects.all()\n    serializer_class = ServiceEnglishSerializer\nclass ServiceEnglishCreateView(CreateAPIView):\n    queryset = ServiceEnglish.objects.all()\n    serializer_class = ServiceEnglishSerializer\nclass ServiceEnglishDetailView(RetrieveAPIView):\n    queryset = ServiceEnglish.objects.all()\n    serializer_class = ServiceEnglishSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class ServiceEnglishListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ServiceEnglish.objects.all()\n    serializer_class = ServiceEnglishSerializer\nclass ServiceEnglishCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ServiceEnglish.objects.all()\n    serializer_class = ServiceEnglishSerializer\nclass ServiceEnglishDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2336,7 +2788,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ServiceEnglishCreateView(CreateAPIView):\n    queryset = ServiceEnglish.objects.all()\n    serializer_class = ServiceEnglishSerializer\nclass ServiceEnglishDetailView(RetrieveAPIView):\n    queryset = ServiceEnglish.objects.all()\n    serializer_class = ServiceEnglishSerializer\n    lookup_field = 'id'\nclass ServiceEnglishUpdateView(UpdateAPIView):\n    queryset = ServiceEnglish.objects.all()\n    serializer_class = ServiceEnglishSerializer",
+        "peekOfCode": "class ServiceEnglishCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ServiceEnglish.objects.all()\n    serializer_class = ServiceEnglishSerializer\nclass ServiceEnglishDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ServiceEnglish.objects.all()\n    serializer_class = ServiceEnglishSerializer\n    lookup_field = 'id'\nclass ServiceEnglishUpdateView(UpdateAPIView):",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2345,7 +2797,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ServiceEnglishDetailView(RetrieveAPIView):\n    queryset = ServiceEnglish.objects.all()\n    serializer_class = ServiceEnglishSerializer\n    lookup_field = 'id'\nclass ServiceEnglishUpdateView(UpdateAPIView):\n    queryset = ServiceEnglish.objects.all()\n    serializer_class = ServiceEnglishSerializer\n    lookup_field = 'id'\nclass ServiceEnglishDeleteView(DestroyAPIView):\n    queryset = ServiceEnglish.objects.all()",
+        "peekOfCode": "class ServiceEnglishDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ServiceEnglish.objects.all()\n    serializer_class = ServiceEnglishSerializer\n    lookup_field = 'id'\nclass ServiceEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ServiceEnglish.objects.all()\n    serializer_class = ServiceEnglishSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2354,7 +2806,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ServiceEnglishUpdateView(UpdateAPIView):\n    queryset = ServiceEnglish.objects.all()\n    serializer_class = ServiceEnglishSerializer\n    lookup_field = 'id'\nclass ServiceEnglishDeleteView(DestroyAPIView):\n    queryset = ServiceEnglish.objects.all()\n    serializer_class = ServiceEnglishSerializer\n    lookup_field = 'id'\n# # * =================== Service Arabic Dashboard ===================\nclass ServiceArabicListView(ListAPIView):",
+        "peekOfCode": "class ServiceEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ServiceEnglish.objects.all()\n    serializer_class = ServiceEnglishSerializer\n    lookup_field = 'id'\nclass ServiceEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ServiceEnglish.objects.all()\n    serializer_class = ServiceEnglishSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2363,7 +2815,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ServiceEnglishDeleteView(DestroyAPIView):\n    queryset = ServiceEnglish.objects.all()\n    serializer_class = ServiceEnglishSerializer\n    lookup_field = 'id'\n# # * =================== Service Arabic Dashboard ===================\nclass ServiceArabicListView(ListAPIView):\n    queryset = ServiceArabic.objects.all()\n    serializer_class = ServiceArabicSerializer\nclass ServiceArabicCreateView(CreateAPIView):\n    queryset = ServiceArabic.objects.all()",
+        "peekOfCode": "class ServiceEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ServiceEnglish.objects.all()\n    serializer_class = ServiceEnglishSerializer\n    lookup_field = 'id'\n# # * =================== Service Arabic Dashboard ===================\nclass ServiceArabicListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ServiceArabic.objects.all()\n    serializer_class = ServiceArabicSerializer",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2372,7 +2824,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ServiceArabicListView(ListAPIView):\n    queryset = ServiceArabic.objects.all()\n    serializer_class = ServiceArabicSerializer\nclass ServiceArabicCreateView(CreateAPIView):\n    queryset = ServiceArabic.objects.all()\n    serializer_class = ServiceArabicSerializer\nclass ServiceArabicDetailView(RetrieveAPIView):\n    queryset = ServiceArabic.objects.all()\n    serializer_class = ServiceArabicSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class ServiceArabicListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ServiceArabic.objects.all()\n    serializer_class = ServiceArabicSerializer\nclass ServiceArabicCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ServiceArabic.objects.all()\n    serializer_class = ServiceArabicSerializer\nclass ServiceArabicDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2381,7 +2833,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ServiceArabicCreateView(CreateAPIView):\n    queryset = ServiceArabic.objects.all()\n    serializer_class = ServiceArabicSerializer\nclass ServiceArabicDetailView(RetrieveAPIView):\n    queryset = ServiceArabic.objects.all()\n    serializer_class = ServiceArabicSerializer\n    lookup_field = 'id'\nclass ServiceArabicUpdateView(UpdateAPIView):\n    queryset = ServiceArabic.objects.all()\n    serializer_class = ServiceArabicSerializer",
+        "peekOfCode": "class ServiceArabicCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ServiceArabic.objects.all()\n    serializer_class = ServiceArabicSerializer\nclass ServiceArabicDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ServiceArabic.objects.all()\n    serializer_class = ServiceArabicSerializer\n    lookup_field = 'id'\nclass ServiceArabicUpdateView(UpdateAPIView):",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2390,7 +2842,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ServiceArabicDetailView(RetrieveAPIView):\n    queryset = ServiceArabic.objects.all()\n    serializer_class = ServiceArabicSerializer\n    lookup_field = 'id'\nclass ServiceArabicUpdateView(UpdateAPIView):\n    queryset = ServiceArabic.objects.all()\n    serializer_class = ServiceArabicSerializer\n    lookup_field = 'id'\nclass ServiceArabicDeleteView(DestroyAPIView):\n    queryset = ServiceArabic.objects.all()",
+        "peekOfCode": "class ServiceArabicDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ServiceArabic.objects.all()\n    serializer_class = ServiceArabicSerializer\n    lookup_field = 'id'\nclass ServiceArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ServiceArabic.objects.all()\n    serializer_class = ServiceArabicSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2399,7 +2851,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ServiceArabicUpdateView(UpdateAPIView):\n    queryset = ServiceArabic.objects.all()\n    serializer_class = ServiceArabicSerializer\n    lookup_field = 'id'\nclass ServiceArabicDeleteView(DestroyAPIView):\n    queryset = ServiceArabic.objects.all()\n    serializer_class = ServiceArabicSerializer\n    lookup_field = 'id'\n# # * =================== Comments English Dashboard ===================\nclass CommentsEnglishListView(ListAPIView):",
+        "peekOfCode": "class ServiceArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ServiceArabic.objects.all()\n    serializer_class = ServiceArabicSerializer\n    lookup_field = 'id'\nclass ServiceArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ServiceArabic.objects.all()\n    serializer_class = ServiceArabicSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2408,7 +2860,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ServiceArabicDeleteView(DestroyAPIView):\n    queryset = ServiceArabic.objects.all()\n    serializer_class = ServiceArabicSerializer\n    lookup_field = 'id'\n# # * =================== Comments English Dashboard ===================\nclass CommentsEnglishListView(ListAPIView):\n    queryset = CommentsEnglish.objects.all()\n    serializer_class = CommentsEnglishSerializer\nclass CommentsEnglishCreateView(CreateAPIView):\n    queryset = CommentsEnglish.objects.all()",
+        "peekOfCode": "class ServiceArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ServiceArabic.objects.all()\n    serializer_class = ServiceArabicSerializer\n    lookup_field = 'id'\n# # * =================== Comments English Dashboard ===================\nclass CommentsEnglishListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = CommentsEnglish.objects.all()\n    serializer_class = CommentsEnglishSerializer",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2417,7 +2869,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class CommentsEnglishListView(ListAPIView):\n    queryset = CommentsEnglish.objects.all()\n    serializer_class = CommentsEnglishSerializer\nclass CommentsEnglishCreateView(CreateAPIView):\n    queryset = CommentsEnglish.objects.all()\n    serializer_class = CommentsEnglishSerializer\nclass CommentsEnglishDetailView(RetrieveAPIView):\n    queryset = CommentsEnglish.objects.all()\n    serializer_class = CommentsEnglishSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class CommentsEnglishListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = CommentsEnglish.objects.all()\n    serializer_class = CommentsEnglishSerializer\nclass CommentsEnglishCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = CommentsEnglish.objects.all()\n    serializer_class = CommentsEnglishSerializer\nclass CommentsEnglishDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2426,7 +2878,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class CommentsEnglishCreateView(CreateAPIView):\n    queryset = CommentsEnglish.objects.all()\n    serializer_class = CommentsEnglishSerializer\nclass CommentsEnglishDetailView(RetrieveAPIView):\n    queryset = CommentsEnglish.objects.all()\n    serializer_class = CommentsEnglishSerializer\n    lookup_field = 'id'\nclass CommentsEnglishUpdateView(UpdateAPIView):\n    queryset = CommentsEnglish.objects.all()\n    serializer_class = CommentsEnglishSerializer",
+        "peekOfCode": "class CommentsEnglishCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = CommentsEnglish.objects.all()\n    serializer_class = CommentsEnglishSerializer\nclass CommentsEnglishDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = CommentsEnglish.objects.all()\n    serializer_class = CommentsEnglishSerializer\n    lookup_field = 'id'\nclass CommentsEnglishUpdateView(UpdateAPIView):",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2435,7 +2887,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class CommentsEnglishDetailView(RetrieveAPIView):\n    queryset = CommentsEnglish.objects.all()\n    serializer_class = CommentsEnglishSerializer\n    lookup_field = 'id'\nclass CommentsEnglishUpdateView(UpdateAPIView):\n    queryset = CommentsEnglish.objects.all()\n    serializer_class = CommentsEnglishSerializer\n    lookup_field = 'id'\nclass CommentsEnglishDeleteView(DestroyAPIView):\n    queryset = CommentsEnglish.objects.all()",
+        "peekOfCode": "class CommentsEnglishDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = CommentsEnglish.objects.all()\n    serializer_class = CommentsEnglishSerializer\n    lookup_field = 'id'\nclass CommentsEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = CommentsEnglish.objects.all()\n    serializer_class = CommentsEnglishSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2444,7 +2896,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class CommentsEnglishUpdateView(UpdateAPIView):\n    queryset = CommentsEnglish.objects.all()\n    serializer_class = CommentsEnglishSerializer\n    lookup_field = 'id'\nclass CommentsEnglishDeleteView(DestroyAPIView):\n    queryset = CommentsEnglish.objects.all()\n    serializer_class = CommentsEnglishSerializer\n    lookup_field = 'id'\n# # * =================== Comments Arabic Dashboard ===================\nclass CommentsArabicListView(ListAPIView):",
+        "peekOfCode": "class CommentsEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = CommentsEnglish.objects.all()\n    serializer_class = CommentsEnglishSerializer\n    lookup_field = 'id'\nclass CommentsEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = CommentsEnglish.objects.all()\n    serializer_class = CommentsEnglishSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2453,7 +2905,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class CommentsEnglishDeleteView(DestroyAPIView):\n    queryset = CommentsEnglish.objects.all()\n    serializer_class = CommentsEnglishSerializer\n    lookup_field = 'id'\n# # * =================== Comments Arabic Dashboard ===================\nclass CommentsArabicListView(ListAPIView):\n    queryset = CommentsArabic.objects.all()\n    serializer_class = CommentsArabicSerializer\nclass CommentsArabicCreateView(CreateAPIView):\n    queryset = CommentsArabic.objects.all()",
+        "peekOfCode": "class CommentsEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = CommentsEnglish.objects.all()\n    serializer_class = CommentsEnglishSerializer\n    lookup_field = 'id'\n# # * =================== Comments Arabic Dashboard ===================\nclass CommentsArabicListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = CommentsArabic.objects.all()\n    serializer_class = CommentsArabicSerializer",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2462,7 +2914,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class CommentsArabicListView(ListAPIView):\n    queryset = CommentsArabic.objects.all()\n    serializer_class = CommentsArabicSerializer\nclass CommentsArabicCreateView(CreateAPIView):\n    queryset = CommentsArabic.objects.all()\n    serializer_class = CommentsArabicSerializer\nclass CommentsArabicDetailView(RetrieveAPIView):\n    queryset = CommentsArabic.objects.all()\n    serializer_class = CommentsArabicSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class CommentsArabicListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = CommentsArabic.objects.all()\n    serializer_class = CommentsArabicSerializer\nclass CommentsArabicCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = CommentsArabic.objects.all()\n    serializer_class = CommentsArabicSerializer\nclass CommentsArabicDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2471,7 +2923,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class CommentsArabicCreateView(CreateAPIView):\n    queryset = CommentsArabic.objects.all()\n    serializer_class = CommentsArabicSerializer\nclass CommentsArabicDetailView(RetrieveAPIView):\n    queryset = CommentsArabic.objects.all()\n    serializer_class = CommentsArabicSerializer\n    lookup_field = 'id'\nclass CommentsArabicUpdateView(UpdateAPIView):\n    queryset = CommentsArabic.objects.all()\n    serializer_class = CommentsArabicSerializer",
+        "peekOfCode": "class CommentsArabicCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = CommentsArabic.objects.all()\n    serializer_class = CommentsArabicSerializer\nclass CommentsArabicDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = CommentsArabic.objects.all()\n    serializer_class = CommentsArabicSerializer\n    lookup_field = 'id'\nclass CommentsArabicUpdateView(UpdateAPIView):",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2480,7 +2932,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class CommentsArabicDetailView(RetrieveAPIView):\n    queryset = CommentsArabic.objects.all()\n    serializer_class = CommentsArabicSerializer\n    lookup_field = 'id'\nclass CommentsArabicUpdateView(UpdateAPIView):\n    queryset = CommentsArabic.objects.all()\n    serializer_class = CommentsArabicSerializer\n    lookup_field = 'id'\nclass CommentsArabicDeleteView(DestroyAPIView):\n    queryset = CommentsArabic.objects.all()",
+        "peekOfCode": "class CommentsArabicDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = CommentsArabic.objects.all()\n    serializer_class = CommentsArabicSerializer\n    lookup_field = 'id'\nclass CommentsArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = CommentsArabic.objects.all()\n    serializer_class = CommentsArabicSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2489,7 +2941,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class CommentsArabicUpdateView(UpdateAPIView):\n    queryset = CommentsArabic.objects.all()\n    serializer_class = CommentsArabicSerializer\n    lookup_field = 'id'\nclass CommentsArabicDeleteView(DestroyAPIView):\n    queryset = CommentsArabic.objects.all()\n    serializer_class = CommentsArabicSerializer\n    lookup_field = 'id'\n# * =================== Suggestions English Dashboard ===================\nclass SuggestionsEnglishListView(ListAPIView):",
+        "peekOfCode": "class CommentsArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = CommentsArabic.objects.all()\n    serializer_class = CommentsArabicSerializer\n    lookup_field = 'id'\nclass CommentsArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = CommentsArabic.objects.all()\n    serializer_class = CommentsArabicSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2498,7 +2950,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class CommentsArabicDeleteView(DestroyAPIView):\n    queryset = CommentsArabic.objects.all()\n    serializer_class = CommentsArabicSerializer\n    lookup_field = 'id'\n# * =================== Suggestions English Dashboard ===================\nclass SuggestionsEnglishListView(ListAPIView):\n    queryset = SuggestionsEnglish.objects.all()\n    serializer_class = SuggestionsEnglishSerializer\nclass SuggestionsEnglishCreateView(CreateAPIView):\n    queryset = SuggestionsEnglish.objects.all()",
+        "peekOfCode": "class CommentsArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = CommentsArabic.objects.all()\n    serializer_class = CommentsArabicSerializer\n    lookup_field = 'id'\n# * =================== Suggestions English Dashboard ===================\nclass SuggestionsEnglishListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SuggestionsEnglish.objects.all()\n    serializer_class = SuggestionsEnglishSerializer",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2507,7 +2959,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class SuggestionsEnglishListView(ListAPIView):\n    queryset = SuggestionsEnglish.objects.all()\n    serializer_class = SuggestionsEnglishSerializer\nclass SuggestionsEnglishCreateView(CreateAPIView):\n    queryset = SuggestionsEnglish.objects.all()\n    serializer_class = SuggestionsEnglishSerializer\nclass SuggestionsEnglishDetailView(RetrieveAPIView):\n    queryset = SuggestionsEnglish.objects.all()\n    serializer_class = SuggestionsEnglishSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class SuggestionsEnglishListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SuggestionsEnglish.objects.all()\n    serializer_class = SuggestionsEnglishSerializer\nclass SuggestionsEnglishCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SuggestionsEnglish.objects.all()\n    serializer_class = SuggestionsEnglishSerializer\nclass SuggestionsEnglishDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2516,7 +2968,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class SuggestionsEnglishCreateView(CreateAPIView):\n    queryset = SuggestionsEnglish.objects.all()\n    serializer_class = SuggestionsEnglishSerializer\nclass SuggestionsEnglishDetailView(RetrieveAPIView):\n    queryset = SuggestionsEnglish.objects.all()\n    serializer_class = SuggestionsEnglishSerializer\n    lookup_field = 'id'\nclass SuggestionsEnglishUpdateView(UpdateAPIView):\n    queryset = SuggestionsEnglish.objects.all()\n    serializer_class = SuggestionsEnglishSerializer",
+        "peekOfCode": "class SuggestionsEnglishCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SuggestionsEnglish.objects.all()\n    serializer_class = SuggestionsEnglishSerializer\nclass SuggestionsEnglishDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SuggestionsEnglish.objects.all()\n    serializer_class = SuggestionsEnglishSerializer\n    lookup_field = 'id'\nclass SuggestionsEnglishUpdateView(UpdateAPIView):",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2525,7 +2977,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class SuggestionsEnglishDetailView(RetrieveAPIView):\n    queryset = SuggestionsEnglish.objects.all()\n    serializer_class = SuggestionsEnglishSerializer\n    lookup_field = 'id'\nclass SuggestionsEnglishUpdateView(UpdateAPIView):\n    queryset = SuggestionsEnglish.objects.all()\n    serializer_class = SuggestionsEnglishSerializer\n    lookup_field = 'id'\nclass SuggestionsEnglishDeleteView(DestroyAPIView):\n    queryset = SuggestionsEnglish.objects.all()",
+        "peekOfCode": "class SuggestionsEnglishDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SuggestionsEnglish.objects.all()\n    serializer_class = SuggestionsEnglishSerializer\n    lookup_field = 'id'\nclass SuggestionsEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SuggestionsEnglish.objects.all()\n    serializer_class = SuggestionsEnglishSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2534,7 +2986,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class SuggestionsEnglishUpdateView(UpdateAPIView):\n    queryset = SuggestionsEnglish.objects.all()\n    serializer_class = SuggestionsEnglishSerializer\n    lookup_field = 'id'\nclass SuggestionsEnglishDeleteView(DestroyAPIView):\n    queryset = SuggestionsEnglish.objects.all()\n    serializer_class = SuggestionsEnglishSerializer\n    lookup_field = 'id'\n# * =================== Suggestions Arabic Dashboard ===================\nclass SuggestionsArabicListView(ListAPIView):",
+        "peekOfCode": "class SuggestionsEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SuggestionsEnglish.objects.all()\n    serializer_class = SuggestionsEnglishSerializer\n    lookup_field = 'id'\nclass SuggestionsEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SuggestionsEnglish.objects.all()\n    serializer_class = SuggestionsEnglishSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2543,7 +2995,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class SuggestionsEnglishDeleteView(DestroyAPIView):\n    queryset = SuggestionsEnglish.objects.all()\n    serializer_class = SuggestionsEnglishSerializer\n    lookup_field = 'id'\n# * =================== Suggestions Arabic Dashboard ===================\nclass SuggestionsArabicListView(ListAPIView):\n    queryset = SuggestionsArabic.objects.all()\n    serializer_class = SuggestionsArabicSerializer\nclass SuggestionsArabicCreateView(CreateAPIView):\n    queryset = SuggestionsArabic.objects.all()",
+        "peekOfCode": "class SuggestionsEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SuggestionsEnglish.objects.all()\n    serializer_class = SuggestionsEnglishSerializer\n    lookup_field = 'id'\n# * =================== Suggestions Arabic Dashboard ===================\nclass SuggestionsArabicListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SuggestionsArabic.objects.all()\n    serializer_class = SuggestionsArabicSerializer",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2552,7 +3004,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class SuggestionsArabicListView(ListAPIView):\n    queryset = SuggestionsArabic.objects.all()\n    serializer_class = SuggestionsArabicSerializer\nclass SuggestionsArabicCreateView(CreateAPIView):\n    queryset = SuggestionsArabic.objects.all()\n    serializer_class = SuggestionsArabicSerializer\nclass SuggestionsArabicDetailView(RetrieveAPIView):\n    queryset = SuggestionsArabic.objects.all()\n    serializer_class = SuggestionsArabicSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class SuggestionsArabicListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SuggestionsArabic.objects.all()\n    serializer_class = SuggestionsArabicSerializer\nclass SuggestionsArabicCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SuggestionsArabic.objects.all()\n    serializer_class = SuggestionsArabicSerializer\nclass SuggestionsArabicDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2561,7 +3013,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class SuggestionsArabicCreateView(CreateAPIView):\n    queryset = SuggestionsArabic.objects.all()\n    serializer_class = SuggestionsArabicSerializer\nclass SuggestionsArabicDetailView(RetrieveAPIView):\n    queryset = SuggestionsArabic.objects.all()\n    serializer_class = SuggestionsArabicSerializer\n    lookup_field = 'id'\nclass SuggestionsArabicUpdateView(UpdateAPIView):\n    queryset = SuggestionsArabic.objects.all()\n    serializer_class = SuggestionsArabicSerializer",
+        "peekOfCode": "class SuggestionsArabicCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SuggestionsArabic.objects.all()\n    serializer_class = SuggestionsArabicSerializer\nclass SuggestionsArabicDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SuggestionsArabic.objects.all()\n    serializer_class = SuggestionsArabicSerializer\n    lookup_field = 'id'\nclass SuggestionsArabicUpdateView(UpdateAPIView):",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2570,7 +3022,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class SuggestionsArabicDetailView(RetrieveAPIView):\n    queryset = SuggestionsArabic.objects.all()\n    serializer_class = SuggestionsArabicSerializer\n    lookup_field = 'id'\nclass SuggestionsArabicUpdateView(UpdateAPIView):\n    queryset = SuggestionsArabic.objects.all()\n    serializer_class = SuggestionsArabicSerializer\n    lookup_field = 'id'\nclass SuggestionsArabicDeleteView(DestroyAPIView):\n    queryset = SuggestionsArabic.objects.all()",
+        "peekOfCode": "class SuggestionsArabicDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SuggestionsArabic.objects.all()\n    serializer_class = SuggestionsArabicSerializer\n    lookup_field = 'id'\nclass SuggestionsArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SuggestionsArabic.objects.all()\n    serializer_class = SuggestionsArabicSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2579,7 +3031,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class SuggestionsArabicUpdateView(UpdateAPIView):\n    queryset = SuggestionsArabic.objects.all()\n    serializer_class = SuggestionsArabicSerializer\n    lookup_field = 'id'\nclass SuggestionsArabicDeleteView(DestroyAPIView):\n    queryset = SuggestionsArabic.objects.all()\n    serializer_class = SuggestionsArabicSerializer\n    lookup_field = 'id'\n# * =================== FAQ English Dashboard ===================\nclass FAQEnglishListView(ListAPIView):",
+        "peekOfCode": "class SuggestionsArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SuggestionsArabic.objects.all()\n    serializer_class = SuggestionsArabicSerializer\n    lookup_field = 'id'\nclass SuggestionsArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SuggestionsArabic.objects.all()\n    serializer_class = SuggestionsArabicSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2588,7 +3040,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class SuggestionsArabicDeleteView(DestroyAPIView):\n    queryset = SuggestionsArabic.objects.all()\n    serializer_class = SuggestionsArabicSerializer\n    lookup_field = 'id'\n# * =================== FAQ English Dashboard ===================\nclass FAQEnglishListView(ListAPIView):\n    queryset = FAQEnglish.objects.all()\n    serializer_class = FAQEnglishSerializer\nclass FAQEnglishCreateView(CreateAPIView):\n    queryset = FAQEnglish.objects.all()",
+        "peekOfCode": "class SuggestionsArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SuggestionsArabic.objects.all()\n    serializer_class = SuggestionsArabicSerializer\n    lookup_field = 'id'\n# * =================== FAQ English Dashboard ===================\nclass FAQEnglishListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = FAQEnglish.objects.all()\n    serializer_class = FAQEnglishSerializer",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2597,7 +3049,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class FAQEnglishListView(ListAPIView):\n    queryset = FAQEnglish.objects.all()\n    serializer_class = FAQEnglishSerializer\nclass FAQEnglishCreateView(CreateAPIView):\n    queryset = FAQEnglish.objects.all()\n    serializer_class = FAQEnglishSerializer\nclass FAQEnglishDetailView(RetrieveAPIView):\n    queryset = FAQEnglish.objects.all()\n    serializer_class = FAQEnglishSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class FAQEnglishListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = FAQEnglish.objects.all()\n    serializer_class = FAQEnglishSerializer\nclass FAQEnglishCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = FAQEnglish.objects.all()\n    serializer_class = FAQEnglishSerializer\nclass FAQEnglishDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2606,7 +3058,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class FAQEnglishCreateView(CreateAPIView):\n    queryset = FAQEnglish.objects.all()\n    serializer_class = FAQEnglishSerializer\nclass FAQEnglishDetailView(RetrieveAPIView):\n    queryset = FAQEnglish.objects.all()\n    serializer_class = FAQEnglishSerializer\n    lookup_field = 'id'\nclass FAQEnglishUpdateView(UpdateAPIView):\n    queryset = FAQEnglish.objects.all()\n    serializer_class = FAQEnglishSerializer",
+        "peekOfCode": "class FAQEnglishCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = FAQEnglish.objects.all()\n    serializer_class = FAQEnglishSerializer\nclass FAQEnglishDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = FAQEnglish.objects.all()\n    serializer_class = FAQEnglishSerializer\n    lookup_field = 'id'\nclass FAQEnglishUpdateView(UpdateAPIView):",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2615,7 +3067,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class FAQEnglishDetailView(RetrieveAPIView):\n    queryset = FAQEnglish.objects.all()\n    serializer_class = FAQEnglishSerializer\n    lookup_field = 'id'\nclass FAQEnglishUpdateView(UpdateAPIView):\n    queryset = FAQEnglish.objects.all()\n    serializer_class = FAQEnglishSerializer\n    lookup_field = 'id'\nclass FAQEnglishDeleteView(DestroyAPIView):\n    queryset = FAQEnglish.objects.all()",
+        "peekOfCode": "class FAQEnglishDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = FAQEnglish.objects.all()\n    serializer_class = FAQEnglishSerializer\n    lookup_field = 'id'\nclass FAQEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = FAQEnglish.objects.all()\n    serializer_class = FAQEnglishSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2624,7 +3076,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class FAQEnglishUpdateView(UpdateAPIView):\n    queryset = FAQEnglish.objects.all()\n    serializer_class = FAQEnglishSerializer\n    lookup_field = 'id'\nclass FAQEnglishDeleteView(DestroyAPIView):\n    queryset = FAQEnglish.objects.all()\n    serializer_class = FAQEnglishSerializer\n    lookup_field = 'id'\n# * =================== FAQ Arabic Dashboard ===================\nclass FAQArabicListView(ListAPIView):",
+        "peekOfCode": "class FAQEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = FAQEnglish.objects.all()\n    serializer_class = FAQEnglishSerializer\n    lookup_field = 'id'\nclass FAQEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = FAQEnglish.objects.all()\n    serializer_class = FAQEnglishSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2633,7 +3085,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class FAQEnglishDeleteView(DestroyAPIView):\n    queryset = FAQEnglish.objects.all()\n    serializer_class = FAQEnglishSerializer\n    lookup_field = 'id'\n# * =================== FAQ Arabic Dashboard ===================\nclass FAQArabicListView(ListAPIView):\n    queryset = FAQArabic.objects.all()\n    serializer_class = FAQArabicSerializer\nclass FAQArabicCreateView(CreateAPIView):\n    queryset = FAQArabic.objects.all()",
+        "peekOfCode": "class FAQEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = FAQEnglish.objects.all()\n    serializer_class = FAQEnglishSerializer\n    lookup_field = 'id'\n# * =================== FAQ Arabic Dashboard ===================\nclass FAQArabicListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = FAQArabic.objects.all()\n    serializer_class = FAQArabicSerializer",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2642,7 +3094,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class FAQArabicListView(ListAPIView):\n    queryset = FAQArabic.objects.all()\n    serializer_class = FAQArabicSerializer\nclass FAQArabicCreateView(CreateAPIView):\n    queryset = FAQArabic.objects.all()\n    serializer_class = FAQArabicSerializer\nclass FAQArabicDetailView(RetrieveAPIView):\n    queryset = FAQArabic.objects.all()\n    serializer_class = FAQArabicSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class FAQArabicListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = FAQArabic.objects.all()\n    serializer_class = FAQArabicSerializer\nclass FAQArabicCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = FAQArabic.objects.all()\n    serializer_class = FAQArabicSerializer\nclass FAQArabicDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2651,7 +3103,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class FAQArabicCreateView(CreateAPIView):\n    queryset = FAQArabic.objects.all()\n    serializer_class = FAQArabicSerializer\nclass FAQArabicDetailView(RetrieveAPIView):\n    queryset = FAQArabic.objects.all()\n    serializer_class = FAQArabicSerializer\n    lookup_field = 'id'\nclass FAQArabicUpdateView(UpdateAPIView):\n    queryset = FAQArabic.objects.all()\n    serializer_class = FAQArabicSerializer",
+        "peekOfCode": "class FAQArabicCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = FAQArabic.objects.all()\n    serializer_class = FAQArabicSerializer\nclass FAQArabicDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = FAQArabic.objects.all()\n    serializer_class = FAQArabicSerializer\n    lookup_field = 'id'\nclass FAQArabicUpdateView(UpdateAPIView):",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2660,7 +3112,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class FAQArabicDetailView(RetrieveAPIView):\n    queryset = FAQArabic.objects.all()\n    serializer_class = FAQArabicSerializer\n    lookup_field = 'id'\nclass FAQArabicUpdateView(UpdateAPIView):\n    queryset = FAQArabic.objects.all()\n    serializer_class = FAQArabicSerializer\n    lookup_field = 'id'\nclass FAQArabicDeleteView(DestroyAPIView):\n    queryset = FAQArabic.objects.all()",
+        "peekOfCode": "class FAQArabicDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = FAQArabic.objects.all()\n    serializer_class = FAQArabicSerializer\n    lookup_field = 'id'\nclass FAQArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = FAQArabic.objects.all()\n    serializer_class = FAQArabicSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2669,7 +3121,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class FAQArabicUpdateView(UpdateAPIView):\n    queryset = FAQArabic.objects.all()\n    serializer_class = FAQArabicSerializer\n    lookup_field = 'id'\nclass FAQArabicDeleteView(DestroyAPIView):\n    queryset = FAQArabic.objects.all()\n    serializer_class = FAQArabicSerializer\n    lookup_field = 'id'\n# * =================== News English Dashboard ===================\nclass NewsEnglishListView(ListAPIView):",
+        "peekOfCode": "class FAQArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = FAQArabic.objects.all()\n    serializer_class = FAQArabicSerializer\n    lookup_field = 'id'\nclass FAQArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = FAQArabic.objects.all()\n    serializer_class = FAQArabicSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2678,7 +3130,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class FAQArabicDeleteView(DestroyAPIView):\n    queryset = FAQArabic.objects.all()\n    serializer_class = FAQArabicSerializer\n    lookup_field = 'id'\n# * =================== News English Dashboard ===================\nclass NewsEnglishListView(ListAPIView):\n    queryset = NewsEnglish.objects.all()\n    serializer_class = NewsEnglishSerializer\nclass NewsEnglishCreateView(CreateAPIView):\n    queryset = NewsEnglish.objects.all()",
+        "peekOfCode": "class FAQArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = FAQArabic.objects.all()\n    serializer_class = FAQArabicSerializer\n    lookup_field = 'id'\n# * =================== News English Dashboard ===================\nclass NewsEnglishListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = NewsEnglish.objects.all()\n    serializer_class = NewsEnglishSerializer",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2687,7 +3139,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class NewsEnglishListView(ListAPIView):\n    queryset = NewsEnglish.objects.all()\n    serializer_class = NewsEnglishSerializer\nclass NewsEnglishCreateView(CreateAPIView):\n    queryset = NewsEnglish.objects.all()\n    serializer_class = NewsEnglishSerializer\nclass NewsEnglishDetailView(RetrieveAPIView):\n    queryset = NewsEnglish.objects.all()\n    serializer_class = NewsEnglishSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class NewsEnglishListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = NewsEnglish.objects.all()\n    serializer_class = NewsEnglishSerializer\nclass NewsEnglishCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = NewsEnglish.objects.all()\n    serializer_class = NewsEnglishSerializer\nclass NewsEnglishDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2696,7 +3148,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class NewsEnglishCreateView(CreateAPIView):\n    queryset = NewsEnglish.objects.all()\n    serializer_class = NewsEnglishSerializer\nclass NewsEnglishDetailView(RetrieveAPIView):\n    queryset = NewsEnglish.objects.all()\n    serializer_class = NewsEnglishSerializer\n    lookup_field = 'id'\nclass NewsEnglishUpdateView(UpdateAPIView):\n    queryset = NewsEnglish.objects.all()\n    serializer_class = NewsEnglishSerializer",
+        "peekOfCode": "class NewsEnglishCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = NewsEnglish.objects.all()\n    serializer_class = NewsEnglishSerializer\nclass NewsEnglishDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = NewsEnglish.objects.all()\n    serializer_class = NewsEnglishSerializer\n    lookup_field = 'id'\nclass NewsEnglishUpdateView(UpdateAPIView):",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2705,7 +3157,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class NewsEnglishDetailView(RetrieveAPIView):\n    queryset = NewsEnglish.objects.all()\n    serializer_class = NewsEnglishSerializer\n    lookup_field = 'id'\nclass NewsEnglishUpdateView(UpdateAPIView):\n    queryset = NewsEnglish.objects.all()\n    serializer_class = NewsEnglishSerializer\n    lookup_field = 'id'\nclass NewsEnglishDeleteView(DestroyAPIView):\n    queryset = NewsEnglish.objects.all()",
+        "peekOfCode": "class NewsEnglishDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = NewsEnglish.objects.all()\n    serializer_class = NewsEnglishSerializer\n    lookup_field = 'id'\nclass NewsEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = NewsEnglish.objects.all()\n    serializer_class = NewsEnglishSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2714,7 +3166,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class NewsEnglishUpdateView(UpdateAPIView):\n    queryset = NewsEnglish.objects.all()\n    serializer_class = NewsEnglishSerializer\n    lookup_field = 'id'\nclass NewsEnglishDeleteView(DestroyAPIView):\n    queryset = NewsEnglish.objects.all()\n    serializer_class = NewsEnglishSerializer\n    lookup_field = 'id'\n# * =================== News Arabic Dashboard ===================\nclass NewsArabicListView(ListAPIView):",
+        "peekOfCode": "class NewsEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = NewsEnglish.objects.all()\n    serializer_class = NewsEnglishSerializer\n    lookup_field = 'id'\nclass NewsEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = NewsEnglish.objects.all()\n    serializer_class = NewsEnglishSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2723,7 +3175,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class NewsEnglishDeleteView(DestroyAPIView):\n    queryset = NewsEnglish.objects.all()\n    serializer_class = NewsEnglishSerializer\n    lookup_field = 'id'\n# * =================== News Arabic Dashboard ===================\nclass NewsArabicListView(ListAPIView):\n    queryset = NewsArabic.objects.all()\n    serializer_class = NewsArabicSerializer\nclass NewsArabicCreateView(CreateAPIView):\n    queryset = NewsArabic.objects.all()",
+        "peekOfCode": "class NewsEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = NewsEnglish.objects.all()\n    serializer_class = NewsEnglishSerializer\n    lookup_field = 'id'\n# * =================== News Arabic Dashboard ===================\nclass NewsArabicListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = NewsArabic.objects.all()\n    serializer_class = NewsArabicSerializer",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2732,7 +3184,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class NewsArabicListView(ListAPIView):\n    queryset = NewsArabic.objects.all()\n    serializer_class = NewsArabicSerializer\nclass NewsArabicCreateView(CreateAPIView):\n    queryset = NewsArabic.objects.all()\n    serializer_class = NewsArabicSerializer\nclass NewsArabicDetailView(RetrieveAPIView):\n    queryset = NewsArabic.objects.all()\n    serializer_class = NewsArabicSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class NewsArabicListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = NewsArabic.objects.all()\n    serializer_class = NewsArabicSerializer\nclass NewsArabicCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = NewsArabic.objects.all()\n    serializer_class = NewsArabicSerializer\nclass NewsArabicDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2741,7 +3193,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class NewsArabicCreateView(CreateAPIView):\n    queryset = NewsArabic.objects.all()\n    serializer_class = NewsArabicSerializer\nclass NewsArabicDetailView(RetrieveAPIView):\n    queryset = NewsArabic.objects.all()\n    serializer_class = NewsArabicSerializer\n    lookup_field = 'id'\nclass NewsArabicUpdateView(UpdateAPIView):\n    queryset = NewsArabic.objects.all()\n    serializer_class = NewsArabicSerializer",
+        "peekOfCode": "class NewsArabicCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = NewsArabic.objects.all()\n    serializer_class = NewsArabicSerializer\nclass NewsArabicDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = NewsArabic.objects.all()\n    serializer_class = NewsArabicSerializer\n    lookup_field = 'id'\nclass NewsArabicUpdateView(UpdateAPIView):",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2750,7 +3202,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class NewsArabicDetailView(RetrieveAPIView):\n    queryset = NewsArabic.objects.all()\n    serializer_class = NewsArabicSerializer\n    lookup_field = 'id'\nclass NewsArabicUpdateView(UpdateAPIView):\n    queryset = NewsArabic.objects.all()\n    serializer_class = NewsArabicSerializer\n    lookup_field = 'id'\nclass NewsArabicDeleteView(DestroyAPIView):\n    queryset = NewsArabic.objects.all()",
+        "peekOfCode": "class NewsArabicDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = NewsArabic.objects.all()\n    serializer_class = NewsArabicSerializer\n    lookup_field = 'id'\nclass NewsArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = NewsArabic.objects.all()\n    serializer_class = NewsArabicSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2759,7 +3211,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class NewsArabicUpdateView(UpdateAPIView):\n    queryset = NewsArabic.objects.all()\n    serializer_class = NewsArabicSerializer\n    lookup_field = 'id'\nclass NewsArabicDeleteView(DestroyAPIView):\n    queryset = NewsArabic.objects.all()\n    serializer_class = NewsArabicSerializer\n    lookup_field = 'id'\n# * =================== Product English Dashboard ===================\nclass ProductEnglishListView(ListAPIView):",
+        "peekOfCode": "class NewsArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = NewsArabic.objects.all()\n    serializer_class = NewsArabicSerializer\n    lookup_field = 'id'\nclass NewsArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = NewsArabic.objects.all()\n    serializer_class = NewsArabicSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2768,7 +3220,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class NewsArabicDeleteView(DestroyAPIView):\n    queryset = NewsArabic.objects.all()\n    serializer_class = NewsArabicSerializer\n    lookup_field = 'id'\n# * =================== Product English Dashboard ===================\nclass ProductEnglishListView(ListAPIView):\n    queryset = ProductEnglish.objects.all()\n    serializer_class = ProductEnglishSerializer\nclass ProductEnglishCreateView(CreateAPIView):\n    queryset = ProductEnglish.objects.all()",
+        "peekOfCode": "class NewsArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = NewsArabic.objects.all()\n    serializer_class = NewsArabicSerializer\n    lookup_field = 'id'\n# * =================== Product English Dashboard ===================\nclass ProductEnglishListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ProductEnglish.objects.all()\n    serializer_class = ProductEnglishSerializer",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2777,7 +3229,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ProductEnglishListView(ListAPIView):\n    queryset = ProductEnglish.objects.all()\n    serializer_class = ProductEnglishSerializer\nclass ProductEnglishCreateView(CreateAPIView):\n    queryset = ProductEnglish.objects.all()\n    serializer_class = ProductEnglishSerializer\nclass ProductEnglishDetailView(RetrieveAPIView):\n    queryset = ProductEnglish.objects.all()\n    serializer_class = ProductEnglishSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class ProductEnglishListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ProductEnglish.objects.all()\n    serializer_class = ProductEnglishSerializer\nclass ProductEnglishCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ProductEnglish.objects.all()\n    serializer_class = ProductEnglishSerializer\nclass ProductEnglishDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2786,7 +3238,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ProductEnglishCreateView(CreateAPIView):\n    queryset = ProductEnglish.objects.all()\n    serializer_class = ProductEnglishSerializer\nclass ProductEnglishDetailView(RetrieveAPIView):\n    queryset = ProductEnglish.objects.all()\n    serializer_class = ProductEnglishSerializer\n    lookup_field = 'id'\nclass ProductEnglishUpdateView(UpdateAPIView):\n    queryset = ProductEnglish.objects.all()\n    serializer_class = ProductEnglishSerializer",
+        "peekOfCode": "class ProductEnglishCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ProductEnglish.objects.all()\n    serializer_class = ProductEnglishSerializer\nclass ProductEnglishDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ProductEnglish.objects.all()\n    serializer_class = ProductEnglishSerializer\n    lookup_field = 'id'\nclass ProductEnglishUpdateView(UpdateAPIView):",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2795,7 +3247,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ProductEnglishDetailView(RetrieveAPIView):\n    queryset = ProductEnglish.objects.all()\n    serializer_class = ProductEnglishSerializer\n    lookup_field = 'id'\nclass ProductEnglishUpdateView(UpdateAPIView):\n    queryset = ProductEnglish.objects.all()\n    serializer_class = ProductEnglishSerializer\n    lookup_field = 'id'\nclass ProductEnglishDeleteView(DestroyAPIView):\n    queryset = ProductEnglish.objects.all()",
+        "peekOfCode": "class ProductEnglishDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ProductEnglish.objects.all()\n    serializer_class = ProductEnglishSerializer\n    lookup_field = 'id'\nclass ProductEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ProductEnglish.objects.all()\n    serializer_class = ProductEnglishSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2804,7 +3256,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ProductEnglishUpdateView(UpdateAPIView):\n    queryset = ProductEnglish.objects.all()\n    serializer_class = ProductEnglishSerializer\n    lookup_field = 'id'\nclass ProductEnglishDeleteView(DestroyAPIView):\n    queryset = ProductEnglish.objects.all()\n    serializer_class = ProductEnglishSerializer\n    lookup_field = 'id'\n# * =================== Product Arabic Dashboard ===================\nclass ProductArabicListView(ListAPIView):",
+        "peekOfCode": "class ProductEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ProductEnglish.objects.all()\n    serializer_class = ProductEnglishSerializer\n    lookup_field = 'id'\nclass ProductEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ProductEnglish.objects.all()\n    serializer_class = ProductEnglishSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2813,7 +3265,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ProductEnglishDeleteView(DestroyAPIView):\n    queryset = ProductEnglish.objects.all()\n    serializer_class = ProductEnglishSerializer\n    lookup_field = 'id'\n# * =================== Product Arabic Dashboard ===================\nclass ProductArabicListView(ListAPIView):\n    queryset = ProductArabic.objects.all()\n    serializer_class = ProductArabicSerializer\nclass ProductArabicCreateView(CreateAPIView):\n    queryset = ProductArabic.objects.all()",
+        "peekOfCode": "class ProductEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ProductEnglish.objects.all()\n    serializer_class = ProductEnglishSerializer\n    lookup_field = 'id'\n# * =================== Product Arabic Dashboard ===================\nclass ProductArabicListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ProductArabic.objects.all()\n    serializer_class = ProductArabicSerializer",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2822,7 +3274,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ProductArabicListView(ListAPIView):\n    queryset = ProductArabic.objects.all()\n    serializer_class = ProductArabicSerializer\nclass ProductArabicCreateView(CreateAPIView):\n    queryset = ProductArabic.objects.all()\n    serializer_class = ProductArabicSerializer\nclass ProductArabicDetailView(RetrieveAPIView):\n    queryset = ProductArabic.objects.all()\n    serializer_class = ProductArabicSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class ProductArabicListView(ListAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ProductArabic.objects.all()\n    serializer_class = ProductArabicSerializer\nclass ProductArabicCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ProductArabic.objects.all()\n    serializer_class = ProductArabicSerializer\nclass ProductArabicDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2831,7 +3283,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ProductArabicCreateView(CreateAPIView):\n    queryset = ProductArabic.objects.all()\n    serializer_class = ProductArabicSerializer\nclass ProductArabicDetailView(RetrieveAPIView):\n    queryset = ProductArabic.objects.all()\n    serializer_class = ProductArabicSerializer\n    lookup_field = 'id'\nclass ProductArabicUpdateView(UpdateAPIView):\n    queryset = ProductArabic.objects.all()\n    serializer_class = ProductArabicSerializer",
+        "peekOfCode": "class ProductArabicCreateView(CreateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ProductArabic.objects.all()\n    serializer_class = ProductArabicSerializer\nclass ProductArabicDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ProductArabic.objects.all()\n    serializer_class = ProductArabicSerializer\n    lookup_field = 'id'\nclass ProductArabicUpdateView(UpdateAPIView):",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2840,7 +3292,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ProductArabicDetailView(RetrieveAPIView):\n    queryset = ProductArabic.objects.all()\n    serializer_class = ProductArabicSerializer\n    lookup_field = 'id'\nclass ProductArabicUpdateView(UpdateAPIView):\n    queryset = ProductArabic.objects.all()\n    serializer_class = ProductArabicSerializer\n    lookup_field = 'id'\nclass ProductArabicDeleteView(DestroyAPIView):\n    queryset = ProductArabic.objects.all()",
+        "peekOfCode": "class ProductArabicDetailView(RetrieveAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ProductArabic.objects.all()\n    serializer_class = ProductArabicSerializer\n    lookup_field = 'id'\nclass ProductArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ProductArabic.objects.all()\n    serializer_class = ProductArabicSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2849,7 +3301,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ProductArabicUpdateView(UpdateAPIView):\n    queryset = ProductArabic.objects.all()\n    serializer_class = ProductArabicSerializer\n    lookup_field = 'id'\nclass ProductArabicDeleteView(DestroyAPIView):\n    queryset = ProductArabic.objects.all()\n    serializer_class = ProductArabicSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class ProductArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ProductArabic.objects.all()\n    serializer_class = ProductArabicSerializer\n    lookup_field = 'id'\nclass ProductArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ProductArabic.objects.all()\n    serializer_class = ProductArabicSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2858,7 +3310,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ProductArabicDeleteView(DestroyAPIView):\n    queryset = ProductArabic.objects.all()\n    serializer_class = ProductArabicSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class ProductArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ProductArabic.objects.all()\n    serializer_class = ProductArabicSerializer\n    lookup_field = 'id'",
         "detail": "dashboard.views",
         "documentation": {}
     },

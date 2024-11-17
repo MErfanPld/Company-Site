@@ -641,3 +641,220 @@ class ProductArabicDeleteView(DestroyAPIView):
     queryset = ProductArabic.objects.all()
     serializer_class = ProductArabicSerializer
     lookup_field = 'id'
+
+
+
+# * =================== About Sliders English Dashboard ===================
+
+
+class AboutSlidersEnglishListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = AboutSlidersEnglish.objects.all()
+    serializer_class = AboutSlidersEnglishSerializer
+
+
+class AboutSlidersEnglishCreateView(CreateAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = AboutSlidersEnglish.objects.all()
+    serializer_class = AboutSlidersEnglishSerializer
+
+
+class AboutSlidersEnglishDetailView(RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = AboutSlidersEnglish.objects.all()
+    serializer_class = AboutSlidersEnglishSerializer
+    lookup_field = 'id'
+
+
+class AboutSlidersEnglishUpdateView(UpdateAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = AboutSlidersEnglish.objects.all()
+    serializer_class = AboutSlidersEnglishSerializer
+    lookup_field = 'id'
+
+
+class AboutSlidersEnglishDeleteView(DestroyAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = AboutSlidersEnglish.objects.all()
+    serializer_class = AboutSlidersEnglishSerializer
+    lookup_field = 'id'
+
+
+# * =================== About Sliders Arabic Dashboard ===================
+
+
+class AboutSlidersArabicListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = AboutSlidersArabic.objects.all()
+    serializer_class = AboutSlidersArabicSerializer
+
+
+class AboutSlidersArabicCreateView(CreateAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = AboutSlidersArabic.objects.all()
+    serializer_class = AboutSlidersArabicSerializer
+
+
+class AboutSlidersArabicDetailView(RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = AboutSlidersArabic.objects.all()
+    serializer_class = AboutSlidersArabicSerializer
+    lookup_field = 'id'
+
+
+class AboutSlidersArabicUpdateView(UpdateAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = AboutSlidersArabic.objects.all()
+    serializer_class = AboutSlidersArabicSerializer
+    lookup_field = 'id'
+
+
+class AboutSlidersArabicDeleteView(DestroyAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = AboutSlidersArabic.objects.all()
+    serializer_class = AboutSlidersArabicSerializer
+    lookup_field = 'id'
+
+
+# * =================== Achievement English Dashboard ===================
+
+
+class AchievementEnglishListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = AchievementEnglish.objects.all()
+    serializer_class = AchievementEnglishSerializer
+
+
+class AchievementEnglishCreateView(CreateAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = AchievementEnglish.objects.all()
+    serializer_class = AchievementEnglishSerializer
+
+
+class AchievementEnglishDetailView(RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = AchievementEnglish.objects.all()
+    serializer_class = AchievementEnglishSerializer
+    lookup_field = 'id'
+
+
+class AchievementEnglishUpdateView(UpdateAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = AchievementEnglish.objects.all()
+    serializer_class = AchievementEnglishSerializer
+    lookup_field = 'id'
+
+
+class AchievementEnglishDeleteView(DestroyAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = AchievementEnglish.objects.all()
+    serializer_class = AchievementEnglishSerializer
+    lookup_field = 'id'
+
+
+# * =================== Achievement Arabic Dashboard ===================
+
+
+class AchievementArabicListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = AchievementArabic.objects.all()
+    serializer_class = AchievementArabicSerializer
+
+
+class AchievementArabicCreateView(CreateAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = AchievementArabic.objects.all()
+    serializer_class = AchievementArabicSerializer
+
+
+class AchievementArabicDetailView(RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = AchievementArabic.objects.all()
+    serializer_class = AchievementArabicSerializer
+    lookup_field = 'id'
+
+
+class AchievementArabicUpdateView(UpdateAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = AchievementArabic.objects.all()
+    serializer_class = AchievementArabicSerializer
+    lookup_field = 'id'
+
+
+class AchievementArabicDeleteView(DestroyAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = AchievementArabic.objects.all()
+    serializer_class = AchievementArabicSerializer
+    lookup_field = 'id'
+
+
+# * =================== Team English Dashboard ===================
+
+
+class TeamEnglishListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = TeamEnglish.objects.all()
+    serializer_class = TeamEnglishSerializer
+
+
+class TeamEnglishCreateView(CreateAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = TeamEnglish.objects.all()
+    serializer_class = TeamEnglishSerializer
+
+
+class TeamEnglishDetailView(RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = TeamEnglish.objects.all()
+    serializer_class = TeamEnglishSerializer
+    lookup_field = 'id'
+
+
+class TeamEnglishUpdateView(UpdateAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = TeamEnglish.objects.all()
+    serializer_class = TeamEnglishSerializer
+    lookup_field = 'id'
+
+
+class TeamEnglishDeleteView(DestroyAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = TeamEnglish.objects.all()
+    serializer_class = TeamEnglishSerializer
+    lookup_field = 'id'
+
+
+# * =================== Team Arabic Dashboard ===================
+
+
+class TeamArabicListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = TeamArabic.objects.all()
+    serializer_class = TeamArabicSerializer
+
+
+class TeamArabicCreateView(CreateAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = TeamArabic.objects.all()
+    serializer_class = TeamArabicSerializer
+
+
+class TeamArabicDetailView(RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = TeamArabic.objects.all()
+    serializer_class = TeamArabicSerializer
+    lookup_field = 'id'
+
+
+class TeamArabicUpdateView(UpdateAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = TeamArabic.objects.all()
+    serializer_class = TeamArabicSerializer
+    lookup_field = 'id'
+
+
+class TeamArabicDeleteView(DestroyAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = TeamArabic.objects.all()
+    serializer_class = TeamArabicSerializer
+    lookup_field = 'id'

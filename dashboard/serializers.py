@@ -1,6 +1,8 @@
+import aboutus.utils
 from rest_framework import serializers
 from home.models import *
 from news.models import *
+from aboutus.models import *
 from products.models import ProductArabic, ProductEnglish
 
 
@@ -109,4 +111,39 @@ class ProductEnglishSerializer(serializers.ModelSerializer):
 class ProductArabicSerializer(serializers.ModelSerializer):
     class Meta:
         model = ProductArabic
+        fields = "__all__"
+
+
+class AboutSlidersEnglishSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = AboutSlidersEnglish
+        fields = "__all__"
+
+
+class AboutSlidersArabicSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = AboutSlidersArabic
+        fields = "__all__"
+
+
+class AchievementEnglishSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = AchievementEnglish
+        fields = "__all__"
+
+
+class AchievementArabicSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = AchievementArabic
+        fields = "__all__"
+
+class TeamEnglishSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TeamEnglish
+        fields = "__all__"
+
+
+class TeamArabicSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TeamArabic
         fields = "__all__"

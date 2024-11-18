@@ -35,6 +35,9 @@ class SlidersEnglishUpdateView(UpdateAPIView):
     serializer_class = SliderEnglishSerializer
     lookup_field = 'id'
 
+    def partial_update(self, request, *args, **kwargs):
+        return super().partial_update(request, *args, **kwargs)
+
 
 class SlidersEnglishDeleteView(DestroyAPIView):
     permission_classes = [IsAuthenticated]
@@ -69,6 +72,9 @@ class SlidersArabicUpdateView(UpdateAPIView):
     queryset = SlidersArabic.objects.all()
     serializer_class = SliderArabicSerializer
     lookup_field = 'id'
+
+    def partial_update(self, request, *args, **kwargs):
+        return super().partial_update(request, *args, **kwargs)
 
 
 class SlidersArabicDeleteView(DestroyAPIView):
@@ -105,6 +111,9 @@ class AboutUsEnglishUpdateView(UpdateAPIView):
     serializer_class = AboutUsEnglishSerializer
     lookup_field = 'id'
 
+    def partial_update(self, request, *args, **kwargs):
+        return super().partial_update(request, *args, **kwargs)
+
 
 class AboutUsEnglishDeleteView(DestroyAPIView):
     permission_classes = [IsAuthenticated]
@@ -139,6 +148,9 @@ class AboutUsArabicUpdateView(UpdateAPIView):
     queryset = AboutUsArabic.objects.all()
     serializer_class = AboutUsArabicSerializer
     lookup_field = 'id'
+
+    def partial_update(self, request, *args, **kwargs):
+        return super().partial_update(request, *args, **kwargs)
 
 
 class AboutUsArabicDeleteView(DestroyAPIView):
@@ -175,6 +187,9 @@ class ChooseUsEnglishUpdateView(UpdateAPIView):
     serializer_class = ChooseUsEnglishSerializer
     lookup_field = 'id'
 
+    def partial_update(self, request, *args, **kwargs):
+        return super().partial_update(request, *args, **kwargs)
+
 
 class ChooseUsEnglishDeleteView(DestroyAPIView):
     permission_classes = [IsAuthenticated]
@@ -209,6 +224,9 @@ class ChooseUsArabicUpdateView(UpdateAPIView):
     queryset = ChooseUsArabic.objects.all()
     serializer_class = ChooseUsArabicSerializer
     lookup_field = 'id'
+
+    def partial_update(self, request, *args, **kwargs):
+        return super().partial_update(request, *args, **kwargs)
 
 
 class ChooseUsArabicDeleteView(DestroyAPIView):
@@ -245,6 +263,9 @@ class ServiceEnglishUpdateView(UpdateAPIView):
     serializer_class = ServiceEnglishSerializer
     lookup_field = 'id'
 
+    def partial_update(self, request, *args, **kwargs):
+        return super().partial_update(request, *args, **kwargs)
+
 
 class ServiceEnglishDeleteView(DestroyAPIView):
     permission_classes = [IsAuthenticated]
@@ -279,6 +300,9 @@ class ServiceArabicUpdateView(UpdateAPIView):
     queryset = ServiceArabic.objects.all()
     serializer_class = ServiceArabicSerializer
     lookup_field = 'id'
+
+    def partial_update(self, request, *args, **kwargs):
+        return super().partial_update(request, *args, **kwargs)
 
 
 class ServiceArabicDeleteView(DestroyAPIView):
@@ -315,6 +339,9 @@ class CommentsEnglishUpdateView(UpdateAPIView):
     serializer_class = CommentsEnglishSerializer
     lookup_field = 'id'
 
+    def partial_update(self, request, *args, **kwargs):
+        return super().partial_update(request, *args, **kwargs)
+
 
 class CommentsEnglishDeleteView(DestroyAPIView):
     permission_classes = [IsAuthenticated]
@@ -349,6 +376,9 @@ class CommentsArabicUpdateView(UpdateAPIView):
     queryset = CommentsArabic.objects.all()
     serializer_class = CommentsArabicSerializer
     lookup_field = 'id'
+
+    def partial_update(self, request, *args, **kwargs):
+        return super().partial_update(request, *args, **kwargs)
 
 
 class CommentsArabicDeleteView(DestroyAPIView):
@@ -386,6 +416,9 @@ class SuggestionsEnglishUpdateView(UpdateAPIView):
     serializer_class = SuggestionsEnglishSerializer
     lookup_field = 'id'
 
+    def partial_update(self, request, *args, **kwargs):
+        return super().partial_update(request, *args, **kwargs)
+
 
 class SuggestionsEnglishDeleteView(DestroyAPIView):
     permission_classes = [IsAuthenticated]
@@ -420,6 +453,9 @@ class SuggestionsArabicUpdateView(UpdateAPIView):
     queryset = SuggestionsArabic.objects.all()
     serializer_class = SuggestionsArabicSerializer
     lookup_field = 'id'
+
+    def partial_update(self, request, *args, **kwargs):
+        return super().partial_update(request, *args, **kwargs)
 
 
 class SuggestionsArabicDeleteView(DestroyAPIView):
@@ -456,6 +492,9 @@ class FAQEnglishUpdateView(UpdateAPIView):
     serializer_class = FAQEnglishSerializer
     lookup_field = 'id'
 
+    def partial_update(self, request, *args, **kwargs):
+        return super().partial_update(request, *args, **kwargs)
+
 
 class FAQEnglishDeleteView(DestroyAPIView):
     permission_classes = [IsAuthenticated]
@@ -490,6 +529,9 @@ class FAQArabicUpdateView(UpdateAPIView):
     queryset = FAQArabic.objects.all()
     serializer_class = FAQArabicSerializer
     lookup_field = 'id'
+
+    def partial_update(self, request, *args, **kwargs):
+        return super().partial_update(request, *args, **kwargs)
 
 
 class FAQArabicDeleteView(DestroyAPIView):
@@ -527,6 +569,9 @@ class NewsEnglishUpdateView(UpdateAPIView):
     serializer_class = NewsEnglishSerializer
     lookup_field = 'id'
 
+    def partial_update(self, request, *args, **kwargs):
+        return super().partial_update(request, *args, **kwargs)
+
 
 class NewsEnglishDeleteView(DestroyAPIView):
     permission_classes = [IsAuthenticated]
@@ -562,6 +607,9 @@ class NewsArabicUpdateView(UpdateAPIView):
     queryset = NewsArabic.objects.all()
     serializer_class = NewsArabicSerializer
     lookup_field = 'id'
+
+    def partial_update(self, request, *args, **kwargs):
+        return super().partial_update(request, *args, **kwargs)
 
 
 class NewsArabicDeleteView(DestroyAPIView):
@@ -599,6 +647,9 @@ class ProductEnglishUpdateView(UpdateAPIView):
     serializer_class = ProductEnglishSerializer
     lookup_field = 'id'
 
+    def partial_update(self, request, *args, **kwargs):
+        return super().partial_update(request, *args, **kwargs)
+
 
 class ProductEnglishDeleteView(DestroyAPIView):
     permission_classes = [IsAuthenticated]
@@ -635,13 +686,15 @@ class ProductArabicUpdateView(UpdateAPIView):
     serializer_class = ProductArabicSerializer
     lookup_field = 'id'
 
+    def partial_update(self, request, *args, **kwargs):
+        return super().partial_update(request, *args, **kwargs)
+
 
 class ProductArabicDeleteView(DestroyAPIView):
     permission_classes = [IsAuthenticated]
     queryset = ProductArabic.objects.all()
     serializer_class = ProductArabicSerializer
     lookup_field = 'id'
-
 
 
 # * =================== About Sliders English Dashboard ===================
@@ -671,6 +724,9 @@ class AboutSlidersEnglishUpdateView(UpdateAPIView):
     queryset = AboutSlidersEnglish.objects.all()
     serializer_class = AboutSlidersEnglishSerializer
     lookup_field = 'id'
+
+    def partial_update(self, request, *args, **kwargs):
+        return super().partial_update(request, *args, **kwargs)
 
 
 class AboutSlidersEnglishDeleteView(DestroyAPIView):
@@ -708,6 +764,9 @@ class AboutSlidersArabicUpdateView(UpdateAPIView):
     serializer_class = AboutSlidersArabicSerializer
     lookup_field = 'id'
 
+    def partial_update(self, request, *args, **kwargs):
+        return super().partial_update(request, *args, **kwargs)
+
 
 class AboutSlidersArabicDeleteView(DestroyAPIView):
     permission_classes = [IsAuthenticated]
@@ -743,6 +802,9 @@ class AchievementEnglishUpdateView(UpdateAPIView):
     queryset = AchievementEnglish.objects.all()
     serializer_class = AchievementEnglishSerializer
     lookup_field = 'id'
+
+    def partial_update(self, request, *args, **kwargs):
+        return super().partial_update(request, *args, **kwargs)
 
 
 class AchievementEnglishDeleteView(DestroyAPIView):
@@ -780,6 +842,9 @@ class AchievementArabicUpdateView(UpdateAPIView):
     serializer_class = AchievementArabicSerializer
     lookup_field = 'id'
 
+    def partial_update(self, request, *args, **kwargs):
+        return super().partial_update(request, *args, **kwargs)
+
 
 class AchievementArabicDeleteView(DestroyAPIView):
     permission_classes = [IsAuthenticated]
@@ -816,6 +881,9 @@ class TeamEnglishUpdateView(UpdateAPIView):
     serializer_class = TeamEnglishSerializer
     lookup_field = 'id'
 
+    def partial_update(self, request, *args, **kwargs):
+        return super().partial_update(request, *args, **kwargs)
+
 
 class TeamEnglishDeleteView(DestroyAPIView):
     permission_classes = [IsAuthenticated]
@@ -851,6 +919,9 @@ class TeamArabicUpdateView(UpdateAPIView):
     queryset = TeamArabic.objects.all()
     serializer_class = TeamArabicSerializer
     lookup_field = 'id'
+
+    def partial_update(self, request, *args, **kwargs):
+        return super().partial_update(request, *args, **kwargs)
 
 
 class TeamArabicDeleteView(DestroyAPIView):

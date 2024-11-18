@@ -1914,7 +1914,7 @@
         "kind": 6,
         "importPath": "config.middleware",
         "description": "config.middleware",
-        "peekOfCode": "class APICorsMiddleware:\n    def __init__(self, get_response):\n        self.get_response = get_response\n    def __call__(self, request):\n        response = self.get_response(request)\n        response[\"Access-Control-Allow-Origin\"] = \"*\"\n        response[\"Access-Control-Allow-Methods\"] = \"GET, POST, PUT, DELETE, OPTIONS\"\n        response[\"Access-Control-Allow-Headers\"] = \"Content-Type, Authorization\"\n        return response",
+        "peekOfCode": "class APICorsMiddleware:\n    def __init__(self, get_response):\n        self.get_response = get_response\n    def __call__(self, request):\n        if request.method == \"OPTIONS\":\n            response = self._handle_preflight(request)\n        else:\n            response = self.get_response(request)\n        response[\"Access-Control-Allow-Origin\"] = \"*\"  # مبدا صحیح را وارد کنید\n        response[\"Access-Control-Allow-Methods\"] = \"GET, POST, PUT, PATCH,DELETE, OPTIONS\"",
         "detail": "config.middleware",
         "documentation": {}
     },
@@ -1968,7 +1968,7 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    # 'corsheaders.middleware.CorsMiddleware',\n    'config.middleware.APICorsMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'corsheaders.middleware.CorsMiddleware',\n    'config.middleware.APICorsMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -2130,7 +2130,34 @@
         "kind": 5,
         "importPath": "config.settings",
         "description": "config.settings",
-        "peekOfCode": "SPECTACULAR_SETTINGS = {\n    'TITLE': 'Project API',\n    'DESCRIPTION': 'Project description',\n    'VERSION': '1.0.0',\n    'SERVE_INCLUDE_SCHEMA': False,\n}\n# CORS_ALLOWED_ORIGINS = [\n#     'http://localhost:3030',\n# ]\nSIMPLE_JWT = {",
+        "peekOfCode": "SPECTACULAR_SETTINGS = {\n    'TITLE': 'Project API',\n    'DESCRIPTION': 'Project description',\n    'VERSION': '1.0.0',\n    'SERVE_INCLUDE_SCHEMA': False,\n}\n# CORS_ALLOWED_ORIGINS = [\n#     'http://localhost:3030',\n# ]\nCORS_ALLOW_ALL_ORIGINS = True",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOW_ALL_ORIGINS",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "CORS_ALLOW_ALL_ORIGINS = True\nCORS_ALLOW_HEADERS = [\n    'Content-Type',\n    'Authorization',\n]\nCORS_ALLOW_METHODS = [\n    'GET',\n    'POST',\n    'PUT',\n    'PATCH',",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOW_HEADERS",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "CORS_ALLOW_HEADERS = [\n    'Content-Type',\n    'Authorization',\n]\nCORS_ALLOW_METHODS = [\n    'GET',\n    'POST',\n    'PUT',\n    'PATCH',\n    'DELETE',",
+        "detail": "config.settings",
+        "documentation": {}
+    },
+    {
+        "label": "CORS_ALLOW_METHODS",
+        "kind": 5,
+        "importPath": "config.settings",
+        "description": "config.settings",
+        "peekOfCode": "CORS_ALLOW_METHODS = [\n    'GET',\n    'POST',\n    'PUT',\n    'PATCH',\n    'DELETE',\n]\nSIMPLE_JWT = {\n    \"ACCESS_TOKEN_LIFETIME\": timedelta(days=1),\n    \"REFRESH_TOKEN_LIFETIME\": timedelta(seconds=5),",
         "detail": "config.settings",
         "documentation": {}
     },
@@ -2598,7 +2625,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class SlidersEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SlidersEnglish.objects.all()\n    serializer_class = SliderEnglishSerializer\n    lookup_field = 'id'\nclass SlidersEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SlidersEnglish.objects.all()\n    serializer_class = SliderEnglishSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class SlidersEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SlidersEnglish.objects.all()\n    serializer_class = SliderEnglishSerializer\n    lookup_field = 'id'\n    def partial_update(self, request, *args, **kwargs):\n        return super().partial_update(request, *args, **kwargs)\nclass SlidersEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SlidersEnglish.objects.all()",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2643,7 +2670,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class SlidersArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SlidersArabic.objects.all()\n    serializer_class = SliderArabicSerializer\n    lookup_field = 'id'\nclass SlidersArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SlidersArabic.objects.all()\n    serializer_class = SliderArabicSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class SlidersArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SlidersArabic.objects.all()\n    serializer_class = SliderArabicSerializer\n    lookup_field = 'id'\n    def partial_update(self, request, *args, **kwargs):\n        return super().partial_update(request, *args, **kwargs)\nclass SlidersArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SlidersArabic.objects.all()",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2688,7 +2715,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class AboutUsEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutUsEnglish.objects.all()\n    serializer_class = AboutUsEnglishSerializer\n    lookup_field = 'id'\nclass AboutUsEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutUsEnglish.objects.all()\n    serializer_class = AboutUsEnglishSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class AboutUsEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutUsEnglish.objects.all()\n    serializer_class = AboutUsEnglishSerializer\n    lookup_field = 'id'\n    def partial_update(self, request, *args, **kwargs):\n        return super().partial_update(request, *args, **kwargs)\nclass AboutUsEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutUsEnglish.objects.all()",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2733,7 +2760,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class AboutUsArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutUsArabic.objects.all()\n    serializer_class = AboutUsArabicSerializer\n    lookup_field = 'id'\nclass AboutUsArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutUsArabic.objects.all()\n    serializer_class = AboutUsArabicSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class AboutUsArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutUsArabic.objects.all()\n    serializer_class = AboutUsArabicSerializer\n    lookup_field = 'id'\n    def partial_update(self, request, *args, **kwargs):\n        return super().partial_update(request, *args, **kwargs)\nclass AboutUsArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutUsArabic.objects.all()",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2778,7 +2805,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ChooseUsEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ChooseUsEnglish.objects.all()\n    serializer_class = ChooseUsEnglishSerializer\n    lookup_field = 'id'\nclass ChooseUsEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ChooseUsEnglish.objects.all()\n    serializer_class = ChooseUsEnglishSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class ChooseUsEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ChooseUsEnglish.objects.all()\n    serializer_class = ChooseUsEnglishSerializer\n    lookup_field = 'id'\n    def partial_update(self, request, *args, **kwargs):\n        return super().partial_update(request, *args, **kwargs)\nclass ChooseUsEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ChooseUsEnglish.objects.all()",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2823,7 +2850,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ChooseUsArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ChooseUsArabic.objects.all()\n    serializer_class = ChooseUsArabicSerializer\n    lookup_field = 'id'\nclass ChooseUsArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ChooseUsArabic.objects.all()\n    serializer_class = ChooseUsArabicSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class ChooseUsArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ChooseUsArabic.objects.all()\n    serializer_class = ChooseUsArabicSerializer\n    lookup_field = 'id'\n    def partial_update(self, request, *args, **kwargs):\n        return super().partial_update(request, *args, **kwargs)\nclass ChooseUsArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ChooseUsArabic.objects.all()",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2868,7 +2895,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ServiceEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ServiceEnglish.objects.all()\n    serializer_class = ServiceEnglishSerializer\n    lookup_field = 'id'\nclass ServiceEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ServiceEnglish.objects.all()\n    serializer_class = ServiceEnglishSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class ServiceEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ServiceEnglish.objects.all()\n    serializer_class = ServiceEnglishSerializer\n    lookup_field = 'id'\n    def partial_update(self, request, *args, **kwargs):\n        return super().partial_update(request, *args, **kwargs)\nclass ServiceEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ServiceEnglish.objects.all()",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2913,7 +2940,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ServiceArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ServiceArabic.objects.all()\n    serializer_class = ServiceArabicSerializer\n    lookup_field = 'id'\nclass ServiceArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ServiceArabic.objects.all()\n    serializer_class = ServiceArabicSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class ServiceArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ServiceArabic.objects.all()\n    serializer_class = ServiceArabicSerializer\n    lookup_field = 'id'\n    def partial_update(self, request, *args, **kwargs):\n        return super().partial_update(request, *args, **kwargs)\nclass ServiceArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ServiceArabic.objects.all()",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -2958,7 +2985,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class CommentsEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = CommentsEnglish.objects.all()\n    serializer_class = CommentsEnglishSerializer\n    lookup_field = 'id'\nclass CommentsEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = CommentsEnglish.objects.all()\n    serializer_class = CommentsEnglishSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class CommentsEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = CommentsEnglish.objects.all()\n    serializer_class = CommentsEnglishSerializer\n    lookup_field = 'id'\n    def partial_update(self, request, *args, **kwargs):\n        return super().partial_update(request, *args, **kwargs)\nclass CommentsEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = CommentsEnglish.objects.all()",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -3003,7 +3030,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class CommentsArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = CommentsArabic.objects.all()\n    serializer_class = CommentsArabicSerializer\n    lookup_field = 'id'\nclass CommentsArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = CommentsArabic.objects.all()\n    serializer_class = CommentsArabicSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class CommentsArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = CommentsArabic.objects.all()\n    serializer_class = CommentsArabicSerializer\n    lookup_field = 'id'\n    def partial_update(self, request, *args, **kwargs):\n        return super().partial_update(request, *args, **kwargs)\nclass CommentsArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = CommentsArabic.objects.all()",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -3048,7 +3075,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class SuggestionsEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SuggestionsEnglish.objects.all()\n    serializer_class = SuggestionsEnglishSerializer\n    lookup_field = 'id'\nclass SuggestionsEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SuggestionsEnglish.objects.all()\n    serializer_class = SuggestionsEnglishSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class SuggestionsEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SuggestionsEnglish.objects.all()\n    serializer_class = SuggestionsEnglishSerializer\n    lookup_field = 'id'\n    def partial_update(self, request, *args, **kwargs):\n        return super().partial_update(request, *args, **kwargs)\nclass SuggestionsEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SuggestionsEnglish.objects.all()",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -3093,7 +3120,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class SuggestionsArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SuggestionsArabic.objects.all()\n    serializer_class = SuggestionsArabicSerializer\n    lookup_field = 'id'\nclass SuggestionsArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SuggestionsArabic.objects.all()\n    serializer_class = SuggestionsArabicSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class SuggestionsArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SuggestionsArabic.objects.all()\n    serializer_class = SuggestionsArabicSerializer\n    lookup_field = 'id'\n    def partial_update(self, request, *args, **kwargs):\n        return super().partial_update(request, *args, **kwargs)\nclass SuggestionsArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = SuggestionsArabic.objects.all()",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -3138,7 +3165,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class FAQEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = FAQEnglish.objects.all()\n    serializer_class = FAQEnglishSerializer\n    lookup_field = 'id'\nclass FAQEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = FAQEnglish.objects.all()\n    serializer_class = FAQEnglishSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class FAQEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = FAQEnglish.objects.all()\n    serializer_class = FAQEnglishSerializer\n    lookup_field = 'id'\n    def partial_update(self, request, *args, **kwargs):\n        return super().partial_update(request, *args, **kwargs)\nclass FAQEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = FAQEnglish.objects.all()",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -3183,7 +3210,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class FAQArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = FAQArabic.objects.all()\n    serializer_class = FAQArabicSerializer\n    lookup_field = 'id'\nclass FAQArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = FAQArabic.objects.all()\n    serializer_class = FAQArabicSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class FAQArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = FAQArabic.objects.all()\n    serializer_class = FAQArabicSerializer\n    lookup_field = 'id'\n    def partial_update(self, request, *args, **kwargs):\n        return super().partial_update(request, *args, **kwargs)\nclass FAQArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = FAQArabic.objects.all()",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -3228,7 +3255,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class NewsEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = NewsEnglish.objects.all()\n    serializer_class = NewsEnglishSerializer\n    lookup_field = 'id'\nclass NewsEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = NewsEnglish.objects.all()\n    serializer_class = NewsEnglishSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class NewsEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = NewsEnglish.objects.all()\n    serializer_class = NewsEnglishSerializer\n    lookup_field = 'id'\n    def partial_update(self, request, *args, **kwargs):\n        return super().partial_update(request, *args, **kwargs)\nclass NewsEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = NewsEnglish.objects.all()",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -3273,7 +3300,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class NewsArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = NewsArabic.objects.all()\n    serializer_class = NewsArabicSerializer\n    lookup_field = 'id'\nclass NewsArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = NewsArabic.objects.all()\n    serializer_class = NewsArabicSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class NewsArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = NewsArabic.objects.all()\n    serializer_class = NewsArabicSerializer\n    lookup_field = 'id'\n    def partial_update(self, request, *args, **kwargs):\n        return super().partial_update(request, *args, **kwargs)\nclass NewsArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = NewsArabic.objects.all()",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -3318,7 +3345,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ProductEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ProductEnglish.objects.all()\n    serializer_class = ProductEnglishSerializer\n    lookup_field = 'id'\nclass ProductEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ProductEnglish.objects.all()\n    serializer_class = ProductEnglishSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class ProductEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ProductEnglish.objects.all()\n    serializer_class = ProductEnglishSerializer\n    lookup_field = 'id'\n    def partial_update(self, request, *args, **kwargs):\n        return super().partial_update(request, *args, **kwargs)\nclass ProductEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ProductEnglish.objects.all()",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -3363,7 +3390,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class ProductArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ProductArabic.objects.all()\n    serializer_class = ProductArabicSerializer\n    lookup_field = 'id'\nclass ProductArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ProductArabic.objects.all()\n    serializer_class = ProductArabicSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class ProductArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ProductArabic.objects.all()\n    serializer_class = ProductArabicSerializer\n    lookup_field = 'id'\n    def partial_update(self, request, *args, **kwargs):\n        return super().partial_update(request, *args, **kwargs)\nclass ProductArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = ProductArabic.objects.all()",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -3408,7 +3435,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class AboutSlidersEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutSlidersEnglish.objects.all()\n    serializer_class = AboutSlidersEnglishSerializer\n    lookup_field = 'id'\nclass AboutSlidersEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutSlidersEnglish.objects.all()\n    serializer_class = AboutSlidersEnglishSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class AboutSlidersEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutSlidersEnglish.objects.all()\n    serializer_class = AboutSlidersEnglishSerializer\n    lookup_field = 'id'\n    def partial_update(self, request, *args, **kwargs):\n        return super().partial_update(request, *args, **kwargs)\nclass AboutSlidersEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutSlidersEnglish.objects.all()",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -3453,7 +3480,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class AboutSlidersArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutSlidersArabic.objects.all()\n    serializer_class = AboutSlidersArabicSerializer\n    lookup_field = 'id'\nclass AboutSlidersArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutSlidersArabic.objects.all()\n    serializer_class = AboutSlidersArabicSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class AboutSlidersArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutSlidersArabic.objects.all()\n    serializer_class = AboutSlidersArabicSerializer\n    lookup_field = 'id'\n    def partial_update(self, request, *args, **kwargs):\n        return super().partial_update(request, *args, **kwargs)\nclass AboutSlidersArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AboutSlidersArabic.objects.all()",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -3498,7 +3525,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class AchievementEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AchievementEnglish.objects.all()\n    serializer_class = AchievementEnglishSerializer\n    lookup_field = 'id'\nclass AchievementEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AchievementEnglish.objects.all()\n    serializer_class = AchievementEnglishSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class AchievementEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AchievementEnglish.objects.all()\n    serializer_class = AchievementEnglishSerializer\n    lookup_field = 'id'\n    def partial_update(self, request, *args, **kwargs):\n        return super().partial_update(request, *args, **kwargs)\nclass AchievementEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AchievementEnglish.objects.all()",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -3543,7 +3570,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class AchievementArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AchievementArabic.objects.all()\n    serializer_class = AchievementArabicSerializer\n    lookup_field = 'id'\nclass AchievementArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AchievementArabic.objects.all()\n    serializer_class = AchievementArabicSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class AchievementArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AchievementArabic.objects.all()\n    serializer_class = AchievementArabicSerializer\n    lookup_field = 'id'\n    def partial_update(self, request, *args, **kwargs):\n        return super().partial_update(request, *args, **kwargs)\nclass AchievementArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = AchievementArabic.objects.all()",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -3588,7 +3615,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class TeamEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = TeamEnglish.objects.all()\n    serializer_class = TeamEnglishSerializer\n    lookup_field = 'id'\nclass TeamEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = TeamEnglish.objects.all()\n    serializer_class = TeamEnglishSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class TeamEnglishUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = TeamEnglish.objects.all()\n    serializer_class = TeamEnglishSerializer\n    lookup_field = 'id'\n    def partial_update(self, request, *args, **kwargs):\n        return super().partial_update(request, *args, **kwargs)\nclass TeamEnglishDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = TeamEnglish.objects.all()",
         "detail": "dashboard.views",
         "documentation": {}
     },
@@ -3633,7 +3660,7 @@
         "kind": 6,
         "importPath": "dashboard.views",
         "description": "dashboard.views",
-        "peekOfCode": "class TeamArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = TeamArabic.objects.all()\n    serializer_class = TeamArabicSerializer\n    lookup_field = 'id'\nclass TeamArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = TeamArabic.objects.all()\n    serializer_class = TeamArabicSerializer\n    lookup_field = 'id'",
+        "peekOfCode": "class TeamArabicUpdateView(UpdateAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = TeamArabic.objects.all()\n    serializer_class = TeamArabicSerializer\n    lookup_field = 'id'\n    def partial_update(self, request, *args, **kwargs):\n        return super().partial_update(request, *args, **kwargs)\nclass TeamArabicDeleteView(DestroyAPIView):\n    permission_classes = [IsAuthenticated]\n    queryset = TeamArabic.objects.all()",
         "detail": "dashboard.views",
         "documentation": {}
     },

@@ -96,6 +96,30 @@ urlpatterns = [
          name="ar_service_dashboard_update"),
     path("ar/service/<int:id>/delete/", views.ServiceArabicDeleteView.as_view(),
          name="ar_service_dashboard_delete"),
+    
+    # =============== Service Sliders ===============
+    path("en/service/sliders/", views.ServiceSlidersEnglishListView.as_view(),
+         name="en_service_dashboard_list"),
+    path("en/service/sliders/create/", views.ServiceSlidersEnglishCreateView.as_view(),
+         name="en_service_dashboard_create"),
+    path("en/service/sliders/<int:id>/", views.ServiceSlidersEnglishDetailView.as_view(),
+         name="en_service_dashboard_detail"),
+    path("en/service/sliders/<int:id>/update/", views.ServiceSlidersEnglishUpdateView.as_view(),
+         name="en_service_dashboard_update"),
+    path("en/service/sliders/<int:id>/delete/", views.ServiceSlidersEnglishDeleteView.as_view(),
+         name="en_service_dashboard_delete"),
+
+    path("ar/service/sliders/", views.ServiceSlidersArabicListView.as_view(),
+         name="ar_service_dashboard_list"),
+    path("ar/service/sliders/create/", views.ServiceSlidersArabicCreateView.as_view(),
+         name="ar_service_dashboard_create"),
+    path("ar/service/sliders/<int:id>/", views.ServiceSlidersArabicDetailView.as_view(),
+         name="ar_service_dashboard_detail"),
+    path("ar/service/sliders/<int:id>/update/", views.ServiceSlidersArabicUpdateView.as_view(),
+         name="ar_service_dashboard_update"),
+    path("ar/service/sliders/<int:id>/delete/", views.ServiceSlidersArabicDeleteView.as_view(),
+         name="ar_service_dashboard_delete"),
+    
     # =============== Comments ===============
     path("en/comments/", views.CommentsEnglishListView.as_view(),
          name="en_comments_dashboard_list"),

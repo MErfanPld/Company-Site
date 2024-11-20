@@ -54,6 +54,18 @@ class ServiceArabicSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
+class ServiceSlidersEnglishSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ServiceSlidersEnglish
+        fields = "__all__"
+
+
+class ServiceSlidersArabicSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ServiceSlidersArabic
+        fields = "__all__"
+
+
 class CommentsEnglishSerializer(serializers.ModelSerializer):
     class Meta:
         model = CommentsEnglish
@@ -136,6 +148,7 @@ class AchievementArabicSerializer(serializers.ModelSerializer):
     class Meta:
         model = AchievementArabic
         fields = "__all__"
+
 
 class TeamEnglishSerializer(serializers.ModelSerializer):
     class Meta:

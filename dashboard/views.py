@@ -311,6 +311,85 @@ class ServiceArabicDeleteView(DestroyAPIView):
     serializer_class = ServiceArabicSerializer
     lookup_field = 'id'
 
+
+# # * =================== Service Sliders English Dashboard ===================
+
+
+class ServiceSlidersEnglishListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = ServiceSlidersEnglish.objects.all()
+    serializer_class = ServiceSlidersEnglishSerializer
+
+
+class ServiceSlidersEnglishCreateView(CreateAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = ServiceSlidersEnglish.objects.all()
+    serializer_class = ServiceSlidersEnglishSerializer
+
+
+class ServiceSlidersEnglishDetailView(RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = ServiceSlidersEnglish.objects.all()
+    serializer_class = ServiceSlidersEnglishSerializer
+    lookup_field = 'id'
+
+
+class ServiceSlidersEnglishUpdateView(UpdateAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = ServiceSlidersEnglish.objects.all()
+    serializer_class = ServiceSlidersEnglishSerializer
+    lookup_field = 'id'
+
+    def partial_update(self, request, *args, **kwargs):
+        return super().partial_update(request, *args, **kwargs)
+
+
+class ServiceSlidersEnglishDeleteView(DestroyAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = ServiceSlidersEnglish.objects.all()
+    serializer_class = ServiceSlidersEnglishSerializer
+    lookup_field = 'id'
+
+
+# # * =================== Service Sliders Arabic Dashboard ===================
+
+
+class ServiceSlidersArabicListView(ListAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = ServiceSlidersArabic.objects.all()
+    serializer_class = ServiceSlidersArabicSerializer
+
+
+class ServiceSlidersArabicCreateView(CreateAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = ServiceSlidersArabic.objects.all()
+    serializer_class = ServiceSlidersArabicSerializer
+
+
+class ServiceSlidersArabicDetailView(RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = ServiceSlidersArabic.objects.all()
+    serializer_class = ServiceSlidersArabicSerializer
+    lookup_field = 'id'
+
+
+class ServiceSlidersArabicUpdateView(UpdateAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = ServiceSlidersArabic.objects.all()
+    serializer_class = ServiceSlidersArabicSerializer
+    lookup_field = 'id'
+
+    def partial_update(self, request, *args, **kwargs):
+        return super().partial_update(request, *args, **kwargs)
+
+
+class ServiceSlidersArabicDeleteView(DestroyAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = ServiceSlidersArabic.objects.all()
+    serializer_class = ServiceSlidersArabicSerializer
+    lookup_field = 'id'
+
+
 # # * =================== Comments English Dashboard ===================
 
 
